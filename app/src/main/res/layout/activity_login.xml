@@ -9,48 +9,48 @@
     android:id="@+id/login_layout" >
 
 
-   <AutoCompleteTextView
-       android:layout_width="250dp"
-       android:layout_height="50dp"
-       android:layout_marginTop="180dp"
-       android:layout_marginLeft="60dp"
-       android:gravity="center_vertical"
-       android:paddingLeft="15dp"
-       android:drawableLeft="@drawable/ic_person_black_24dp"
-       android:hint="  Username"
-       android:background="@drawable/edittextcorners"
-
-       />
-
-   <AutoCompleteTextView
-       android:layout_width="250dp"
-       android:layout_height="50dp"
-       android:layout_marginTop="250dp"
-       android:layout_marginLeft="60dp"
-       android:gravity="center_vertical"
-       android:paddingLeft="15dp"
-       android:drawableLeft="@drawable/ic_password"
-       android:hint="   Password"
-       android:background="@drawable/edittextcorners"
-
-       />
-
-    <Button
+    <AutoCompleteTextView
+        android:id="@+id/login_user"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginTop="320dp"
         android:layout_marginLeft="60dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/edittextcorners"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:gravity="center_vertical"
+        android:hint="  Username"
+
+        android:paddingLeft="15dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/login_pass"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/edittextcorners"
+        android:drawableLeft="@drawable/ic_password"
+        android:gravity="center_vertical"
+        android:hint="   Password"
+
+        android:paddingLeft="15dp" />
+
+    <Button
+        android:id="@+id/btnsignuplogin"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/buttoncorners"
+        android:drawableRight="@drawable/ic_login"
+
         android:gravity="center"
         android:hint="Login"
-        android:textColor="#fff"
-
-        android:paddingRight="80dp"
         android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:textColor="#fff"
         android:textSize="25dp"
-        android:textStyle="bold"
-        android:drawableRight="@drawable/ic_login"
-        android:background="@drawable/buttoncorners"
-        />
+        android:textStyle="bold" />
     <TextView
         android:layout_width="150dp"
         android:layout_height="20dp"
