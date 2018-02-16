@@ -6,4 +6,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#fff</color>
     <color name="pagebg">#FF000000</color>
+    <color name="graylight">#fafafa</color>
+    <color name="startblue">#09c6df</color>
+    <color name="endblue">#0bcce6</color>
 </resources>
