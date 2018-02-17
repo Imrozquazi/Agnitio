@@ -4,10 +4,8 @@
     <modules>
       <module fileurl="file://D:\TechFest2018\Cover_Flow.iml" filepath="D:\TechFest2018\Cover_Flow.iml" />
       <module fileurl="file://$PROJECT_DIR$/TechFest2018.iml" filepath="$PROJECT_DIR$/TechFest2018.iml" />
-      <module fileurl="file://E:\TechFest2018\TechFest2018.iml" filepath="E:\TechFest2018\TechFest2018.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://D:\TechFest2018\app\app.iml" filepath="D:\TechFest2018\app\app.iml" />
-      <module fileurl="file://E:\TechFest2018\app\app.iml" filepath="E:\TechFest2018\app\app.iml" />
     </modules>
   </component>
 </project>
