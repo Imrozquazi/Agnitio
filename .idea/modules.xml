@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://D:\TechFest2018\Cover_Flow.iml" filepath="D:\TechFest2018\Cover_Flow.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TechFest.iml" filepath="$PROJECT_DIR$/TechFest.iml" />
-      <module fileurl="file://E:\TechFest\TechFest2018.iml" filepath="E:\TechFest\TechFest2018.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Agnitio.iml" filepath="$PROJECT_DIR$/Agnitio.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://D:\TechFest2018\app\app.iml" filepath="D:\TechFest2018\app\app.iml" />
     </modules>
   </component>
 </project>
