@@ -72,6 +72,7 @@ public class Login extends AppCompatActivity {
                     mProLogin.dismiss();
                     startActivity(new Intent(Login.this,Bottom_NavBar.class));
                     //imroz
+                    //chutiya github
 
                 }
                 else {
