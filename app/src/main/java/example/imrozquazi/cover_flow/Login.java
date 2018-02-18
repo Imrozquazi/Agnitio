@@ -70,7 +70,7 @@ public class Login extends AppCompatActivity {
                 if(task.isSuccessful())
                 {
                     mProLogin.dismiss();
-                    startActivity(new Intent(Login.this,Homescreen.class));
+                    startActivity(new Intent(Login.this,Bottom_NavBar.class));
 
                 }
                 else {

@@ -13,7 +13,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
 
-public class fragment_home extends Fragment {
+public class fragment_home extends Fragment implements View.OnClickListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -44,24 +44,22 @@ public class fragment_home extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View v = (View) getView().findViewById(R.id.homeFrame);
+        View v = inflater.inflate(R.layout.fragment_fragment_home, container, false);
 
         c = (CardView)v.findViewById(R.id.c1);
-        c.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        c.setOnClickListener(this);
 
-                startActivity(new Intent(fragment_home.this.getActivity(),MainActivity.class));
-            }
-        });
-
-        return inflater.inflate(R.layout.fragment_fragment_home, container, false);
+        return  v;
+       // return inflater.inflate(R.layout.fragment_fragment_home, container, false);
 
 
 
 
     }
 
+    @Override
+    public void onClick(View v) {
+        startActivity(new Intent(getActivity(),MainActivity.class));
+    }
 
 }
