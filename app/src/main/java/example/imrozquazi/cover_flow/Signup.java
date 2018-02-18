@@ -103,7 +103,10 @@ public class Signup extends AppCompatActivity {
                             if(task.isSuccessful())
                             {
                                 mProSignUp.dismiss();
-                                startActivity(new Intent(Signup.this,Homescreen.class));
+                                Intent siginupIntent = new Intent(Signup.this,Bottom_NavBar.class);
+                                siginupIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                startActivity(siginupIntent);
+                                //startActivity(new Intent(Signup.this,Homescreen.class));
                             }
                             else {
                                 mProSignUp.dismiss();
