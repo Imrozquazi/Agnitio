@@ -70,7 +70,10 @@ public class Login extends AppCompatActivity {
                 if(task.isSuccessful())
                 {
                     mProLogin.dismiss();
-                    startActivity(new Intent(Login.this,Bottom_NavBar.class));
+                    Intent loginIntent= new Intent(Login.this,Bottom_NavBar.class);
+                    loginIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(loginIntent);
+                    //startActivity(new Intent(Login.this,Bottom_NavBar.class));
                     //imroz
                     //chutiya github
                     //Correct
