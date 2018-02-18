@@ -26,8 +26,6 @@ public class Intro_ extends AppCompatActivity {
         downtoup = AnimationUtils.loadAnimation(this, R.anim.downtoup);
         l2.setAnimation(downtoup);
 
-
-
         startActivity(new Intent(this, Login.class));
 
     }

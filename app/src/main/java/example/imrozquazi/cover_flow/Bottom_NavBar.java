@@ -1,6 +1,7 @@
 package example.imrozquazi.cover_flow;
 
 import android.content.ClipData;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -9,11 +10,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 //comment by ashay
 
 public class Bottom_NavBar extends AppCompatActivity {
 
     private TextView mTextMessage;
+    private FirebaseAuth mAuth;
+
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -47,10 +53,14 @@ public class Bottom_NavBar extends AppCompatActivity {
 
                 case R.id.navigation_Logout:
                    // mTextMessage.setText("Logout");
+                    /*
                     fragment_home frag4 = new fragment_home();
                     FragmentTransaction ft4 = getSupportFragmentManager().beginTransaction();
                     ft4.replace(R.id.fram,frag4);
-                    ft4.commit();
+                    ft4.commit();*/
+
+                    mAuth.signOut();
+                    startActivity(new Intent(getApplicationContext(),Login.class));
                     return true;
             }
             return false;
@@ -73,12 +83,17 @@ public class Bottom_NavBar extends AppCompatActivity {
         ft.replace(R.id.fram,fragment);
         ft.commit();
 
-
-
-
-
-
+        mAuth=FirebaseAuth.getInstance();
 
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user =FirebaseAuth.getInstance().getCurrentUser();
+        if(user == null)
+        {
+            startActivity(new Intent(getApplicationContext(),Login.class));
+        }
+    }
 }

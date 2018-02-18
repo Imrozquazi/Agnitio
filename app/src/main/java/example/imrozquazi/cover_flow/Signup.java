@@ -105,6 +105,10 @@ public class Signup extends AppCompatActivity {
                                 mProSignUp.dismiss();
                                 startActivity(new Intent(Signup.this,Homescreen.class));
                             }
+                            else {
+                                mProSignUp.dismiss();
+                                Toast.makeText(getApplicationContext(),"Something went wrong",Toast.LENGTH_SHORT).show();
+                            }
                         }
                     });
                 }
