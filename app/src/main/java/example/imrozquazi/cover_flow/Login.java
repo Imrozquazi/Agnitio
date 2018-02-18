@@ -73,6 +73,7 @@ public class Login extends AppCompatActivity {
                     startActivity(new Intent(Login.this,Bottom_NavBar.class));
                     //imroz
                     //chutiya github
+                    //Correct
 
                 }
                 else {
