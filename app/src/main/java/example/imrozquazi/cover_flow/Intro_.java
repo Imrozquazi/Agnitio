@@ -32,8 +32,9 @@ public class Intro_ extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent i=new Intent(Intro_.this,Bottom_NavBar.class);
+                Intent i=new Intent(Intro_.this,WelcomeActivity.class);
                 startActivity(i);
+                finish();
             }
         }, 1500);
 
