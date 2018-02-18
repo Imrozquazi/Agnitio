@@ -9,6 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+//comment by ashay
+
 public class Bottom_NavBar extends AppCompatActivity {
 
     private TextView mTextMessage;
