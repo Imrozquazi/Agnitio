@@ -1,6 +1,7 @@
 package example.imrozquazi.cover_flow;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.animation.Animation;
@@ -26,7 +27,17 @@ public class Intro_ extends AppCompatActivity {
         downtoup = AnimationUtils.loadAnimation(this, R.anim.downtoup);
         l2.setAnimation(downtoup);
 
-        startActivity(new Intent(this, Login.class));
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                Intent i=new Intent(Intro_.this,Bottom_NavBar.class);
+                startActivity(i);
+            }
+        }, 1500);
+
+        //startActivity(new Intent(this, Login.class));
 
     }
 }
