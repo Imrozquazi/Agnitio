@@ -1,6 +1,7 @@
 package example.imrozquazi.cover_flow;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -44,7 +45,21 @@ public class fragment_home extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        View v = (View) getView().findViewById(R.id.homeFrame);
+
+        c = (CardView)v.findViewById(R.id.c1);
+        c.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(fragment_home.this.getActivity(),MainActivity.class));
+            }
+        });
+
         return inflater.inflate(R.layout.fragment_fragment_home, container, false);
+
+
+
 
     }
 
