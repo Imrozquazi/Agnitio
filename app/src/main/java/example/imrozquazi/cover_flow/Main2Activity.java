@@ -72,7 +72,7 @@ public class Main2Activity extends AppCompatActivity {
                 }
                 else
                 {
-                    Toast.makeText(getApplicationContext(),"Error",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Error ",Toast.LENGTH_LONG).show();
                 }
             }
         });
