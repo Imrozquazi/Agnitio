@@ -41,7 +41,7 @@ public class Main2Activity extends AppCompatActivity {
         v2.startAnimation(a);
 
         mAuth=FirebaseAuth.getInstance();
-       mbook = (Button)findViewById(R.id.book);
+        mbook = (Button)findViewById(R.id.book);
 
         mbook.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,12 +57,12 @@ public class Main2Activity extends AppCompatActivity {
         user=FirebaseAuth.getInstance().getCurrentUser();
 
         String email=user.getEmail();
-
-        mDatabase= FirebaseDatabase.getInstance().getReference("Virtual");
+        String uid=user.getUid();
+        mDatabase= FirebaseDatabase.getInstance().getReference("CodeWars").child(uid);
 
         Map<String, String> data=new HashMap<String,String>();
-        data.put("Email:",email);
-        mDatabase.push().setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
+        data.put("Email",email);
+        mDatabase.setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
 
@@ -72,7 +72,7 @@ public class Main2Activity extends AppCompatActivity {
                 }
                 else
                 {
-                    Toast.makeText(getApplicationContext(),"eRROR",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Error",Toast.LENGTH_LONG).show();
                 }
             }
         });
