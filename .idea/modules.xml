@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Agnitio.iml" filepath="$PROJECT_DIR$/Agnitio.iml" />
-      <module fileurl="file://E:\Agnitio\.idea\Agnitio.iml" filepath="E:\Agnitio\.idea\Agnitio.iml" />
+      <module fileurl="file://E:\Agnitio\Agnitio.iml" filepath="E:\Agnitio\Agnitio.iml" />
+      <module fileurl="file://F:\Andriod_Studio_Projects\Agnitio\.idea\Agnitio.iml" filepath="F:\Andriod_Studio_Projects\Agnitio\.idea\Agnitio.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
