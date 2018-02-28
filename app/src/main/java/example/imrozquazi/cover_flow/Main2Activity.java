@@ -1,6 +1,7 @@
 package example.imrozquazi.cover_flow;
 
 import android.app.Dialog;
+import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,6 +19,10 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -48,9 +53,12 @@ public class Main2Activity extends AppCompatActivity {
             public void onClick(View v) {
 
                 DataEntry();
+                smsApiCall();
             }
         });
 
+        StrictMode.ThreadPolicy policy=new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
     }
 
     private void DataEntry() {
@@ -77,6 +85,49 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
     }
+
+
+    public void smsApiCall()
+    {
+        try {
+            // Construct data
+            String apiKey = "apikey=" + "4iQet9zS7N0-8BOlNJ7oGBJzPBA2yesfVrpXDE1K1y";
+            String message = "&message=" + "Greetings from team TechFest, Thank you for the registration..!!";
+            String sender = "&sender=" + "";//mtxtsender.getText().toString();
+            String numbers = "&numbers=" + "919552144662";
+
+            // Send data
+            HttpURLConnection conn = (HttpURLConnection) new URL("https://api.textlocal.in/send/?").openConnection();
+            String data = apiKey + numbers + message + sender;
+            conn.setDoOutput(true);
+            conn.setRequestMethod("POST");
+            conn.setRequestProperty("Content-Length", Integer.toString(data.length()));
+
+            conn.getOutputStream().write(data.getBytes("UTF-8"));
+
+            final BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+
+            final StringBuffer stringBuffer = new StringBuffer();
+            String line;
+            while ((line = rd.readLine()) != null) {
+                //stringBuffer.append(line);
+                Toast.makeText(getApplicationContext(),"The Message is: "+line,Toast.LENGTH_LONG).show();
+            }
+
+            rd.close();
+
+            //return stringBuffer.toString();
+        } catch (Exception e) {
+            //System.out.println("Error SMS "+e);
+            //return "Error "+e;
+            Toast.makeText(getApplicationContext(),"The Error Message is: "+e,Toast.LENGTH_LONG).show();
+        }
+    }
+
+
+
+
+
 
 
    /*public void Showpopup(View v)
