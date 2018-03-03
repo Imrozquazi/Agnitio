@@ -7,17 +7,22 @@
     tools:context="example.imrozquazi.cover_flow.Signup"
     android:background="@drawable/android_color_gradient_list"
     android:id="@+id/signup_layout" >
-
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+     >
 
     <AutoCompleteTextView
         android:id="@+id/UserName"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="60dp"
+
         android:layout_marginTop="120dp"
         android:background="@drawable/edittextcorners"
         android:drawableLeft="@drawable/ic_person_black_24dp"
-        android:gravity="center_vertical"
+
         android:hint="  Username"
 
         android:paddingLeft="15dp" />
@@ -26,12 +31,12 @@
         android:id="@+id/signup_email"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="15dp"
+
         android:background="@drawable/edittextcorners"
         android:drawableLeft="@drawable/ic_email_black_24dp"
         android:gravity="center_vertical"
-        android:hint="   Email"
+        android:hint="    Email"
 
         android:paddingLeft="15dp" />
 
@@ -39,8 +44,7 @@
         android:id="@+id/signup_contact"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/edittextcorners"
         android:drawableLeft="@drawable/ic_phone_iphone_black_24dp"
         android:gravity="center_vertical"
@@ -52,12 +56,12 @@
         android:id="@+id/signup_password"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="330dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/edittextcorners"
         android:drawableLeft="@drawable/ic_password"
         android:gravity="center_vertical"
         android:hint="   Password"
+        android:inputType="textPassword"
 
         android:paddingLeft="15dp" />
 
@@ -65,8 +69,7 @@
         android:id="@+id/btn_signup"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/buttoncorners"
         android:drawableRight="@drawable/ic_login"
 
@@ -83,8 +86,8 @@
     <TextView
         android:layout_width="250dp"
         android:layout_height="20dp"
-        android:layout_marginTop="530dp"
-        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
         android:text="Already Signed Up...??..Click Here"
         android:textStyle="bold"
         android:textColor="#fff"
@@ -92,5 +95,7 @@
         android:onClick="login"
 
         />
+
+</LinearLayout>
 
 </RelativeLayout>

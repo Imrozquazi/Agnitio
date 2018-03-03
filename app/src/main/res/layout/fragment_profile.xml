@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="example.imrozquazi.cover_flow.Profile"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -104,7 +105,7 @@
 
                     android:layout_width="36dp"
                     android:layout_height="36dp"
-                    app:srcCompat="@drawable/ic_phone_iphone_profile_24dp"/>
+                    app:srcCompat="@drawable/ic_school_black_24dp"/>
                 <TextView
                     android:paddingTop="5dp"
                     android:paddingLeft="18dp"
@@ -112,7 +113,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:textSize="18dp"
-                    android:text="9999999999"/>
+                    android:text="Jawaharlal Nehru Egineering College"/>
 
 
             </LinearLayout>

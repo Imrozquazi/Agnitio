@@ -6,19 +6,29 @@
     android:layout_height="match_parent"
     tools:context="example.imrozquazi.cover_flow.Login"
     android:background="@drawable/android_color_gradient_list"
-    android:id="@+id/login_layout" >
+    android:id="@+id/login_layout"
 
+     >
 
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:padding="20dp">
     <AutoCompleteTextView
         android:id="@+id/login_user"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="60dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="15dp"
+
         android:layout_marginTop="180dp"
         android:background="@drawable/edittextcorners"
         android:drawableLeft="@drawable/ic_person_black_24dp"
-        android:gravity="center_vertical"
+
         android:hint="  Username"
+        android:inputType="textAutoComplete"
 
         android:paddingLeft="15dp" />
 
@@ -26,12 +36,14 @@
         android:id="@+id/login_pass"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="250dp"
+
+        android:layout_marginTop="20dp"
         android:background="@drawable/edittextcorners"
         android:drawableLeft="@drawable/ic_password"
         android:gravity="center_vertical"
         android:hint="   Password"
+        android:inputType="textPassword"
+
 
         android:paddingLeft="15dp" />
 
@@ -39,11 +51,9 @@
         android:id="@+id/btnsignuplogin"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="320dp"
         android:background="@drawable/buttoncorners"
         android:drawableRight="@drawable/ic_login"
-
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:hint="Login"
         android:paddingLeft="80dp"
@@ -54,26 +64,29 @@
     <TextView
         android:layout_width="150dp"
         android:layout_height="20dp"
-        android:layout_marginTop="380dp"
-        android:layout_marginLeft="110dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
         android:text="forgot password..??"
         android:textStyle="bold"
         android:textColor="#fff"
         android:clickable="true"
+        android:focusable="true"
 
         />
 
     <TextView
         android:layout_width="250dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="530dp"
-        android:layout_marginLeft="80dp"
-        android:text="Not yet Signed Up...??..Click Here"
-        android:textStyle="bold"
-        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
         android:clickable="true"
+        android:focusable="true"
         android:onClick="signup"
+        android:text="Not yet Signed Up...??..Click Here"
+        android:textColor="#fff"
+        android:textStyle="bold"
 
         />
+</LinearLayout>
 
 </RelativeLayout>

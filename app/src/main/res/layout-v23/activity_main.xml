@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="example.imrozquazi.cover_flow.MainActivity"
-    android:background="@color/black">
+     >
 
     <TextView
         android:id="@+id/txtanim"
@@ -16,7 +16,6 @@
         android:layout_marginTop="38dp"
         android:paddingLeft="130dp"
         android:gravity="center_vertical"
-
         android:textSize="28dp"
         android:textStyle="bold"
 
@@ -29,7 +28,7 @@
         android:layout_height="match_parent"
          android:elevation="2dp"
         android:longClickable="true"
-        android:background="@color/black"
+
         app:reflectionOpacity="@android:integer/config_mediumAnimTime"
         app:coverHeight="180dp"
         app:coverWidth="120dp"
@@ -49,9 +48,11 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
+        android:padding="10dp"
+        android:paddingTop="5dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerVertical="true">
+        android:layout_centerVertical="true"
+        >
 
 
 

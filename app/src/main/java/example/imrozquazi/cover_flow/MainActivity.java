@@ -1,6 +1,7 @@
 package example.imrozquazi.cover_flow;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -44,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
             public View makeView() {
                 LayoutInflater inflater = LayoutInflater.from(MainActivity.this);
                 TextView txt = (TextView) inflater.inflate((R.layout.layout_title),null);
+                txt.setTextColor(Color.BLACK);
+                txt.setTextSize(40);
+
                 return txt;
 
             }
@@ -54,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
         mTitle.setAnimation(in);
         mTitle.setAnimation(out);
+
 
         //
 
@@ -106,10 +111,10 @@ public class MainActivity extends AppCompatActivity {
     {
 
 
-        eventList.add(new Event("Coding","https://www.internationalstudentinsurance.com/blog/wp-content/uploads/2014/07/487540655-Converted.png"));
-        eventList.add(new Event("Running","http://anurag.edu.in/wp-content/uploads/2012/quiz.jpg"));
-        eventList.add(new Event("Implementing","https://res.cloudinary.com/teepublic/image/private/s--91AeMXfq--/t_Preview/b_rgb:262c3a,c_limit,f_auto,h_313,q_90,w_313/v1496756374/production/designs/1649485_1"));
-        eventList.add(new Event("Output","https://bookboon.com/thumbnail/720/47f230d1-2d56-4cb9-9d04-a0f600b34b87/495eed07-fa5c-40b4-9667-a5d400e1a9ca/c-1-introduction-to-programming-and-the-c-language.jpg"));
+        eventList.add(new Event("Event 1","https://www.internationalstudentinsurance.com/blog/wp-content/uploads/2014/07/487540655-Converted.png"));
+        eventList.add(new Event("Event 2","http://anurag.edu.in/wp-content/uploads/2012/quiz.jpg"));
+        eventList.add(new Event("Event 3","https://res.cloudinary.com/teepublic/image/private/s--91AeMXfq--/t_Preview/b_rgb:262c3a,c_limit,f_auto,h_313,q_90,w_313/v1496756374/production/designs/1649485_1"));
+        eventList.add(new Event("Event 4","https://bookboon.com/thumbnail/720/47f230d1-2d56-4cb9-9d04-a0f600b34b87/495eed07-fa5c-40b4-9667-a5d400e1a9ca/c-1-introduction-to-programming-and-the-c-language.jpg"));
 
     }
 

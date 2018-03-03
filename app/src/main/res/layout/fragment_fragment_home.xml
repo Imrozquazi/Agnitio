@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="example.imrozquazi.cover_flow.fragment_home"
-    android:background="#000"
+    android:background="@drawable/back"
     android:id="@+id/homeFrame">
     <ScrollView
         android:layout_width="match_parent"
@@ -14,26 +14,36 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:background="#EE2C2C"></LinearLayout>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Categories"
+                 android:textColor="#000"
+                 android:textSize="40dp"
+                 android:textStyle="bold"
+                 android:background="@drawable/shape"
+                 android:layout_marginLeft="100dp"
+                 android:layout_marginTop="40dp"
+                 />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/c1"
                     android:layout_marginTop="150dp"
-                    android:layout_marginLeft="45dp"
+
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:foreground="?attr/selectableItemBackground"
-                    android:stateListAnimator="@anim/aniamtion"
-                    android:clickable="true">
+
+                    android:clickable="true"
+                    android:focusable="auto">
                 </android.support.v7.widget.CardView>
 
 
@@ -50,12 +60,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/c3"
                     android:layout_marginTop="320dp"
-                    android:layout_marginLeft="45dp"
+
                     android:layout_width="120dp"
                     android:layout_height="120dp"></android.support.v7.widget.CardView>
 
@@ -72,12 +83,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/c5"
                     android:layout_marginTop="490dp"
-                    android:layout_marginLeft="45dp"
+
                     android:layout_width="120dp"
                     android:layout_height="120dp"></android.support.v7.widget.CardView>
 
@@ -94,12 +106,12 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/c7"
                     android:layout_marginTop="660dp"
-                    android:layout_marginLeft="45dp"
                     android:layout_width="120dp"
                     android:layout_height="120dp"></android.support.v7.widget.CardView>
 

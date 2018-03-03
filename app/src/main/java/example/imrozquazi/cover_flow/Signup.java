@@ -61,8 +61,8 @@ public class Signup extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                mProSignUp.setTitle("Regitering User");
-                mProSignUp.setMessage("Please wait while we create account");
+                mProSignUp.setTitle("Registering User");
+                mProSignUp.setMessage("Please wait while we create your account");
                 mProSignUp.setCanceledOnTouchOutside(false);
                 mProSignUp.show();
 
@@ -110,7 +110,7 @@ public class Signup extends AppCompatActivity {
                             }
                             else {
                                 mProSignUp.dismiss();
-                                Toast.makeText(getApplicationContext(),"Something went wrong",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(),"Oopps...!!...Something went wrong",Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
