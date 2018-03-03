@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.CardView;
+import android.transition.Explode;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,6 +57,8 @@ public class fragment_home extends Fragment implements View.OnClickListener {
         r1= (RelativeLayout)v.findViewById(R.id.r1);
 
 
+
+
         r1.setOnClickListener(this);
 
         return  v;
@@ -69,6 +72,7 @@ public class fragment_home extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v)
     {
+
         startActivity(new Intent(getActivity(),MainActivity.class));
     }
 
