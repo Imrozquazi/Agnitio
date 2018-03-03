@@ -5,7 +5,8 @@ android {
     buildToolsVersion "27.0.3"
     defaultConfig {
         applicationId "example.imrozquazi.cover_flow"
-        minSdkVersion 20
+        minSdkVersion 15
+
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"

@@ -5,12 +5,14 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.RelativeLayout;
 
 
 public class fragment_home extends Fragment implements View.OnClickListener {
@@ -20,6 +22,10 @@ public class fragment_home extends Fragment implements View.OnClickListener {
     private static final String ARG_PARAM2 = "param2";
 
     Animation anima;
+
+    ViewPager imagesliderhome;
+
+    RelativeLayout r1;
 
     CardView c;
 
@@ -47,7 +53,10 @@ public class fragment_home extends Fragment implements View.OnClickListener {
         View v = inflater.inflate(R.layout.fragment_fragment_home, container, false);
 
         c = (CardView)v.findViewById(R.id.c1);
-        c.setOnClickListener(this);
+        r1= (RelativeLayout)v.findViewById(R.id.r1);
+
+
+        r1.setOnClickListener(this);
 
         return  v;
        // return inflater.inflate(R.layout.fragment_fragment_home, container, false);
