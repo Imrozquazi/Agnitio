@@ -63,20 +63,20 @@ public class Main2Activity extends AppCompatActivity {
 
     private void DataEntry() {
         user=FirebaseAuth.getInstance().getCurrentUser();
-
         String email=user.getEmail();
         String uid=user.getUid();
         mDatabase= FirebaseDatabase.getInstance().getReference("CodeWars").child(uid);
 
         Map<String, String> data=new HashMap<String,String>();
         data.put("Email",email);
+        data.put("Contact",StudentInfo.getContact());
         mDatabase.setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
 
                 if(task.isSuccessful())
                 {
-                    Toast.makeText(getApplicationContext(), "Registered", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Registered ", Toast.LENGTH_SHORT).show();
                 }
                 else
                 {
@@ -92,9 +92,9 @@ public class Main2Activity extends AppCompatActivity {
         try {
             // Construct data
             String apiKey = "apikey=" + "4iQet9zS7N0-8BOlNJ7oGBJzPBA2yesfVrpXDE1K1y";
-            String message = "&message=" + "Greetings from team TechFest, Thank you for the registration..!!";
+            String message = "&message=" + "Greetings from team TechFest, Thank you for the registration " + StudentInfo.getname();
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
-            String numbers = "&numbers=" + "919552144662";
+            String numbers = "&numbers=" + StudentInfo.getContact();
 
             // Send data
             HttpURLConnection conn = (HttpURLConnection) new URL("https://api.textlocal.in/send/?").openConnection();

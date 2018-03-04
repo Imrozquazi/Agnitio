@@ -3,10 +3,13 @@ package example.imrozquazi.cover_flow;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.DocumentsContract;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class Profile extends Fragment {
@@ -19,13 +22,31 @@ public class Profile extends Fragment {
     private String mParam1;
     private String mParam2;
 
-
+    private TextView Email;
+    private TextView name;
+    private TextView con;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        View v = inflater.inflate(R.layout.fragment_profile, container, false);
+
+
+        Email = (TextView) v.findViewById(R.id.profile_email);
+        name = (TextView) v.findViewById(R.id.profile_Username);
+
+        con = (TextView) v.findViewById(R.id.profile_contact);
+
+        Email.setText(StudentInfo.getEmail());
+        name.setText(StudentInfo.getname());
+        con.setText(StudentInfo.getContact());
+
+        //Toast.makeText(getActivity(),"Email:"+StudentInfo.getEmail(),Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getActivity(),"Name:"+StudentInfo.getname(),Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getActivity(),"Contact:"+StudentInfo.getContact(),Toast.LENGTH_SHORT).show();
+        //return inflater.inflate(R.layout.fragment_profile, container, false);
+        return v;
     }
 
 

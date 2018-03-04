@@ -7,11 +7,18 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 //comment by ashay
 
@@ -19,7 +26,7 @@ public class Bottom_NavBar extends AppCompatActivity {
 
     private TextView mTextMessage;
     private FirebaseAuth mAuth;
-
+    private DatabaseReference mdatabase;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -90,10 +97,33 @@ public class Bottom_NavBar extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        FirebaseUser user =FirebaseAuth.getInstance().getCurrentUser();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if(user == null)
         {
             startActivity(new Intent(getApplicationContext(),Login.class));
+        }
+        else
+        {
+            mdatabase = FirebaseDatabase.getInstance().getReference().child("Users").child(user.getUid());
+
+            mdatabase.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    StudentInfo StudentInfo = new StudentInfo();
+                    String name=dataSnapshot.child("Name").getValue().toString();
+                    String con = dataSnapshot.child("Contact").getValue().toString();
+                    String email= dataSnapshot.child("Email").getValue().toString();
+                    StudentInfo.setName(name);
+                    StudentInfo.setEmail(email);
+                    StudentInfo.setContact(con);
+
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                }
+            });
         }
     }
 }

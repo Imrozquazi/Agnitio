@@ -31,6 +31,10 @@ public class Signup extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
     private ProgressDialog mProSignUp;
+    private String name;
+    private String email;
+    private String con;
+    private String pass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,19 +78,19 @@ public class Signup extends AppCompatActivity {
     private void signup() {
 
         //fetching details
-        String name=mName.getText().toString();
-        String email=mEmail.getText().toString();
-        String contact=mContact.getText().toString();
-        String password=mPass.getText().toString();
+        name=mName.getText().toString();
+        email=mEmail.getText().toString();
+        con=mContact.getText().toString();
+        pass=mPass.getText().toString();
 
         //make a map to add it to database
         final Map<String,String> datamap=new HashMap<String, String>();
         datamap.put("Name",name);
         datamap.put("Email",email);
-        datamap.put("Contact",contact);
+        datamap.put("Contact",con);
 
 
-        mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+        mAuth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
 
