@@ -40,5 +40,7 @@ public class Intro_ extends AppCompatActivity {
 
         //startActivity(new Intent(this, Login.class));
 
+        //hello there...
+
     }
 }
