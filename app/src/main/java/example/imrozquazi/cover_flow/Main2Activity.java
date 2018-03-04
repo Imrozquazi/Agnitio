@@ -121,6 +121,7 @@ public class Main2Activity extends AppCompatActivity {
             //System.out.println("Error SMS "+e);
             //return "Error "+e;
             Toast.makeText(getApplicationContext(),"The Error Message is: "+e,Toast.LENGTH_LONG).show();
+
         }
     }
 
