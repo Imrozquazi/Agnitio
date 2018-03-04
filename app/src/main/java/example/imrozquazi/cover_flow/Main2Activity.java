@@ -33,6 +33,7 @@ public class Main2Activity extends AppCompatActivity {
     FirebaseUser user;
     Dialog mydialog;
     Button mbook;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
