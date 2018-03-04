@@ -41,4 +41,5 @@ public class StudentInfo {
     public void setContact(String Contact) {
         this.contact = Contact;
     }
+
 }
