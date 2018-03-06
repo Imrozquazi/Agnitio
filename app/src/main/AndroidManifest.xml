@@ -11,13 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".Main3Activity" />
-        <activity android:name=".Floatingmenu" />
-        <activity android:name=".Popup_Activity" />
+        <activity android:name=".MainActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Main2Activity" android:screenOrientation="portrait" />
+        <activity android:name=".Main3Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".Floatingmenu" android:screenOrientation="portrait"/>
+        <activity android:name=".Popup_Activity" android:screenOrientation="portrait"/>
 
-        <activity android:name=".Homescreen">
+        <activity android:name=".Homescreen" android:screenOrientation="portrait">
         </activity>
 
         <activity android:name=".Intro_"
@@ -29,8 +29,8 @@
 
         </activity>
 
-        <activity android:name=".Login" />
-        <activity android:name=".Signup" />
+        <activity android:name=".Login" android:screenOrientation="portrait"/>
+        <activity android:name=".Signup" android:screenOrientation="portrait"/>
 
         <activity
             android:name=".Bottom_NavBar"
@@ -39,7 +39,7 @@
 
         </activity>
 
-        <activity android:name=".WelcomeActivity">
+        <activity android:name=".WelcomeActivity" android:screenOrientation="portrait">
 
 
 
