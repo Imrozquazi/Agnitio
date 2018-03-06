@@ -43,29 +43,36 @@
             android:layout_width="match_parent"
             android:layout_height="220dp"
             android:layout_gravity="center"
-            android:background="@color/bg_screen1">
+            android:background="@color/white">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:foregroundGravity="center_vertical"
-                app:srcCompat="@drawable/ic_desktop_windows_black_24dp"
-                android:id="@+id/imageView"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true" />
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_width="300dp"
+                android:layout_height="175dp"
+                app:lottie_autoPlay="true"
+                android:layout_centerHorizontal="true"
+                app:lottie_fileName="Monitorcse.json"
+                app:lottie_loop="true"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="8dp" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="CSE"
-                android:textColor="@color/white"
-                android:textColorHighlight="@color/white"
-                android:textSize="30dp"
+                android:layout_height="50dp"
+                android:text="Cse"
                 android:textStyle="bold"
-                android:layout_below="@+id/imageView"
+                android:textAlignment="gravity"
+                android:textSize="40dp"
+                android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp" />
+                android:layout_marginBottom="12dp" />
+
 
 
         </RelativeLayout>
@@ -81,29 +88,37 @@
             android:layout_width="match_parent"
             android:layout_height="220dp"
             android:layout_gravity="center"
-            android:background="@color/bg_screen2">
+             >
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:foregroundGravity="center_vertical"
-                app:srcCompat="@drawable/ic_desktop_windows_black_24dp"
-                android:id="@+id/imageView1"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true" />
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view1"
+                android:layout_width="300dp"
+                android:layout_height="190dp"
+                android:layout_centerHorizontal="true"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="Mechanical.json"
+                app:lottie_loop="true"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="8dp" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:text="Mechanical"
                 android:textColor="@color/white"
-                android:textColorHighlight="@color/white"
-                android:textSize="30dp"
                 android:textStyle="bold"
-                android:layout_below="@+id/imageView1"
+                android:textAlignment="gravity"
+                android:textSize="35dp"
+                android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp" />
+                android:layout_marginBottom="8dp" />
+
 
 
         </RelativeLayout>
@@ -111,36 +126,45 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"></View>
+            android:layout_height="2dp"
+            android:background="@color/white"></View>
 
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="220dp"
             android:layout_gravity="center"
-            android:background="@color/bg_screen3">
+            >
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:foregroundGravity="center_vertical"
-                app:srcCompat="@drawable/ic_desktop_windows_black_24dp"
-                android:id="@+id/imageView2"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true" />
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view2"
+                android:layout_width="300dp"
+                android:layout_height="175dp"
+                android:layout_centerHorizontal="true"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="Civil.json"
+                app:lottie_loop="true"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="8dp" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:text="Civil"
                 android:textColor="@color/white"
-                android:textColorHighlight="@color/white"
-                android:textSize="30dp"
                 android:textStyle="bold"
-                android:layout_below="@+id/imageView2"
+                android:textAlignment="gravity"
+                android:textSize="35dp"
+                android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp" />
+                android:layout_marginBottom="8dp" />
+
 
 
         </RelativeLayout>
@@ -149,45 +173,46 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"></View>
+            android:layout_height="2dp"
+            android:background="@color/white"></View>
 
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="220dp"
             android:layout_gravity="center"
-            android:background="@color/bg_screen4">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:foregroundGravity="center_vertical"
-                app:srcCompat="@drawable/ic_desktop_windows_black_24dp"
-                android:id="@+id/imageView3"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true" />
+             >
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view3"
+                android:layout_width="3000dp"
+                android:layout_height="190dp"
+                android:layout_centerHorizontal="true"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="ECT.json"
+                app:lottie_loop="true"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="8dp" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:text="ECT"
                 android:textColor="@color/white"
-                android:textColorHighlight="@color/white"
-                android:textSize="30dp"
                 android:textStyle="bold"
-                android:layout_below="@+id/imageView3"
+                android:textAlignment="gravity"
+                android:textSize="40dp"
+                android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp" />
+                android:layout_marginBottom="10dp" />
 
 
         </RelativeLayout>
-
-
-
-
-
-
 
 
     </LinearLayout>

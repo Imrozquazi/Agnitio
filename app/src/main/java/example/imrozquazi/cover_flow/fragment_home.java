@@ -1,7 +1,11 @@
 package example.imrozquazi.cover_flow;
 
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -14,6 +18,8 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
+
+import com.airbnb.lottie.LottieAnimationView;
 
 
 public class fragment_home extends Fragment implements View.OnClickListener {
@@ -60,6 +66,31 @@ public class fragment_home extends Fragment implements View.OnClickListener {
 
 
         r1.setOnClickListener(this);
+
+
+        final LottieAnimationView animationView = (LottieAnimationView)v.findViewById(R.id.animation_view);
+
+
+// CSE Animation
+// Custom animation speed or duration.
+        ValueAnimator animator = ValueAnimator.ofFloat(0f, 1f)
+                .setDuration(60000);
+        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                animationView.setProgress((Float) animation.getAnimatedValue());
+            }
+        });
+        animator.start();
+
+        //  animationView.cancelAnimation();
+
+//custom color
+       /* PorterDuffColorFilter colorFilter = new PorterDuffColorFilter(Color.RED, PorterDuff.Mode.LIGHTEN);
+        animationView.addColorFilter(colorFilter);
+        animationView.addColorFilterToLayer("hello_layer", colorFilter);
+        animationView.addColorFilterToContent("hello_layer", "hello", colorFilter);
+        // animationView.clearColorFilters();*/
 
         return  v;
        // return inflater.inflate(R.layout.fragment_fragment_home, container, false);

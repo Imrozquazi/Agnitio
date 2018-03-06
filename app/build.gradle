@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 
+
 android {
     compileSdkVersion 26
     buildToolsVersion "27.0.3"
@@ -49,6 +50,8 @@ dependencies {
     compile 'com.github.Hitomis:CircleMenu:v1.0.2'
     implementation  'me.spark:submitbutton:1.0.1'
     compile 'com.android.support:cardview-v7:26.1.0'
+
+    compile 'com.airbnb.android:lottie:2.0.0'
 }
 
 
