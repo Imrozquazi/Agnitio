@@ -15,43 +15,36 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_centerHorizontal="true"
-    android:padding="20dp">
+    android:layout_marginTop="100dp"
+     >
     <AutoCompleteTextView
         android:id="@+id/login_user"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
-        android:padding="15dp"
-
-        android:layout_marginTop="180dp"
         android:background="@drawable/edittextcorners"
         android:drawableLeft="@drawable/ic_person_black_24dp"
-
         android:hint="  Username"
         android:inputType="textAutoComplete"
-
         android:paddingLeft="15dp" />
 
     <AutoCompleteTextView
         android:id="@+id/login_pass"
         android:layout_width="250dp"
         android:layout_height="50dp"
-
         android:layout_marginTop="20dp"
         android:background="@drawable/edittextcorners"
         android:drawableLeft="@drawable/ic_password"
         android:gravity="center_vertical"
         android:hint="   Password"
         android:inputType="textPassword"
-
-
         android:paddingLeft="15dp" />
 
 
 
     <Button
         android:id="@+id/btnsignuplogin"
-        android:layout_width="250dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:background="@drawable/buttoncorners"
         android:drawableRight="@drawable/ic_login"
@@ -64,8 +57,8 @@
         android:textSize="25dp"
         android:textStyle="bold" />
     <TextView
-        android:layout_width="150dp"
-        android:layout_height="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:text="forgot password..??"
@@ -77,7 +70,7 @@
         />
 
     <TextView
-        android:layout_width="250dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="100dp"
