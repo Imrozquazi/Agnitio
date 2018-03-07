@@ -88,6 +88,23 @@ public class Login extends AppCompatActivity {
 
     }
 
+    public void Reset(View v)
+    {
+        String user = mUser.getText().toString();
+        if(user == "")
+        {
+            Toast.makeText(getApplicationContext(),"Enter your email in username",Toast.LENGTH_LONG).show();
+        }
+        else {
+
+            mAuth.sendPasswordResetEmail(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+                @Override
+                public void onComplete(@NonNull Task<Void> task) {
+                    Toast.makeText(getApplicationContext(),"Password Reset Link has been send to your mail address",Toast.LENGTH_LONG).show();
+                }
+            });
+        }
+    }
     void signup(View v)
     {
         startActivity(new Intent(this,Signup.class));

@@ -1,6 +1,7 @@
 package example.imrozquazi.cover_flow;
 
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -33,7 +34,7 @@ public class Main2Activity extends AppCompatActivity {
     FirebaseUser user;
     Dialog mydialog;
     Button mbook;
-
+    ProgressDialog mPro;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,12 +50,28 @@ public class Main2Activity extends AppCompatActivity {
         mAuth=FirebaseAuth.getInstance();
         mbook = (Button)findViewById(R.id.book);
 
+        mPro = new ProgressDialog(this);
         mbook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                DataEntry();
-                smsApiCall();
+                mPro.setTitle("Registering");
+                mPro.setMessage("Please wait while we register you to the event");
+                mPro.setCanceledOnTouchOutside(false);
+                mPro.show();
+
+                eventEntrySMSpayTM ob =new eventEntrySMSpayTM("Robo Race");
+                boolean res = ob.DataEntry();
+                Toast.makeText(getApplication(),""+res, Toast.LENGTH_SHORT).show();
+                if(res)
+                {
+                    mPro.dismiss();
+                    Toast.makeText(getApplication(),"Registered", Toast.LENGTH_SHORT).show();
+                }
+                //mPro.dismiss();
+
+                // DataEntry();
+                //smsApiCall();
             }
         });
 

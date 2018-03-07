@@ -56,18 +56,18 @@
         android:textColor="#fff"
         android:textSize="25dp"
         android:textStyle="bold" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:text="forgot password..??"
-        android:textStyle="bold"
-        android:textColor="#fff"
         android:clickable="true"
         android:focusable="true"
-
-        />
+        android:onClick="Reset"
+        android:text="forgot password..??"
+        android:textColor="#fff"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
