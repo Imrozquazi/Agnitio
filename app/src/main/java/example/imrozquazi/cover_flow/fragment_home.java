@@ -1,22 +1,15 @@
 package example.imrozquazi.cover_flow;
 
 import android.animation.ValueAnimator;
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffColorFilter;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.CardView;
-import android.transition.Explode;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
 
 import com.airbnb.lottie.LottieAnimationView;
@@ -32,7 +25,7 @@ public class fragment_home extends Fragment implements View.OnClickListener {
 
     ViewPager imagesliderhome;
 
-    RelativeLayout r1;
+    RelativeLayout r_cse,r_mech,r_it;
 
     CardView c;
 
@@ -60,12 +53,16 @@ public class fragment_home extends Fragment implements View.OnClickListener {
         View v = inflater.inflate(R.layout.fragment_fragment_home, container, false);
 
         c = (CardView)v.findViewById(R.id.c1);
-        r1= (RelativeLayout)v.findViewById(R.id.r1);
+        r_cse= (RelativeLayout)v.findViewById(R.id.r_cse);
+        r_mech= (RelativeLayout)v.findViewById(R.id.r_mech);
+        r_it= (RelativeLayout)v.findViewById(R.id.r_it);
 
 
 
 
-        r1.setOnClickListener(this);
+        r_cse.setOnClickListener(this);
+        r_mech.setOnClickListener(this);
+        r_it.setOnClickListener(this);
 
 
         final LottieAnimationView animationView = (LottieAnimationView)v.findViewById(R.id.animation_view);
@@ -103,8 +100,26 @@ public class fragment_home extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v)
     {
+        switch (v.getId()) {
 
-        startActivity(new Intent(getActivity(),MainActivity.class));
+            case R.id.r_cse:
+                startActivity(new Intent(getActivity(),CSE_EVENTS_MAIN.class));
+                break;
+
+            case R.id.r_mech:
+                startActivity(new Intent(getActivity(),MECH_EVENTS_MAIN.class));
+                break;
+
+            case R.id.r_it:
+                startActivity(new Intent(getActivity(),IT_EVENTS_MAIN.class));
+                break;
+
+
+
+            default:
+                break;
+        }
+
     }
 
 }

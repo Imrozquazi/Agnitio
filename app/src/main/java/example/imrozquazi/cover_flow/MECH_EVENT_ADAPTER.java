@@ -13,29 +13,29 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 /**
- * Created by Imroz Quazi on 26-01-2018.
+ * Created by Imroz Quazi on 07-03-2018.
  */
 
-public class EventAdapter extends BaseAdapter {
+public class MECH_EVENT_ADAPTER  extends BaseAdapter {
 
-    private List<Event> EventList;
+    private List<MECH_EVENT_1> MechEvent1List;
     private Context mcontext;
 
-    public EventAdapter(List<Event> eventList, Context mcontext) {
-        EventList = eventList;
+    public MECH_EVENT_ADAPTER(List<MECH_EVENT_1> MechEvent1List, Context mcontext) {
+        this.MechEvent1List = MechEvent1List;
         this.mcontext = mcontext;
     }
 
     @Override
     public int getCount() {
-        return EventList.size();
+        return MechEvent1List.size();
 
     }
 
     @Override
     public Object getItem(int position)
     {
-        return EventList.get(position);
+        return MechEvent1List.get(position);
     }
 
     @Override
@@ -57,9 +57,9 @@ public class EventAdapter extends BaseAdapter {
             ImageView image = (ImageView) rowView.findViewById(R.id.image);
 
 
-            Picasso.with(mcontext).load(EventList.get(position).getPathofimage()).into(image);
-            name.setText(EventList.get(position).getName());
+            Picasso.with(mcontext).load(MechEvent1List.get(position).getPathofimage()).into(image);
+            name.setText(MechEvent1List.get(position).getName());
         }
-            return  rowView;
+        return  rowView;
     }
 }

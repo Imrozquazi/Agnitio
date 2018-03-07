@@ -1,19 +1,19 @@
 package example.imrozquazi.cover_flow;
 
 /**
- * Created by Imroz Quazi on 26-01-2018.
+ * Created by Imroz Quazi on 07-03-2018.
  */
 
-public class Event {
+public class IT_EVENT_1 {
 
     private String Name , Pathofimage;
 
 
-    public Event(String name , String path)
+    public IT_EVENT_1(String name , String path)
     {
-            Name = name;
+        Name = name;
 
-            Pathofimage = path;
+        Pathofimage = path;
 
 
     }

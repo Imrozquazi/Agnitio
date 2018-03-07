@@ -29,7 +29,7 @@ public class Homescreen extends AppCompatActivity {
         mc1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Homescreen.this,MainActivity.class));
+                startActivity(new Intent(Homescreen.this,CSE_EVENTS_MAIN.class));
             }
         });
 

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="example.imrozquazi.cover_flow.CSE_EVENTS_MAIN"
-     >
+    tools:context="example.imrozquazi.cover_flow.IT_EVENTS_MAIN">
 
     <TextView
         android:id="@+id/txtanim"
@@ -19,14 +18,14 @@
         android:textSize="28dp"
         android:textStyle="bold"
 
-         />
+        />
 
     <it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow
 
-        android:id="@+id/coverflow"
+        android:id="@+id/coverflow_IT"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-         android:elevation="2dp"
+        android:elevation="2dp"
         android:longClickable="true"
 
         app:reflectionOpacity="@android:integer/config_mediumAnimTime"
@@ -45,7 +44,7 @@
 
 
     <TextSwitcher
-        android:id="@+id/title"
+        android:id="@+id/title_IT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
@@ -58,20 +57,7 @@
 
     </TextSwitcher>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:onClick="Circlemenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="340dp"
-        android:clickable="true"
-        app:srcCompat="@drawable/shape"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="21dp"
-        android:layout_marginRight="20dp"
-        android:paddingRight="8dp"
-        android:focusable="true"/>
+
 
 
 </RelativeLayout>
