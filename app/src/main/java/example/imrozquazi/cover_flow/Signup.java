@@ -88,6 +88,7 @@ public class Signup extends AppCompatActivity {
         datamap.put("Name",name);
         datamap.put("Email",email);
         datamap.put("Contact",con);
+        
 
 
         mAuth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
