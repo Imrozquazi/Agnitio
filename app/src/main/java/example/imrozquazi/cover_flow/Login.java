@@ -54,9 +54,15 @@ public class Login extends AppCompatActivity {
                 mProLogin.show();
 
 
+
                 signin();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        moveTaskToBack(true);
     }
 
     private void signin() {

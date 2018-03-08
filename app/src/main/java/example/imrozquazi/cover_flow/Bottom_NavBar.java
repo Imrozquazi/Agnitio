@@ -69,7 +69,10 @@ public class Bottom_NavBar extends AppCompatActivity {
                     ft4.commit();*/
 
                     mAuth.signOut();
+                    finish();
                     startActivity(new Intent(getApplicationContext(),Login.class));
+
+
                     return true;
             }
             return false;
