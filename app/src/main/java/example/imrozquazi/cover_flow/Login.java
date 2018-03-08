@@ -59,6 +59,11 @@ public class Login extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onBackPressed() {
+        moveTaskToBack(true);
+    }
+
     private void signin() {
 
         String user=mUser.getText().toString();

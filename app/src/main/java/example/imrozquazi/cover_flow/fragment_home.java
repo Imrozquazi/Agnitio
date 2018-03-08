@@ -25,7 +25,7 @@ public class fragment_home extends Fragment implements View.OnClickListener {
 
     ViewPager imagesliderhome;
 
-    RelativeLayout r_cse,r_mech,r_it;
+    RelativeLayout r_cse,r_mech,r_it,r_ect;
 
     CardView c;
 
@@ -56,6 +56,7 @@ public class fragment_home extends Fragment implements View.OnClickListener {
         r_cse= (RelativeLayout)v.findViewById(R.id.r_cse);
         r_mech= (RelativeLayout)v.findViewById(R.id.r_mech);
         r_it= (RelativeLayout)v.findViewById(R.id.r_it);
+        r_ect= (RelativeLayout)v.findViewById(R.id.r_ect);
 
 
 
@@ -63,6 +64,7 @@ public class fragment_home extends Fragment implements View.OnClickListener {
         r_cse.setOnClickListener(this);
         r_mech.setOnClickListener(this);
         r_it.setOnClickListener(this);
+        r_ect.setOnClickListener(this);
 
 
         final LottieAnimationView animationView = (LottieAnimationView)v.findViewById(R.id.animation_view);
@@ -112,6 +114,10 @@ public class fragment_home extends Fragment implements View.OnClickListener {
 
             case R.id.r_it:
                 startActivity(new Intent(getActivity(),IT_EVENTS_MAIN.class));
+                break;
+
+            case R.id.r_ect:
+                startActivity(new Intent(getActivity(),ECT_EVENTS_MAIN.class));
                 break;
 
 

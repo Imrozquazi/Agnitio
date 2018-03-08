@@ -184,6 +184,7 @@
             android:layout_height="220dp"
             android:layout_gravity="center"
             android:background="@color/white"
+            android:id="@+id/r_ect"
              >
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/animation_view3"
@@ -228,6 +229,7 @@
             android:layout_height="220dp"
             android:layout_gravity="center"
             android:background="@color/white"
+
             >
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/animation_view4"
