@@ -20,24 +20,12 @@
             android:layout_gravity="center"
             android:layout_marginTop="100dp"
             android:text="TechFest 2018"
-
             android:textColor="@color/white"
             android:textSize="50sp"
             android:textStyle="bold">
 
         </TextView>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-
-            android:textAlignment="center"
-
-            android:textSize="30sp">
-
-        </TextView>
 
     </LinearLayout>
 

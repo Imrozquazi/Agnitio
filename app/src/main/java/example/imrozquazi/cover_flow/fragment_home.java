@@ -27,7 +27,7 @@ public class fragment_home extends Fragment implements View.OnClickListener {
 
     RelativeLayout r_cse,r_mech,r_it,r_ect;
 
-    CardView c;
+    CardView c_cse,c_mech,c_cvivl,c_IT;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -52,27 +52,27 @@ public class fragment_home extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_fragment_home, container, false);
 
-        c = (CardView)v.findViewById(R.id.c1);
-        r_cse= (RelativeLayout)v.findViewById(R.id.r_cse);
-        r_mech= (RelativeLayout)v.findViewById(R.id.r_mech);
-        r_it= (RelativeLayout)v.findViewById(R.id.r_it);
-        r_ect= (RelativeLayout)v.findViewById(R.id.r_ect);
+
+        c_cse= (CardView)v.findViewById(R.id.cardView_cse);
+        c_mech= (CardView) v.findViewById(R.id.cardView_mech);
+        c_cvivl= (CardView) v.findViewById(R.id.cardView_civil);
+        c_IT= (CardView) v.findViewById(R.id.cardView_IT);
 
 
 
 
-        r_cse.setOnClickListener(this);
-        r_mech.setOnClickListener(this);
-        r_it.setOnClickListener(this);
-        r_ect.setOnClickListener(this);
+        c_cse.setOnClickListener(this);
+        c_mech.setOnClickListener(this);
+        c_IT.setOnClickListener(this);
+        c_cvivl.setOnClickListener(this);
 
 
-        final LottieAnimationView animationView = (LottieAnimationView)v.findViewById(R.id.animation_view);
+        //final LottieAnimationView animationView = (LottieAnimationView)v.findViewById(R.id.animation_view);
 
 
 // CSE Animation
 // Custom animation speed or duration.
-        ValueAnimator animator = ValueAnimator.ofFloat(0f, 1f)
+       /* ValueAnimator animator = ValueAnimator.ofFloat(0f, 1f)
                 .setDuration(60000);
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
@@ -80,7 +80,7 @@ public class fragment_home extends Fragment implements View.OnClickListener {
                 animationView.setProgress((Float) animation.getAnimatedValue());
             }
         });
-        animator.start();
+        animator.start();*/
 
         //  animationView.cancelAnimation();
 
@@ -104,19 +104,19 @@ public class fragment_home extends Fragment implements View.OnClickListener {
     {
         switch (v.getId()) {
 
-            case R.id.r_cse:
+            case R.id.cardView_cse:
                 startActivity(new Intent(getActivity(),CSE_EVENTS_MAIN.class));
                 break;
 
-            case R.id.r_mech:
+            case R.id.cardView_mech:
                 startActivity(new Intent(getActivity(),MECH_EVENTS_MAIN.class));
                 break;
 
-            case R.id.r_it:
+            case R.id.cardView_IT:
                 startActivity(new Intent(getActivity(),IT_EVENTS_MAIN.class));
                 break;
 
-            case R.id.r_ect:
+            case R.id.cardView_civil:
                 startActivity(new Intent(getActivity(),ECT_EVENTS_MAIN.class));
                 break;
 
