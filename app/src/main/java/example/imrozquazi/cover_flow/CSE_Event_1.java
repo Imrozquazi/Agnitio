@@ -9,6 +9,7 @@ public class CSE_Event_1 {
     private String Name , Pathofimage;
 
 
+
     public CSE_Event_1(String name , String path)
     {
             Name = name;
