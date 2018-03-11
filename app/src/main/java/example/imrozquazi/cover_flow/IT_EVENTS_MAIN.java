@@ -86,13 +86,23 @@ public class IT_EVENTS_MAIN extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0)
                 {
-                    Intent in = new Intent(getApplicationContext(),Main2Activity.class);
+                    Intent in = new Intent(getApplicationContext(),Event_1_IT.class);
                     startActivity(in);
 
                 }
                 if(position == 1)
                 {
-                    Intent in = new Intent(getApplicationContext(),Main3Activity.class);
+                    Intent in = new Intent(getApplicationContext(),Event_2_IT.class);
+                    startActivity(in);
+                }
+                if(position == 2)
+                {
+                    Intent in = new Intent(getApplicationContext(),Event_3_IT.class);
+                    startActivity(in);
+                }
+                if(position == 3)
+                {
+                    Intent in = new Intent(getApplicationContext(),Event_4_IT.class);
                     startActivity(in);
                 }
             }

@@ -3,13 +3,14 @@ package example.imrozquazi.cover_flow;
 import android.app.Dialog;
 import android.os.StrictMode;
 import android.support.annotation.NonNull;
+import android.support.v4.content.res.FontResourcesParserCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -26,7 +27,7 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Main2Activity extends AppCompatActivity {
+public class Event_1_CSE extends AppCompatActivity {
 
     FirebaseAuth mAuth;
     DatabaseReference mDatabase;
@@ -37,24 +38,30 @@ public class Main2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_event_1_cse);
 
         mydialog = new Dialog(this);
         Animation a = AnimationUtils.loadAnimation(this,R.anim.viewanim);
-        View v1 = (View)findViewById(R.id.v1);
-        View v2 = (View)findViewById(R.id.v2);
+       CardView v1 = (CardView)findViewById(R.id.c1_cse);
+        CardView v2 = (CardView)findViewById(R.id.c2_cse);
+        CardView v3 = (CardView)findViewById(R.id.c3_cse);
+        CardView v4 = (CardView)findViewById(R.id.c4_cse);
+
         v1.startAnimation(a);
         v2.startAnimation(a);
+        v3.startAnimation(a);
+        v4.startAnimation(a);
+
 
         mAuth=FirebaseAuth.getInstance();
-        mbook = (Button)findViewById(R.id.book);
+       mbook = (Button)findViewById(R.id.button_event_1_cse);
 
-        mbook.setOnClickListener(new View.OnClickListener() {
+       mbook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 DataEntry();
-                smsApiCall();
+                //smsApiCall();
             }
         });
 
@@ -78,6 +85,10 @@ public class Main2Activity extends AppCompatActivity {
                 if(task.isSuccessful())
                 {
                     Toast.makeText(getApplicationContext(), "Registered ", Toast.LENGTH_SHORT).show();
+                    mbook.setText("Booked");
+                    mbook.setClickable(false);
+
+
                 }
                 else
                 {

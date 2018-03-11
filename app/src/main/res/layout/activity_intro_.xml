@@ -13,6 +13,7 @@
         android:id="@+id/l1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
         android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
@@ -21,7 +22,7 @@
             android:layout_marginTop="100dp"
             android:text="TechFest 2018"
             android:textColor="@color/white"
-            android:textSize="50sp"
+            android:textSize="40sp"
             android:textStyle="bold">
 
         </TextView>
@@ -31,8 +32,8 @@
 
     <com.airbnb.lottie.LottieAnimationView
     android:id="@+id/animation_view3"
-    android:layout_width="300dp"
-    android:layout_height="300dp"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
     android:layout_centerHorizontal="true"
     app:lottie_autoPlay="true"
     app:lottie_fileName="cubes.json"

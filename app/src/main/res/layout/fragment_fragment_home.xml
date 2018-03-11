@@ -32,12 +32,11 @@
             android:layout_height="200dp"
              android:layout_gravity="center"
             android:background="@color/white"
-
+            android:transitionName="@string/transition_string"
             android:id="@+id/cardView_cse"
             app:cardCornerRadius="20dp"
             app:cardElevation="@dimen/cardview_compat_inset_shadow"
             app:contentPadding="5dp"
-
             app:cardPreventCornerOverlap="true">
 
             <com.airbnb.lottie.LottieAnimationView
@@ -167,14 +166,12 @@
         android:layout_height="200dp"
         android:layout_gravity="center"
         android:background="@color/white"
-
         android:id="@+id/cardView_IT"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="150dp"
+        android:layout_marginBottom="180dp"
         app:cardCornerRadius="20dp"
         app:cardElevation="@dimen/cardview_compat_inset_shadow"
         app:contentPadding="5dp"
-
         app:cardPreventCornerOverlap="true">
 
         <com.airbnb.lottie.LottieAnimationView
@@ -201,7 +198,6 @@
             android:layout_gravity="bottom|center_horizontal"
             android:layout_marginBottom="5dp"
             android:text="IT"
-
             android:textSize="30dp"
             ></TextView>
 

@@ -86,13 +86,25 @@ public class CSE_EVENTS_MAIN extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0)
                 {
-                    Intent in = new Intent(getApplicationContext(),Main2Activity.class);
+                    Intent in = new Intent(getApplicationContext(),Event_1_CSE.class);
                     startActivity(in);
 
                 }
                 if(position == 1)
                 {
-                    Intent in = new Intent(getApplicationContext(),Main3Activity.class);
+                    Intent in = new Intent(getApplicationContext(),Event_2_CSE.class);
+                    startActivity(in);
+                }
+
+                if(position == 2)
+                {
+                    Intent in = new Intent(getApplicationContext(),Event_3_CSE.class);
+                    startActivity(in);
+                }
+
+                if(position == 3)
+                {
+                    Intent in = new Intent(getApplicationContext(),Event_4_CSE.class);
                     startActivity(in);
                 }
             }
@@ -102,6 +114,7 @@ public class CSE_EVENTS_MAIN extends AppCompatActivity {
         Animation a = AnimationUtils.loadAnimation(this, R.anim.textanim);
         a.reset();
         TextView tv = (TextView) findViewById(R.id.txtanim);
+        tv.setTextColor(Color.BLACK);
         tv.clearAnimation();
         tv.startAnimation(a);
 

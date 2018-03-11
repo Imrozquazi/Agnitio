@@ -4,6 +4,8 @@ import android.animation.ValueAnimator;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.CardView;
@@ -33,6 +35,7 @@ public class fragment_home extends Fragment implements View.OnClickListener {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    View viewStart_cse,viewStart_mech,viewStart_It,viewStart_civil;
 
 
     @Override
@@ -52,6 +55,9 @@ public class fragment_home extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_fragment_home, container, false);
+
+
+
 
 
         c_cse= (CardView)v.findViewById(R.id.cardView_cse);
@@ -107,14 +113,17 @@ public class fragment_home extends Fragment implements View.OnClickListener {
         switch (v.getId()) {
 
             case R.id.cardView_cse:
-                startActivity(new Intent(getActivity(),CSE_EVENTS_MAIN.class));
+
+               startActivity(new Intent(getActivity(),CSE_EVENTS_MAIN.class));
                 break;
 
             case R.id.cardView_mech:
-                startActivity(new Intent(getActivity(),MECH_EVENTS_MAIN.class));
+
+               startActivity(new Intent(getActivity(),MECH_EVENTS_MAIN.class));
                 break;
 
             case R.id.cardView_IT:
+
                 startActivity(new Intent(getActivity(),IT_EVENTS_MAIN.class));
                 break;
 
@@ -129,5 +138,13 @@ public class fragment_home extends Fragment implements View.OnClickListener {
         }
 
     }
+
+
+
+
+
+
+
+
 
 }
