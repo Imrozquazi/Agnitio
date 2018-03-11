@@ -6,13 +6,14 @@
     android:layout_height="match_parent"
     tools:context="example.imrozquazi.cover_flow.Intro_"
     android:orientation="vertical"
-    android:background="@color/white">
+    android:background="#000">
 
 
     <LinearLayout
         android:id="@+id/l1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
         android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
@@ -20,39 +21,32 @@
             android:layout_gravity="center"
             android:layout_marginTop="100dp"
             android:text="TechFest 2018"
-
-            android:textColor="@color/black"
-            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:textSize="40sp"
             android:textStyle="bold">
 
         </TextView>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-
-            android:textAlignment="center"
-
-            android:textSize="30sp">
-
-        </TextView>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/l2"
-        android:layout_width="match_parent"
-        android:layout_height="280dp"
-        android:background="@drawable/logo"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:paddingTop="60dp"
-        android:layout_marginTop="40dp"
-        android:paddingLeft="2dp">
+    <com.airbnb.lottie.LottieAnimationView
+    android:id="@+id/animation_view3"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:layout_centerHorizontal="true"
+    app:lottie_autoPlay="true"
+    app:lottie_fileName="cubes.json"
 
-    </LinearLayout>
+    android:layout_marginRight="8dp"
+    app:layout_constraintRight_toRightOf="parent"
+        android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="8dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="8dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginBottom="8dp" />
 
 </LinearLayout>
 

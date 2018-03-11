@@ -1,5 +1,6 @@
 package example.imrozquazi.cover_flow;
 
+import android.animation.ValueAnimator;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
@@ -12,6 +13,7 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -29,10 +31,8 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.login_layout);
-        AnimationDrawable animationDrawable = (AnimationDrawable) relativeLayout.getBackground();
-        animationDrawable.setEnterFadeDuration(1000);
-        animationDrawable.setExitFadeDuration(2000);
-        animationDrawable.start();
+
+
 
         mProLogin= new ProgressDialog(this);
         //linking java to xml

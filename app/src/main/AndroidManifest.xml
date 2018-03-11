@@ -15,10 +15,10 @@
             android:name=".CSE_EVENTS_MAIN"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Main2Activity"
+            android:name=".Event_1_CSE"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Main3Activity"
+            android:name=".Event_2_CSE"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Floatingmenu"
@@ -53,7 +53,13 @@
             android:screenOrientation="portrait" />
         <activity android:name=".MECH_EVENTS_MAIN" />
         <activity android:name=".IT_EVENTS_MAIN" />
-        <activity android:name=".ECT_EVENTS_MAIN"></activity>
+        <activity android:name=".ECT_EVENTS_MAIN" />
+        <activity android:name=".Event_3_CSE" />
+        <activity android:name=".Event_4_CSE" />
+        <activity android:name=".Event_1_IT" />
+        <activity android:name=".Event_2_IT" />
+        <activity android:name=".Event_3_IT" />
+        <activity android:name=".Event_4_IT"></activity>
     </application>
 
 </manifest>

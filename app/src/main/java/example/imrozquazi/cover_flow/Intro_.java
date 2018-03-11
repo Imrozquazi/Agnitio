@@ -1,5 +1,6 @@
 package example.imrozquazi.cover_flow;
 
+import android.animation.ValueAnimator;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +8,8 @@ import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
+
+import com.airbnb.lottie.LottieAnimationView;
 
 import java.util.concurrent.TimeUnit;
 
@@ -20,12 +23,25 @@ public class Intro_ extends AppCompatActivity {
         setContentView(R.layout.activity_intro_);
 
         l1 = (LinearLayout) findViewById(R.id.l1);
-        l2 = (LinearLayout) findViewById(R.id.l2);
+
 
         uptodown = AnimationUtils.loadAnimation(this, R.anim.uptodown);
         l1.setAnimation(uptodown);
-        downtoup = AnimationUtils.loadAnimation(this, R.anim.downtoup);
-        l2.setAnimation(downtoup);
+
+        final LottieAnimationView animationView = (LottieAnimationView)findViewById(R.id.animation_view3);
+
+
+// CSE Animation
+// Custom animation speed or duration.
+        ValueAnimator animator = ValueAnimator.ofFloat(0f, 1f)
+                .setDuration(0);
+        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                animationView.setProgress((Float)animation.getAnimatedValue());
+            }
+        });
+        animator.start();
 
 
         new Handler().postDelayed(new Runnable() {
@@ -36,7 +52,7 @@ public class Intro_ extends AppCompatActivity {
                 startActivity(i);
                 finish();
             }
-        }, 1500);
+        }, 2900);
 
         //startActivity(new Intent(this, Login.class));
 

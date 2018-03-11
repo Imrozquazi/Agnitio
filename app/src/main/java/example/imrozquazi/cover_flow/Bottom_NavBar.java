@@ -53,7 +53,7 @@ public class Bottom_NavBar extends AppCompatActivity {
                     return true;
 
                 case R.id.navigation_notifications:
-                   // mTextMessage.setText("Profile");
+                   // mTextMessage.setText  ("Profile");
                     Profile frag3 = new Profile();
                     FragmentTransaction ft3 = getSupportFragmentManager().beginTransaction();
                     ft3.replace(R.id.fram,frag3);

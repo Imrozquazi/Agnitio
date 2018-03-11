@@ -86,13 +86,13 @@ public class ECT_EVENTS_MAIN extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0)
                 {
-                    Intent in = new Intent(getApplicationContext(),Main2Activity.class);
+                    Intent in = new Intent(getApplicationContext(),Event_1_CSE.class);
                     startActivity(in);
 
                 }
                 if(position == 1)
                 {
-                    Intent in = new Intent(getApplicationContext(),Main3Activity.class);
+                    Intent in = new Intent(getApplicationContext(),Event_2_CSE.class);
                     startActivity(in);
                 }
             }
