@@ -49,26 +49,18 @@ public class Main2Activity extends AppCompatActivity {
 
         mAuth=FirebaseAuth.getInstance();
         mbook = (Button)findViewById(R.id.book);
-
         mPro = new ProgressDialog(this);
+
         mbook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
 
                 mPro.setTitle("Registering");
                 mPro.setMessage("Please wait while we register you to the event");
                 mPro.setCanceledOnTouchOutside(false);
                 mPro.show();
 
-                eventEntrySMSpayTM ob =new eventEntrySMSpayTM("Robo Race");
-                boolean res = ob.DataEntry();
-                Toast.makeText(getApplication(),""+res, Toast.LENGTH_SHORT).show();
-                if(res)
-                {
-                    mPro.dismiss();
-                    Toast.makeText(getApplication(),"Registered", Toast.LENGTH_SHORT).show();
-                }
-                //mPro.dismiss();
 
                 // DataEntry();
                 //smsApiCall();
@@ -142,8 +134,6 @@ public class Main2Activity extends AppCompatActivity {
 
         }
     }
-
-
 
 
 
