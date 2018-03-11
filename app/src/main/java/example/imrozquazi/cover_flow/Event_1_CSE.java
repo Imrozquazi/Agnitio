@@ -5,6 +5,7 @@ import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -26,35 +27,45 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Main2Activity extends AppCompatActivity {
+public class Event_1_CSE extends AppCompatActivity {
 
-    FirebaseAuth mAuth;
-    DatabaseReference mDatabase;
-    FirebaseUser user;
+    private FirebaseAuth mAuth;
+    private DatabaseReference mDatabase;
+    private FirebaseUser user;
     Dialog mydialog;
     Button mbook;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_event_1_cse);
 
         mydialog = new Dialog(this);
         Animation a = AnimationUtils.loadAnimation(this,R.anim.viewanim);
-        View v1 = (View)findViewById(R.id.v1);
-        View v2 = (View)findViewById(R.id.v2);
+
+
+        CardView v1 = (CardView)findViewById(R.id.c1_cse);
+        CardView v2 = (CardView)findViewById(R.id.c2_cse);
+        CardView v3 = (CardView)findViewById(R.id.c3_cse);
+        CardView v4 = (CardView)findViewById(R.id.c4_cse);
+
         v1.startAnimation(a);
         v2.startAnimation(a);
+        v3.startAnimation(a);
+        v4.startAnimation(a);
+
 
         mAuth=FirebaseAuth.getInstance();
-        mbook = (Button)findViewById(R.id.book);
+
+        mbook = (Button)findViewById(R.id.button_event_1_cse);
 
         mbook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                Toast.makeText(getApplication(),"Clicked",Toast.LENGTH_LONG).show();
                 DataEntry();
-                smsApiCall();
+                //smsApiCall();
             }
         });
 
@@ -68,7 +79,9 @@ public class Main2Activity extends AppCompatActivity {
         user=FirebaseAuth.getInstance().getCurrentUser();
         String email=user.getEmail();
         String uid=user.getUid();
-        mDatabase= FirebaseDatabase.getInstance().getReference("CodeWars").child(uid);
+        Toast.makeText(getApplicationContext(),""+email,Toast.LENGTH_LONG).show();
+
+        mDatabase= FirebaseDatabase.getInstance().getReference("Event 1 CSE").child(uid);
 
         Map<String, String> data=new HashMap<String,String>();
         data.put("Email",email);
