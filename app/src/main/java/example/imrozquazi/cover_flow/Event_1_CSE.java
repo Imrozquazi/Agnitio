@@ -68,6 +68,7 @@ public class Event_1_CSE extends AppCompatActivity {
         StrictMode.ThreadPolicy policy=new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
+
     }
 
     private void DataEntry() {
