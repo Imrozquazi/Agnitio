@@ -58,7 +58,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:fontFeatureSettings="@string/action_settings"
+                android:fontFamily="sans-serif-light"
                 android:textColor="@color/bg_screen1"
                  android:layout_gravity="bottom|center_horizontal"
                 android:layout_marginBottom="5dp"
@@ -105,7 +106,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
+            android:fontFamily="sans-serif-thin"
             android:textColor="@color/bg_screen2"
             android:layout_gravity="bottom|center_horizontal"
             android:layout_marginBottom="5dp"
@@ -114,6 +115,100 @@
             android:textSize="30dp"
             ></TextView>
 
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="@dimen/cardview_compat_inset_shadow"
+        app:contentPadding="5dp"
+
+        app:cardPreventCornerOverlap="true"
+
+
+        android:id="@+id/cardView_Chemical"
+        android:layout_marginTop="30dp"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view_Chemical"
+            android:layout_width="220dp"
+            android:layout_height="170dp"
+            android:layout_alignEnd="@+id/cardView"
+            app:lottie_loop="true"
+            android:layout_alignRight="@+id/cardView"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="Chemical.json" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/bg_screen2"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:text="Chemical"
+
+            android:textSize="30dp"
+            ></TextView>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+
+        android:id="@+id/cardView_ECT"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="@dimen/cardview_compat_inset_shadow"
+        app:contentPadding="5dp"
+
+        app:cardPreventCornerOverlap="true">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view_ECT"
+            android:layout_width="220dp"
+            android:layout_height="180dp"
+            android:layout_alignEnd="@+id/cardView"
+            app:lottie_loop="true"
+            android:layout_alignRight="@+id/cardView"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="antenna.json" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/bg_screen3"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:text="ECT"
+
+            android:textSize="30dp"
+            ></TextView>
 
     </android.support.v7.widget.CardView>
 
@@ -150,7 +245,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
+            android:fontFamily="sans-serif-thin"
             android:textColor="@color/bg_screen3"
             android:layout_gravity="bottom|center_horizontal"
             android:layout_marginBottom="5dp"
@@ -160,6 +255,7 @@
             ></TextView>
 
     </android.support.v7.widget.CardView>
+
 
     <android.support.v7.widget.CardView
         android:layout_width="300dp"
@@ -193,7 +289,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
+            android:fontFamily="sans-serif-thin"
             android:textColor="@color/bg_screen4"
             android:layout_gravity="bottom|center_horizontal"
             android:layout_marginBottom="5dp"

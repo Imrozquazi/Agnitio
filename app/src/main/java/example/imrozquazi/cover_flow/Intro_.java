@@ -26,7 +26,7 @@ public class Intro_ extends AppCompatActivity {
 
 
         uptodown = AnimationUtils.loadAnimation(this, R.anim.uptodown);
-        l1.setAnimation(uptodown);
+      //  l1.setAnimation(uptodown);
 
         final LottieAnimationView animationView = (LottieAnimationView)findViewById(R.id.animation_view3);
 

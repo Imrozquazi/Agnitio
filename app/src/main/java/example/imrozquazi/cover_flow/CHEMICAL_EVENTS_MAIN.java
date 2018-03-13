@@ -18,32 +18,31 @@ import java.util.List;
 
 import it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow;
 
-public class ECT_EVENTS_MAIN extends AppCompatActivity {
+public class CHEMICAL_EVENTS_MAIN extends AppCompatActivity {
 
-    private FeatureCoverFlow coverFlow_ECT;
+    private FeatureCoverFlow coverFlow_CHEMICAL;
 
-    private ECT_EVENT_ADAPTER ECTEVENTADAPTER;
+    private CHEMICAL_EVENT_ADAPTER CHEMICALEVENTADAPTER;
 
-    private List<ECT_EVENT_1> ECTEvent1List = new ArrayList<>();
-    private TextSwitcher mTitle_ECT;
-
-
+    private List<Chemical_Event_1> ChemicalEvent1List = new ArrayList<>();
+    private TextSwitcher mTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ect__events__main);
+        setContentView(R.layout.activity_chemical__events__main);
+
 
 
         initData();
 
 
 
-        mTitle_ECT = (TextSwitcher)findViewById(R.id.title_ECT);
-        mTitle_ECT.setFactory(new ViewSwitcher.ViewFactory() {
+        mTitle = (TextSwitcher)findViewById(R.id.title_CHEMICAL);
+        mTitle.setFactory(new ViewSwitcher.ViewFactory() {
             @Override
             public View makeView() {
-                LayoutInflater inflater = LayoutInflater.from(ECT_EVENTS_MAIN.this);
+                LayoutInflater inflater = LayoutInflater.from(CHEMICAL_EVENTS_MAIN.this);
                 TextView txt = (TextView) inflater.inflate((R.layout.layout_title),null);
                 txt.setTextColor(Color.BLACK);
                 txt.setTextSize(40);
@@ -56,20 +55,20 @@ public class ECT_EVENTS_MAIN extends AppCompatActivity {
         Animation in = AnimationUtils.loadAnimation(this,R.anim.slide_in_top);
         Animation out = AnimationUtils.loadAnimation(this,R.anim.slide_out_bottom);
 
-        mTitle_ECT.setAnimation(in);
-        mTitle_ECT.setAnimation(out);
+        mTitle.setAnimation(in);
+        mTitle.setAnimation(out);
 
 
+        //
 
+        CHEMICALEVENTADAPTER = new CHEMICAL_EVENT_ADAPTER(ChemicalEvent1List,this);
+        coverFlow_CHEMICAL = (FeatureCoverFlow) findViewById(R.id.coverflow_CIVIL);
+        coverFlow_CHEMICAL.setAdapter(CHEMICALEVENTADAPTER);
 
-        ECTEVENTADAPTER = new ECT_EVENT_ADAPTER(ECTEvent1List,this);
-        coverFlow_ECT = (FeatureCoverFlow) findViewById(R.id.coverflow_ECT);
-        coverFlow_ECT.setAdapter(ECTEVENTADAPTER);
-
-        coverFlow_ECT.setOnScrollPositionListener(new FeatureCoverFlow.OnScrollPositionListener() {
+        coverFlow_CHEMICAL.setOnScrollPositionListener(new FeatureCoverFlow.OnScrollPositionListener() {
             @Override
             public void onScrolledToPosition(int position) {
-                mTitle_ECT.setText(ECTEvent1List.get(position).getName());
+                mTitle.setText(ChemicalEvent1List.get(position).getName());
 
 
             }
@@ -81,7 +80,7 @@ public class ECT_EVENTS_MAIN extends AppCompatActivity {
         });
 
 
-        coverFlow_ECT.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        coverFlow_CHEMICAL.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0)
@@ -95,6 +94,18 @@ public class ECT_EVENTS_MAIN extends AppCompatActivity {
                     Intent in = new Intent(getApplicationContext(),Event_2_CSE.class);
                     startActivity(in);
                 }
+
+                if(position == 2)
+                {
+                    Intent in = new Intent(getApplicationContext(),Event_3_CSE.class);
+                    startActivity(in);
+                }
+
+                if(position == 3)
+                {
+                    Intent in = new Intent(getApplicationContext(),Event_4_CSE.class);
+                    startActivity(in);
+                }
             }
         });
 
@@ -102,6 +113,7 @@ public class ECT_EVENTS_MAIN extends AppCompatActivity {
         Animation a = AnimationUtils.loadAnimation(this, R.anim.textanim);
         a.reset();
         TextView tv = (TextView) findViewById(R.id.txtanim);
+        tv.setTextColor(Color.BLACK);
         tv.clearAnimation();
         tv.startAnimation(a);
 
@@ -111,18 +123,10 @@ public class ECT_EVENTS_MAIN extends AppCompatActivity {
     {
 
 
-        ECTEvent1List.add(new ECT_EVENT_1("Circuit Making","https://www.internationalstudentinsurance.com/blog/wp-content/uploads/2014/07/487540655-Converted.png"));
-        ECTEvent1List.add(new ECT_EVENT_1("Tech Hunt","http://anurag.edu.in/wp-content/uploads/2012/quiz.jpg"));
-        ECTEvent1List.add(new ECT_EVENT_1("Mat-Mania","https://res.cloudinary.com/teepublic/image/private/s--91AeMXfq--/t_Preview/b_rgb:262c3a,c_limit,f_auto,h_313,q_90,w_313/v1496756374/production/designs/1649485_1"));
-        ECTEvent1List.add(new ECT_EVENT_1("AquaBoat","https://bookboon.com/thumbnail/720/47f230d1-2d56-4cb9-9d04-a0f600b34b87/495eed07-fa5c-40b4-9667-a5d400e1a9ca/c-1-introduction-to-programming-and-the-c-language.jpg"));
+        ChemicalEvent1List.add(new Chemical_Event_1("Drishti Chem","https://www.internationalstudentinsurance.com/blog/wp-content/uploads/2014/07/487540655-Converted.png"));
+        ChemicalEvent1List.add(new Chemical_Event_1("Tech Talk","http://anurag.edu.in/wp-content/uploads/2012/quiz.jpg"));
+        ChemicalEvent1List.add(new Chemical_Event_1("Water Rocket","https://res.cloudinary.com/teepublic/image/private/s--91AeMXfq--/t_Preview/b_rgb:262c3a,c_limit,f_auto,h_313,q_90,w_313/v1496756374/production/designs/1649485_1"));
 
     }
-
-    void Circlemenu(View v)
-    {
-        Intent in = new Intent(getApplicationContext(),Floatingmenu.class);
-        startActivity(in);
-    }
-
 
 }

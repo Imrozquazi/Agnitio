@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
@@ -18,6 +19,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+
+import org.w3c.dom.Text;
 
 public class Login extends AppCompatActivity {
 
@@ -31,6 +34,17 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.login_layout);
+        Button bt = (Button) findViewById(R.id.cli);
+
+        bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(getApplicationContext(),Signup.class));
+
+            }
+        });
+
 
 
 
@@ -111,8 +125,5 @@ public class Login extends AppCompatActivity {
             });
         }
     }
-    void signup(View v)
-    {
-        startActivity(new Intent(this,Signup.class));
-    }
+
 }

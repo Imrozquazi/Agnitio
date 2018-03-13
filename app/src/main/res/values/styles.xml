@@ -9,6 +9,9 @@
         <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
         <!-- Add this line -->
         <item name="android:windowContentTransitions">true</item>
+
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

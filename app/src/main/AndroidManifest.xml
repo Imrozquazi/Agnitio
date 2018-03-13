@@ -60,7 +60,9 @@
         <activity android:name=".Event_1_IT" />
         <activity android:name=".Event_2_IT" />
         <activity android:name=".Event_3_IT" />
-        <activity android:name=".Event_4_IT"></activity>
+        <activity android:name=".Event_4_IT" />
+        <activity android:name=".CIVIL_EVENTS_MAIN" />
+        <activity android:name=".CHEMICAL_EVENTS_MAIN"></activity>
     </application>
 
 </manifest>

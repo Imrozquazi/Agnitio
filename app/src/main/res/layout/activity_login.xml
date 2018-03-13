@@ -63,22 +63,16 @@
         android:focusable="true"
         android:onClick="Reset"
         android:text="forgot password..??"
-        android:textColor="#fff"
+        android:textColor="#000"
         android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="100dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:onClick="signup"
-        android:text="Not yet Signed Up...??..Click Here"
-        android:textColor="#fff"
-        android:textStyle="bold"
+    <Button
+        android:id="@+id/cli"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btnbg"/>
 
-        />
+
 </LinearLayout>
 
 </RelativeLayout>

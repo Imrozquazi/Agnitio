@@ -124,10 +124,10 @@ public class CSE_EVENTS_MAIN extends AppCompatActivity {
     {
 
 
-        CSEEvent1List.add(new CSE_Event_1("Event 1","https://www.internationalstudentinsurance.com/blog/wp-content/uploads/2014/07/487540655-Converted.png"));
-        CSEEvent1List.add(new CSE_Event_1("Event 2","http://anurag.edu.in/wp-content/uploads/2012/quiz.jpg"));
-        CSEEvent1List.add(new CSE_Event_1("Event 3","https://res.cloudinary.com/teepublic/image/private/s--91AeMXfq--/t_Preview/b_rgb:262c3a,c_limit,f_auto,h_313,q_90,w_313/v1496756374/production/designs/1649485_1"));
-        CSEEvent1List.add(new CSE_Event_1("Event 4","https://bookboon.com/thumbnail/720/47f230d1-2d56-4cb9-9d04-a0f600b34b87/495eed07-fa5c-40b4-9667-a5d400e1a9ca/c-1-introduction-to-programming-and-the-c-language.jpg"));
+        CSEEvent1List.add(new CSE_Event_1("Codingo & CodeRelay","https://www.internationalstudentinsurance.com/blog/wp-content/uploads/2014/07/487540655-Converted.png"));
+        CSEEvent1List.add(new CSE_Event_1("C-Ladder","http://anurag.edu.in/wp-content/uploads/2012/quiz.jpg"));
+        CSEEvent1List.add(new CSE_Event_1("Trivia","https://res.cloudinary.com/teepublic/image/private/s--91AeMXfq--/t_Preview/b_rgb:262c3a,c_limit,f_auto,h_313,q_90,w_313/v1496756374/production/designs/1649485_1"));
+        CSEEvent1List.add(new CSE_Event_1("Code-O-Holix","https://bookboon.com/thumbnail/720/47f230d1-2d56-4cb9-9d04-a0f600b34b87/495eed07-fa5c-40b4-9667-a5d400e1a9ca/c-1-introduction-to-programming-and-the-c-language.jpg"));
 
     }
 
