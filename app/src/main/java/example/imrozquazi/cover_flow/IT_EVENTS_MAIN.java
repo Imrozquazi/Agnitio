@@ -86,18 +86,18 @@ public class IT_EVENTS_MAIN extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0)
                 {
-                    Intent in = new Intent(getApplicationContext(),Event_1_IT.class);
+                    Intent in = new Intent(getApplicationContext(),Web_War_IT.class);
                     startActivity(in);
 
                 }
                 if(position == 1)
                 {
-                    Intent in = new Intent(getApplicationContext(),Event_2_IT.class);
+                    Intent in = new Intent(getApplicationContext(),Abhivyakti_IT.class);
                     startActivity(in);
                 }
                 if(position == 2)
                 {
-                    Intent in = new Intent(getApplicationContext(),Event_3_IT.class);
+                    Intent in = new Intent(getApplicationContext(),LanGaming_IT.class);
                     startActivity(in);
                 }
                 if(position == 3)

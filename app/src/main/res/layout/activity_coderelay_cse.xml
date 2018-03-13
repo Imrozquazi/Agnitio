@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="example.imrozquazi.cover_flow.Event_1_CSE"
+    tools:context="example.imrozquazi.cover_flow.CodeRelay_CSE"
     android:orientation="vertical">
 
     <ScrollView

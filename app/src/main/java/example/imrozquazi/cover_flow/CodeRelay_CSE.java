@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -27,7 +26,7 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Event_1_CSE extends AppCompatActivity {
+public class CodeRelay_CSE extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
@@ -38,7 +37,7 @@ public class Event_1_CSE extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_event_1_cse);
+        setContentView(R.layout.activity_coderelay_cse);
 
         mydialog = new Dialog(this);
         Animation a = AnimationUtils.loadAnimation(this,R.anim.viewanim);
@@ -81,7 +80,7 @@ public class Event_1_CSE extends AppCompatActivity {
         String uid=user.getUid();
         Toast.makeText(getApplicationContext(),""+email,Toast.LENGTH_LONG).show();
 
-        mDatabase= FirebaseDatabase.getInstance().getReference("Event 1 CSE").child(uid);
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("CSE").child("CodeRelay").child(uid);
 
         Map<String, String> data=new HashMap<String,String>();
         data.put("Email",email);

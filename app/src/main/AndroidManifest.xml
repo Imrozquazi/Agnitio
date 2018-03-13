@@ -16,10 +16,10 @@
             android:name=".CSE_EVENTS_MAIN"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Event_1_CSE"
+            android:name=".CodeRelay_CSE"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Event_2_CSE"
+            android:name=".C_Ladder_CSE"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Floatingmenu"
@@ -55,11 +55,11 @@
         <activity android:name=".MECH_EVENTS_MAIN" />
         <activity android:name=".IT_EVENTS_MAIN" />
         <activity android:name=".ECT_EVENTS_MAIN" />
-        <activity android:name=".Event_3_CSE" />
-        <activity android:name=".Event_4_CSE" />
-        <activity android:name=".Event_1_IT" />
-        <activity android:name=".Event_2_IT" />
-        <activity android:name=".Event_3_IT" />
+        <activity android:name=".Trivia" />
+        <activity android:name=".CodeHolix_CSE" />
+        <activity android:name=".Web_War_IT" />
+        <activity android:name=".Abhivyakti_IT" />
+        <activity android:name=".LanGaming_IT" />
         <activity android:name=".Event_4_IT" />
         <activity android:name=".CIVIL_EVENTS_MAIN" />
         <activity android:name=".CHEMICAL_EVENTS_MAIN"></activity>
