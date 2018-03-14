@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.imrozquazi.cover_flow.CartoFest"
+    android:orientation="vertical"
+    android:background="#010">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="25dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/c1_Civil"
+                    android:layout_marginTop="300dp"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    app:cardBackgroundColor="@color/bg_screen1"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="30dp"
+
+                            android:layout_height="30dp"
+
+                            android:layout_alignEnd="@+id/textView"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignRight="@+id/textView"
+                            android:layout_marginEnd="51dp"
+                            android:layout_marginRight="51dp"
+                            android:layout_marginTop="18dp"
+                            app:srcCompat="@drawable/ic_pin_drop_black_50dp" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="JNEC CAMPUS"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="9dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_below="@+id/imageView"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/c2_Civil"
+                    android:layout_marginTop="300dp"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    app:cardBackgroundColor="@color/bg_screen1"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginLeft="10dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+
+                            app:srcCompat="@drawable/ic_date_range_black_24dp"
+
+                            android:layout_marginTop="20dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="31 March 2018"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:id="@+id/textView2"
+
+                            android:layout_marginTop="7dp"
+                            android:layout_below="@+id/imageView2"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_horizontal"
+                            android:layout_marginRight="8dp"
+
+                            android:layout_alignParentEnd="true">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/c3_Civil"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Event Discription"
+                        android:padding="5dp"
+                        android:fontFamily="sans-serif"
+                        android:textSize="30dp"
+                        android:layout_gravity="center"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#000"
+                        ></View>
+                    <TextView
+                        android:padding="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:fontFamily="sans-serif"
+                        android:text="In this event , Dr. Suddhasheel Gosh will give an overview of surveying practices through a 45-60 min lecture. This would be followed by the training session conducted by the students who have gained excellence in collecting and mapping with data ,on the use of GIS software(45-60 min).This training will provide an overview regarding the various type of mapping layers, and their associated symbologies. Consequently the participants of the competition shall compete to prepare a “MAP” of the MGM JNEC lawn, using the data collected by the students"></TextView>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/c4_Civil"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prices"
+                        android:padding="5dp"
+                        android:fontFamily="sans-serif"
+                        android:textSize="30dp"
+                        android:layout_gravity="center"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#000"
+                        ></View>
+                    <TextView
+                        android:padding="15dp"
+                        android:fontFamily="sans-serif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:text="The best map, complete with all annotations and symbology standards ,shall be awarded based on their aesthetics and meaningfulness .(THREE PRIZES)"></TextView>
+
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/button_event_4_cse"
+                android:layout_marginTop="30dp"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Book Event 4"
+                android:background="@drawable/btnbg"
+                android:focusable="true"
+                android:clickable="true"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
