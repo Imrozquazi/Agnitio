@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="example.imrozquazi.cover_flow.CartoFest"
+    tools:context="example.imrozquazi.cover_flow.Tech_Talk"
     android:orientation="vertical"
     android:background="#010">
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -20,7 +21,6 @@
             android:orientation="vertical">
 
 
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
 
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/c1_Civil"
+                    android:id="@+id/c1_cse"
                     android:layout_marginTop="300dp"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
@@ -72,7 +72,7 @@
 
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/c2_Civil"
+                    android:id="@+id/c2_cse"
                     android:layout_marginTop="300dp"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
@@ -113,6 +113,7 @@
 
                         </TextView>
 
+
                     </RelativeLayout>
 
                 </android.support.v7.widget.CardView>
@@ -128,12 +129,14 @@
 
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c3_Civil"
+                android:id="@+id/c3_cse"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardElevation="5dp"
+                app:cardElevation="10dp"
                 app:cardCornerRadius="10dp">
+
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -141,7 +144,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Event Discription"
+                        android:text="REQUIREMENT :"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -154,76 +157,27 @@
                         ></View>
                     <TextView
                         android:padding="15dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20dp"
-                        android:fontFamily="sans-serif"
-                        android:text="In this event , Dr. Suddhasheel Gosh will give an overview of surveying practices through a 45-60 min lecture. This would be followed by the training session conducted by the students who have gained excellence in collecting and mapping with data ,on the use of GIS software(45-60 min).This training will provide an overview regarding the various type of mapping layers, and their associated symbologies. Consequently the participants of the competition shall compete to prepare a “MAP” of the MGM JNEC lawn, using the data collected by the students"></TextView>
 
-
-
-                </LinearLayout>
-
-
-
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/c4_Civil"
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                app:cardCornerRadius="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Prices"
-                        android:padding="5dp"
-                        android:fontFamily="sans-serif"
-                        android:textSize="30dp"
-                        android:layout_gravity="center"
-                        />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="#000"
-                        ></View>
-                    <TextView
-                        android:padding="15dp"
-                        android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="25dp"
-                        android:text="The best map, complete with all annotations and symbology standards ,shall be awarded based on their aesthetics and meaningfulness .(THREE PRIZES)"></TextView>
-
+                        android:text="Topics related to industrial pollution and its solutions are to be discussed. The various topics which the participants can opt to present are as given under. The presentation should be in context with the topic. The presentation should include minimum 8 slides or maximum 12 slides.Presentation should be completed within 10 min. The best solution presentation would be declared the winner"></TextView>
 
 
                 </LinearLayout>
 
 
+
             </android.support.v7.widget.CardView>
 
 
-
-
-
-
-
-
             <Button
-                android:id="@+id/button_event_4_cse"
+                android:id="@+id/button_event_2_cse"
                 android:layout_marginTop="30dp"
                 android:layout_width="120dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center_horizontal"
-                android:text="Book Event 4"
+                android:text="Book Event 2"
                 android:background="@drawable/btnbg"
                 android:focusable="true"
                 android:clickable="true"
@@ -234,7 +188,11 @@
 
 
 
-    </ScrollView>/
+    </ScrollView>
+
+
+
+
 
 
 

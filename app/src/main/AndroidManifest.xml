@@ -72,7 +72,10 @@
         <activity android:name=".Democracy" />
         <activity android:name=".Smarmony" />
         <activity android:name=".Levelling_Master" />
-        <activity android:name=".CartoFest"></activity>
+        <activity android:name=".CartoFest" />
+        <activity android:name=".Water_rocket" />
+        <activity android:name=".AquaBoat" />
+        <activity android:name=".Tech_Talk"></activity>
     </application>
 
 </manifest>
