@@ -69,7 +69,10 @@
         <activity android:name=".Tech_Hunt" />
         <activity android:name=".Auto_CAD_Desgin" />
         <activity android:name=".Dshriti_Chem" />
-        <activity android:name=".Democracy"></activity>
+        <activity android:name=".Democracy" />
+        <activity android:name=".Smarmony" />
+        <activity android:name=".Levelling_Master" />
+        <activity android:name=".CartoFest"></activity>
     </application>
 
 </manifest>

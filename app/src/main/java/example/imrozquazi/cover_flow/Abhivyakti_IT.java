@@ -38,7 +38,7 @@ public class Abhivyakti_IT extends AppCompatActivity {
         v2.startAnimation(a);
         v3.startAnimation(a);
         v4.startAnimation(a);
-
+        mBtn = (Button) findViewById(R.id.button_event_2_it);
         mBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
