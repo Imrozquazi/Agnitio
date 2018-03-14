@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="example.imrozquazi.cover_flow.CodeRelay_CSE"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#010">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -128,12 +129,42 @@
             android:id="@+id/c2_cse"
             android:layout_marginTop="16dp"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            app:cardBackgroundColor="@color/bg_screen2"
+            android:layout_height="wrap_content"
+
             app:cardCornerRadius="10dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Round 1"
+                    android:padding="5dp"
+                    android:fontFamily="sans-serif"
+                    android:textSize="30dp"
+                    android:layout_gravity="center"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#000"
+                    ></View>
+                <TextView
+                    android:padding="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:fontFamily="sans-serif"
+                    android:text=" ​Participants will have to find/search maximum number of algorithms placed at different places in the campus with the help of QR codes or Google Maps. The participants teams which will report in the shortest span of time will be selected for the next round."></TextView>
+
+
+            </LinearLayout>
+
 
 
 
@@ -143,20 +174,38 @@
              android:id="@+id/c3_cse"
              android:layout_marginTop="20dp"
              android:layout_width="match_parent"
-             android:layout_height="150dp"
-             app:cardBackgroundColor="@color/bg_screen4"
+             android:layout_height="wrap_content"
              app:cardCornerRadius="10dp">
 
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Round 2"
+                     android:padding="5dp"
+                     android:fontFamily="sans-serif"
+                     android:textSize="30dp"
+                     android:layout_gravity="center"
+                     />
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="2dp"
+                     android:background="#000"
+                     ></View>
+                 <TextView
+                     android:padding="15dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="25dp"
+                     android:fontFamily="sans-serif"
+                     android:text=" ​The selected participants will have to code a program (C or C++) using the algorithms collected in Round 1."></TextView>
 
-         </android.support.v7.widget.CardView>
 
-         <android.support.v7.widget.CardView
-             android:id="@+id/c4_cse"
-             android:layout_marginTop="20dp"
-             android:layout_width="match_parent"
-             android:layout_height="150dp"
-             app:cardBackgroundColor="@color/bg_screen3"
-             app:cardCornerRadius="10dp">
+             </LinearLayout>
+
 
 
          </android.support.v7.widget.CardView>
@@ -168,9 +217,9 @@
              android:layout_height="70dp"
              android:layout_gravity="center_horizontal"
              android:text="Book Event 1"
-             android:background="@drawable/btnbg"
              android:focusable="true"
              android:clickable="true"
+
              />
 
      </LinearLayout>

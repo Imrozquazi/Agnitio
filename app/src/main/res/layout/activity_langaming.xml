@@ -72,7 +72,7 @@
 
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/c5_IT"
+                    android:id="@+id/c2_IT"
                     android:layout_marginTop="300dp"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
@@ -127,34 +127,40 @@
             </LinearLayout>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c2_IT"
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                app:cardBackgroundColor="@color/bg_screen2"
-                app:cardCornerRadius="10dp">
-
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
                 android:id="@+id/c3_IT"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                app:cardBackgroundColor="@color/bg_screen4"
+                android:layout_height="wrap_content"
                 app:cardCornerRadius="10dp">
 
 
-            </android.support.v7.widget.CardView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gaming"
+                        android:padding="5dp"
+                        android:fontFamily="sans-serif"
+                        android:textSize="30dp"
+                        android:layout_gravity="center"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#000"
+                        ></View>
+                    <TextView
+                        android:padding="15dp"
 
-            <android.support.v7.widget.CardView
-                android:id="@+id/c4_IT"
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                app:cardBackgroundColor="@color/bg_screen3"
-                app:cardCornerRadius="10dp">
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:text=" 1. CS 1.6 (Team of 5 members) \n 2. Need For Speed most wanted(Individual) \n 3. FIFA (Individual)\n 4. RAW (Individual)"></TextView>
+
+                </LinearLayout>
 
 
             </android.support.v7.widget.CardView>

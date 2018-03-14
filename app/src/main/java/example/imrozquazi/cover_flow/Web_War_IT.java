@@ -34,6 +34,7 @@ public class Web_War_IT extends AppCompatActivity {
         CardView v3 = (CardView)findViewById(R.id.c3_IT);
         CardView v4 = (CardView)findViewById(R.id.c4_IT);
 
+
         v1.startAnimation(a);
         v2.startAnimation(a);
         v3.startAnimation(a);

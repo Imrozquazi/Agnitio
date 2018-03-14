@@ -34,10 +34,12 @@ public class Abhivyakti_IT extends AppCompatActivity {
         CardView v3 = (CardView)findViewById(R.id.c3_IT);
         CardView v4 = (CardView)findViewById(R.id.c4_IT);
 
+        /*
         v1.startAnimation(a);
         v2.startAnimation(a);
         v3.startAnimation(a);
         v4.startAnimation(a);
+*/
         mBtn = (Button) findViewById(R.id.button_event_2_it);
         mBtn.setOnClickListener(new View.OnClickListener() {
             @Override

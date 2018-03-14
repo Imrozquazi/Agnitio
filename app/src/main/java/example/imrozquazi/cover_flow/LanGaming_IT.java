@@ -32,12 +32,11 @@ public class LanGaming_IT extends AppCompatActivity {
         CardView v1 = (CardView)findViewById(R.id.c1_IT);
         CardView v2 = (CardView)findViewById(R.id.c2_IT);
         CardView v3 = (CardView)findViewById(R.id.c3_IT);
-        CardView v4 = (CardView)findViewById(R.id.c4_IT);
+
 
         v1.startAnimation(a);
         v2.startAnimation(a);
         v3.startAnimation(a);
-        v4.startAnimation(a);
 
         mbtn = (Button) findViewById(R.id.button_event_3_it);
 

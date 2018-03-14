@@ -44,6 +44,8 @@ public class C_Ladder_CSE extends AppCompatActivity {
         mbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Toast.makeText(getApplication(),"Clicked",Toast.LENGTH_LONG).show();
                 DataEntry();
 
             }

@@ -6,18 +6,19 @@ import android.support.v7.widget.CardView;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
-public class Event_4_IT extends AppCompatActivity {
+public class Codinggo_IT extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_event_4__it);
+        setContentView(R.layout.activity_codinggo__it);
 
         Animation a = AnimationUtils.loadAnimation(this,R.anim.viewanim);
         CardView v1 = (CardView)findViewById(R.id.c1_IT);
         CardView v2 = (CardView)findViewById(R.id.c2_IT);
-        CardView v3 = (CardView)findViewById(R.id.c3_IT);
-        CardView v4 = (CardView)findViewById(R.id.c4_IT);
+        CardView v3 = (CardView)findViewById(R.id.c3_it);
+        CardView v4 = (CardView)findViewById(R.id.c4_it);
+
 
         v1.startAnimation(a);
         v2.startAnimation(a);

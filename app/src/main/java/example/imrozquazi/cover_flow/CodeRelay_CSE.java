@@ -16,8 +16,11 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -48,11 +51,11 @@ public class CodeRelay_CSE extends AppCompatActivity {
         CardView v3 = (CardView)findViewById(R.id.c3_cse);
         CardView v4 = (CardView)findViewById(R.id.c4_cse);
 
-        v1.startAnimation(a);
+        /*v1.startAnimation(a);
         v2.startAnimation(a);
         v3.startAnimation(a);
         v4.startAnimation(a);
-
+*/
 
         mAuth=FirebaseAuth.getInstance();
 
@@ -63,7 +66,11 @@ public class CodeRelay_CSE extends AppCompatActivity {
             public void onClick(View v) {
 
                 Toast.makeText(getApplication(),"Clicked",Toast.LENGTH_LONG).show();
-                DataEntry();
+
+                Datacheck();
+                //DataEntry();
+
+
                 //smsApiCall();
             }
         });
@@ -73,6 +80,43 @@ public class CodeRelay_CSE extends AppCompatActivity {
 
 
     }
+
+
+    private void Datacheck()
+    {
+        user=FirebaseAuth.getInstance().getCurrentUser();
+        String email=user.getEmail();
+        String uid=user.getUid();
+        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("CSE").child("Coderelay").child(uid);
+
+
+        try {
+
+            Toast.makeText(getApplicationContext(),"in try",Toast.LENGTH_LONG).show();
+
+            dr.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+
+                    Toast.makeText(getApplicationContext(),"in data",Toast.LENGTH_LONG).show();
+                    String email = dataSnapshot.child("Email").getValue().toString();
+                    Toast.makeText(getApplicationContext(), "Already Registered with this " + email + "email", Toast.LENGTH_LONG).show();
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                }
+            });
+        }
+        catch (NullPointerException e)
+        {
+            Toast.makeText(getApplicationContext(),"in catch ",Toast.LENGTH_LONG).show();
+            DataEntry();
+        }
+
+    }
+
 
     private void DataEntry() {
         user=FirebaseAuth.getInstance().getCurrentUser();

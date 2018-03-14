@@ -60,7 +60,7 @@
         <activity android:name=".Web_War_IT" />
         <activity android:name=".Abhivyakti_IT" />
         <activity android:name=".LanGaming_IT" />
-        <activity android:name=".Event_4_IT" />
+        <activity android:name=".Codinggo_IT" />
         <activity android:name=".CIVIL_EVENTS_MAIN" />
         <activity android:name=".CHEMICAL_EVENTS_MAIN" />
         <activity android:name=".Circuit_Making_ECT" />
