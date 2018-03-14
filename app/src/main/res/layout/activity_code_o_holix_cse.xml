@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="example.imrozquazi.cover_flow.CodeHolix_CSE"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#010">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -129,21 +130,39 @@
                 android:id="@+id/c2_cse"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                app:cardBackgroundColor="@color/bg_screen2"
+                android:layout_height="wrap_content"
+               app:cardElevation="5dp"
                 app:cardCornerRadius="10dp">
-
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/phoneNumber"
-                    android:autoLink="phone"
+                    android:text="Round 1"
+                    android:padding="5dp"
+                    android:fontFamily="sans-serif"
                     android:textSize="30dp"
-                    android:textColor="@color/white"
-                    android:linksClickable="true"
-
-                    android:text="+91 22 2222 2222"
+                    android:layout_gravity="center"
                     />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#000"
+                    ></View>
+                <TextView
+                    android:padding="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:fontFamily="sans-serif"
+                    android:text="The team will be given a riddle and they’ll have to write a problem statement and program for the same. "></TextView>
+
+
+                </LinearLayout>
+
+
 
 
             </android.support.v7.widget.CardView>
@@ -152,23 +171,42 @@
                 android:id="@+id/c3_cse"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                app:cardBackgroundColor="@color/bg_screen4"
+                android:layout_height="wrap_content"
+
                 app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Round 2"
+                        android:padding="5dp"
+                        android:fontFamily="sans-serif"
+                        android:textSize="30dp"
+                        android:layout_gravity="center"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#000"
+                        ></View>
+                    <TextView
+                        android:padding="15dp"
+                        android:fontFamily="sans-serif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:text="Members will have to write program in as many programming language as possible the members will be switched after particular interval"></TextView>
+
+                </LinearLayout>
 
 
             </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView
-                android:id="@+id/c4_cse"
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                app:cardBackgroundColor="@color/bg_screen3"
-                app:cardCornerRadius="10dp">
 
-
-            </android.support.v7.widget.CardView>
 
             <Button
                 android:id="@+id/button_event_4_cse"

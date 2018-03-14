@@ -39,7 +39,7 @@ public class Trivia extends AppCompatActivity {
         v3.startAnimation(a);
         v4.startAnimation(a);
 
-        mbtn = (Button) findViewById(R.id.button_event_3_cse);
+        //mbtn = (Button) findViewById(R.id.button_event_3_cse);
 
         mbtn.setOnClickListener(new View.OnClickListener() {
             @Override

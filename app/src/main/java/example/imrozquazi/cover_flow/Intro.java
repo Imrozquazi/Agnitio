@@ -6,29 +6,29 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 
 import com.airbnb.lottie.LottieAnimationView;
+ // java.util.concurrent.TimeUnit;
 
-import java.util.concurrent.TimeUnit;
-
-public class Intro_ extends AppCompatActivity {
+public class Intro extends AppCompatActivity {
     LinearLayout l1, l2;
     Animation uptodown, downtoup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intro_);
+        setContentView(R.layout.activity_intro);
 
-        l1 = (LinearLayout) findViewById(R.id.l1);
+       // l1 = (LinearLayout) findViewById(R.id.l1);
 
 
-        uptodown = AnimationUtils.loadAnimation(this, R.anim.uptodown);
+       ///// uptodown = AnimationUtils.loadAnimation(this, R.anim.uptodown);
       //  l1.setAnimation(uptodown);
 
         final LottieAnimationView animationView = (LottieAnimationView)findViewById(R.id.animation_view3);
+
+        
 
 
 // CSE Animation
@@ -48,15 +48,12 @@ public class Intro_ extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent i=new Intent(Intro_.this,WelcomeActivity.class);
+                Intent i=new Intent(Intro.this,WelcomeActivity.class);
                 startActivity(i);
                 finish();
             }
         }, 2900);
 
-        //startActivity(new Intent(this, Login.class));
-
-        //hello there...
 
     }
 }

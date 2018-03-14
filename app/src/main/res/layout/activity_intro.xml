@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="example.imrozquazi.cover_flow.Intro_"
+    tools:context="example.imrozquazi.cover_flow.Intro"
     android:orientation="vertical"
     android:background="#000">
 
@@ -16,6 +16,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:orientation="vertical">
+
+
 
 
 

@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="example.imrozquazi.cover_flow.Trivia"
+    tools:context="example.imrozquazi.cover_flow.Auto_CAD_Desgin"
     android:orientation="vertical"
     android:background="#010">
 
@@ -157,7 +158,8 @@
                         android:layout_height="wrap_content"
                         android:textSize="25dp"
                         android:fontFamily="sans-serif"
-                        android:text="Written Quiz: A quiz will be conducted based on TV series. And participants have to solve 45 questions in 30 minutes. "></TextView>
+                        android:text="Every individual/team will be given a design which they need to develop on Auto-CAD.A time of 30 minutes will be given to accomplish the motive. Best  work will be 	selected for the next round."></TextView>
+
 
 
                 </LinearLayout>
@@ -167,14 +169,14 @@
 
             </android.support.v7.widget.CardView>
 
-
             <android.support.v7.widget.CardView
-
+                android:id="@+id/c3_cse"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardElevation="5dp"
+
                 app:cardCornerRadius="10dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -195,19 +197,19 @@
                         ></View>
                     <TextView
                         android:padding="15dp"
+                        android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="25dp"
-                        android:fontFamily="sans-serif"
-                        android:text="Fastest finger first: Participants will have to arrange the given video clips or situations of series in ascending order."></TextView>
+                        android:text="For this round , more intricate designs will be given to the individual/teams. A time of 45 minutes will be given to the participants.Twist: A set of 20 questions  based on AutoCAD will be asked online"></TextView>
+
 
 
                 </LinearLayout>
 
 
-
-
             </android.support.v7.widget.CardView>
+
 
 
             <android.support.v7.widget.CardView
@@ -215,44 +217,21 @@
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardElevation="5dp"
+
                 app:cardCornerRadius="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Round 3"
-                        android:padding="5dp"
-                        android:fontFamily="sans-serif"
-                        android:textSize="30dp"
-                        android:layout_gravity="center"
-                        />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="#000"
-                        ></View>
+
+
                     <TextView
                         android:padding="15dp"
+                        android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="25dp"
-                        android:fontFamily="sans-serif"
-                        android:text="Buzzer quiz ."></TextView>
-
-
-                </LinearLayout>
-
+                        android:text="The winners will be selected based on the numbers of questions answered correctly and the quality work done on AutoCAD."></TextView>
 
 
 
             </android.support.v7.widget.CardView>
-
-
-
 
 
 
@@ -277,6 +256,3 @@
 
 
 </LinearLayout>
-
-
-

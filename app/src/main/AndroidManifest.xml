@@ -31,7 +31,7 @@
             android:name=".Homescreen"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Intro_"
+            android:name=".Intro"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -62,7 +62,14 @@
         <activity android:name=".LanGaming_IT" />
         <activity android:name=".Event_4_IT" />
         <activity android:name=".CIVIL_EVENTS_MAIN" />
-        <activity android:name=".CHEMICAL_EVENTS_MAIN"></activity>
+        <activity android:name=".CHEMICAL_EVENTS_MAIN" />
+        <activity android:name=".Circuit_Making_ECT" />
+        <activity android:name=".Lathe_War_Mech" />
+        <activity android:name=".Mat_Mania" />
+        <activity android:name=".Tech_Hunt" />
+        <activity android:name=".Auto_CAD_Desgin" />
+        <activity android:name=".Dshriti_Chem" />
+        <activity android:name=".Democracy"></activity>
     </application>
 
 </manifest>

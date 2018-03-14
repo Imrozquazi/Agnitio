@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="example.imrozquazi.cover_flow.Trivia"
+    tools:context="example.imrozquazi.cover_flow.Democracy"
     android:orientation="vertical"
     android:background="#010">
 
@@ -127,6 +128,47 @@
 
 
             <android.support.v7.widget.CardView
+
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:padding="5dp"
+                        android:fontFamily="sans-serif"
+                        android:textSize="30dp"
+                        android:layout_gravity="center"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#000"
+                        ></View>
+                    <TextView
+                        android:padding="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Democracy is an educational simulation and/or academic activity in which students can learn about diplomacy, which involves and teaches participants researching, public speaking, debating, and writing skills, in addition to critical thinking, teamwork, and leadership abilities. Participants in Democracy, are placed in Ministries and assigned as ministers or leaders to represent, where they represent members of respective bodies. Only the Ruling party leader, opposition party leader and the speaker will be presented with their assignments in advance, along with a topic or topics that their committee will discuss. Participants will conduct research after the first session and formulate positions that they will then debate with their fellow participants in the committee, staying true to the actual position of the member they represent. At the end of the final session, the best-performing participants in each criteria, will be recognized with awards."></TextView>
+
+
+                </LinearLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
                 android:id="@+id/c2_cse"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
@@ -140,7 +182,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Round 1"
+                        android:text="Session"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -157,7 +199,8 @@
                         android:layout_height="wrap_content"
                         android:textSize="25dp"
                         android:fontFamily="sans-serif"
-                        android:text="Written Quiz: A quiz will be conducted based on TV series. And participants have to solve 45 questions in 30 minutes. "></TextView>
+                        android:text="Ruling Party: \n\n 1.RP leader \n	2.Ministry of Finance \n 3.Ministry of Defence \n4.Ministry of External Affairs \n5.Ministry of Human Resource Development\n 6.Ministry of Rural Development \n7.Ministry of Women And Child Development\n Opposition Party:\n 1.Opposition party leader "></TextView>
+
 
 
                 </LinearLayout>
@@ -166,92 +209,6 @@
 
 
             </android.support.v7.widget.CardView>
-
-
-            <android.support.v7.widget.CardView
-
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardElevation="5dp"
-                app:cardCornerRadius="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Round 2"
-                        android:padding="5dp"
-                        android:fontFamily="sans-serif"
-                        android:textSize="30dp"
-                        android:layout_gravity="center"
-                        />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="#000"
-                        ></View>
-                    <TextView
-                        android:padding="15dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="25dp"
-                        android:fontFamily="sans-serif"
-                        android:text="Fastest finger first: Participants will have to arrange the given video clips or situations of series in ascending order."></TextView>
-
-
-                </LinearLayout>
-
-
-
-
-            </android.support.v7.widget.CardView>
-
-
-            <android.support.v7.widget.CardView
-
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardElevation="5dp"
-                app:cardCornerRadius="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Round 3"
-                        android:padding="5dp"
-                        android:fontFamily="sans-serif"
-                        android:textSize="30dp"
-                        android:layout_gravity="center"
-                        />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="#000"
-                        ></View>
-                    <TextView
-                        android:padding="15dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="25dp"
-                        android:fontFamily="sans-serif"
-                        android:text="Buzzer quiz ."></TextView>
-
-
-                </LinearLayout>
-
-
-
-
-            </android.support.v7.widget.CardView>
-
-
 
 
 
@@ -276,7 +233,5 @@
     </ScrollView>
 
 
+
 </LinearLayout>
-
-
-

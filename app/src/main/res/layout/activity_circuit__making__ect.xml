@@ -1,10 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="example.imrozquazi.cover_flow.Trivia"
-    android:orientation="vertical"
+    tools:context="example.imrozquazi.cover_flow.Circuit_Making_ECT"
     android:background="#010">
 
     <ScrollView
@@ -157,7 +157,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="25dp"
                         android:fontFamily="sans-serif"
-                        android:text="Written Quiz: A quiz will be conducted based on TV series. And participants have to solve 45 questions in 30 minutes. "></TextView>
+                        android:text="Each team will get a circuit name to make circuit diagram in software [PROTEUS]. If the circuit diagram is right then the team will be selected for second round."></TextView>
 
 
                 </LinearLayout>
@@ -167,14 +167,14 @@
 
             </android.support.v7.widget.CardView>
 
-
             <android.support.v7.widget.CardView
-
+                android:id="@+id/c3_cse"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardElevation="5dp"
+
                 app:cardCornerRadius="10dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -195,19 +195,17 @@
                         ></View>
                     <TextView
                         android:padding="15dp"
+                        android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="25dp"
-                        android:fontFamily="sans-serif"
-                        android:text="Fastest finger first: Participants will have to arrange the given video clips or situations of series in ascending order."></TextView>
-
+                        android:text="Each team has to make layout of the given circuit. If the layout is correct team will be selected for third round."></TextView>
 
                 </LinearLayout>
 
 
-
-
             </android.support.v7.widget.CardView>
+
 
 
             <android.support.v7.widget.CardView
@@ -215,8 +213,9 @@
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardElevation="5dp"
+
                 app:cardCornerRadius="10dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -237,22 +236,16 @@
                         ></View>
                     <TextView
                         android:padding="15dp"
+                        android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="25dp"
-                        android:fontFamily="sans-serif"
-                        android:text="Buzzer quiz ."></TextView>
-
+                        android:text=":Each team has to make hardware of the circuit. If possible team can bring their components for making hardware. Winner will be selected on the basis of completion of task in minimum time with correct output."></TextView>
 
                 </LinearLayout>
 
 
-
-
             </android.support.v7.widget.CardView>
-
-
-
 
 
 
@@ -277,6 +270,3 @@
 
 
 </LinearLayout>
-
-
-
