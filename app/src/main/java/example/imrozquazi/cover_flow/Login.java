@@ -4,6 +4,7 @@ import android.animation.ValueAnimator;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
+import android.speech.tts.TextToSpeech;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -34,7 +35,7 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.login_layout);
-        Button bt = (Button) findViewById(R.id.cli);
+        TextView bt = (TextView) findViewById(R.id.cli);
 
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,11 +94,7 @@ public class Login extends AppCompatActivity {
                     Intent loginIntent= new Intent(Login.this,Bottom_NavBar.class);
                     loginIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(loginIntent);
-                    //startActivity(new Intent(Login.this,Bottom_NavBar.class));
-                    //imroz
-                    //chutiya github
-                    //Correct
-
+                    
                 }
                 else {
                     mProLogin.dismiss();

@@ -66,11 +66,12 @@
         android:textColor="#000"
         android:textStyle="bold" />
 
-    <Button
+    <TextView
         android:id="@+id/cli"
+        android:layout_gravity="center"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:background="@drawable/btnbg"/>
+         android:text="New User...Sign Up"/>
 
 
 </LinearLayout>

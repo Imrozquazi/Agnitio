@@ -118,10 +118,5 @@ public class MECH_EVENTS_MAIN extends AppCompatActivity {
 
     }
 
-    void Circlemenu(View v)
-    {
-        Intent in = new Intent(getApplicationContext(),Floatingmenu.class);
-        startActivity(in);
-    }
 
 }
