@@ -228,7 +228,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:background="#000"></View>
+                    android:background="@color/back"></View>
 
                 <TextView
                     android:layout_width="wrap_content"

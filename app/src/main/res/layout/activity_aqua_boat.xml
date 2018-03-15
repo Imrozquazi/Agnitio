@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="example.imrozquazi.cover_flow.AquaBoat"
     android:orientation="vertical"
-    android:background="#010">
+    android:background="@color/back">
 
 
     <ScrollView
@@ -32,7 +32,7 @@
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    app:cardBackgroundColor="@color/bg_screen1"
+
                     app:cardCornerRadius="10dp">
 
                     <RelativeLayout
@@ -58,7 +58,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="JNEC CAMPUS"
-                            android:textColor="@color/white"
+                            android:textColor="@color/back"
                             android:textSize="20dp"
                             android:textStyle="bold"
                             android:layout_marginTop="9dp"
@@ -76,7 +76,7 @@
                     android:id="@+id/c2_ECT"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    app:cardBackgroundColor="@color/bg_screen1"
+
                     app:cardCornerRadius="10dp"
                     android:layout_marginLeft="10dp">
                     <RelativeLayout
@@ -98,7 +98,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="31 March 2018"
-                            android:textColor="@color/white"
+                            android:textColor="@color/back"
                             android:textSize="20dp"
                             android:textStyle="bold"
                             android:id="@+id/textView2"
@@ -138,6 +138,7 @@
                         android:layout_height="wrap_content"
                         android:text="Round specifications"
                         android:padding="5dp"
+                        android:textColor="@color/back"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
                         android:layout_gravity="center"
@@ -145,7 +146,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="#000"
+                        android:background="@color/back"
                         ></View>
                     <TextView
                         android:padding="15dp"
@@ -153,6 +154,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
+                        android:textColor="@color/back"
                         android:text="Round 1 - selection of boat based on given specifications.\n\nRound 2 - Boat should have to cover the given track with obstracles.\n\nRound 3 -Boat has to cover the track with obstracles within minimun time."></TextView>
 
 
@@ -177,7 +179,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Boat specifications:"
+                        android:text="Boat specifications"
+                        android:textColor="@color/back"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -186,7 +189,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="#000"
+                        android:background="@color/back"
                         ></View>
                     <TextView
                         android:id="@+id/xt1"
@@ -195,6 +198,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
+                        android:textColor="@color/back"
                         android:layout_gravity="center_vertical"
                         android:gravity="center"
                         android:text="The boat should be a manually controlled. The L x B x H should not be exceed 25 x 25 x 25 (all in cm) Maximum allowed voltage to powered the robot is 24V and 4A. Wired or wireless boat are allowed. No lego kits or complete and ready-made boat are allowed. Length of the wire must be sufficient long to cover the entire arena."></TextView>
@@ -231,7 +235,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="#000"
+                        android:background="@color/back"
                         ></View>
                     <TextView
                         android:padding="15dp"
@@ -240,6 +244,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
                         android:gravity="center"
+                        android:textColor="@color/back"
                         android:justificationMode="inter_word"
                         android:text=" Same as the round 1, but difficulty level will be increased."></TextView>
 
@@ -253,6 +258,7 @@
             <Button
                 android:id="@+id/button_aquaboat"
                 android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
                 android:layout_width="120dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center_horizontal"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="example.imrozquazi.cover_flow.Murder_Mystery"
-    android:background="#010"
+    android:background="@color/back"
     android:orientation="vertical">
 
     <ScrollView
@@ -30,7 +30,6 @@
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    app:cardBackgroundColor="@color/bg_screen1"
                     app:cardCornerRadius="10dp">
 
                     <RelativeLayout
@@ -56,7 +55,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="JNEC CAMPUS"
-                            android:textColor="@color/white"
+                            android:textColor="@color/back"
                             android:textSize="20dp"
                             android:textStyle="bold"
                             android:layout_marginTop="9dp"
@@ -74,7 +73,7 @@
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    app:cardBackgroundColor="@color/bg_screen1"
+
                     app:cardCornerRadius="10dp"
                     android:layout_marginLeft="10dp">
                     <RelativeLayout
@@ -96,7 +95,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="31 March 2018"
-                            android:textColor="@color/white"
+                            android:textColor="@color/back"
                             android:textSize="20dp"
                             android:textStyle="bold"
                             android:id="@+id/textView2"
@@ -143,6 +142,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
+                        android:textColor="@color/back"
                         android:text="To solve a mysterious murder case and find the murderer with the given police investigation report."
                         android:padding="10dp"
                         android:fontFamily="sans-serif"
@@ -174,6 +174,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
+                        android:textColor="@color/back"
                         android:fontFamily="sans-serif"
                         android:text="A murder crime scene will be depicted in the campus. Each team will be given clues and other details regarding the murder case in a booklet. The team which will solve the mystery in minimum time and report to the desk within specified amount of time will be the winners. Reporting after the time limit leads to disqualification of the team."></TextView>
 
@@ -187,6 +188,7 @@
             <Button
                 android:id="@+id/button_event_1_cse"
                 android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
                 android:layout_width="120dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center_horizontal"

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context="example.imrozquazi.cover_flow.C_Ladder_CSE"
     android:orientation="vertical"
-    android:background="#010"
+    android:background="@color/back"
     >
 
     <ScrollView
@@ -34,7 +34,7 @@
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    app:cardBackgroundColor="@color/bg_screen1"
+
                     app:cardCornerRadius="10dp">
 
                     <RelativeLayout
@@ -60,9 +60,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="JNEC CAMPUS"
-                            android:textColor="@color/white"
+                            android:textColor="@color/back"
                             android:textSize="20dp"
                             android:textStyle="bold"
+
                             android:layout_marginTop="9dp"
                             android:layout_marginLeft="5dp"
                             android:layout_below="@+id/imageView"
@@ -78,7 +79,7 @@
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    app:cardBackgroundColor="@color/bg_screen1"
+
                     app:cardCornerRadius="10dp"
                     android:layout_marginLeft="10dp">
                     <RelativeLayout
@@ -100,7 +101,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="31 March 2018"
-                            android:textColor="@color/white"
+                            android:textColor="@color/back"
                             android:textSize="20dp"
                             android:textStyle="bold"
                             android:id="@+id/textView2"
@@ -138,6 +139,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Description"
+                        android:textColor="@color/back"
                         android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
@@ -147,7 +149,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="#000"
+                        android:background="@color/back"
                         ></View>
                     <TextView
                         android:padding="15dp"
@@ -155,6 +157,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
+                        android:textColor="@color/back"
                         android:fontFamily="sans-serif"
                         android:gravity="left"
                         android:text="It’s a Snake-n-ladder game like event with C/C ++ questions. One member  has to roll the dice and other one to play on the ladder. Lifelines will be provided."></TextView>
@@ -181,6 +184,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 1"
+                        android:textColor="@color/back"
                         android:padding="5dp"
                         android:textStyle="bold"
                         android:fontFamily="sans-serif"
@@ -190,7 +194,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="#000"
+                        android:background="@color/back"
                         ></View>
                     <TextView
                         android:padding="15dp"
@@ -198,6 +202,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
+                        android:textColor="@color/back"
                         android:gravity="left"
                         android:text="4 teams will play at a time. The player has to complete the task in order to 	    succeed the game."></TextView>
 
@@ -226,6 +231,7 @@
                         android:padding="5dp"
                         android:text="Round 2 || Round 3"
                         android:textStyle="bold"
+                        android:textColor="@color/back"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
                         android:layout_gravity="center"
@@ -233,13 +239,14 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="#000"
+                        android:background="@color/back"
                         ></View>
                     <TextView
                         android:padding="15dp"
                         android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/back"
                         android:textSize="18dp"
                         android:gravity="left"
                         android:text=" Same as the round 1, but difficulty level will be increased."></TextView>
@@ -254,6 +261,7 @@
             <Button
                 android:id="@+id/button_event_2_cse"
                 android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
                 android:layout_width="120dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center_horizontal"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="example.imrozquazi.cover_flow.Circuit_Making_ECT"
-    android:background="#010">
+    android:background="@color/back">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -31,7 +31,7 @@
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    app:cardBackgroundColor="@color/bg_screen1"
+
                     app:cardCornerRadius="10dp">
 
                     <RelativeLayout
@@ -57,7 +57,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="JNEC CAMPUS"
-                            android:textColor="@color/white"
+                            android:textColor="@color/back"
                             android:textSize="20dp"
                             android:textStyle="bold"
                             android:layout_marginTop="9dp"
@@ -75,7 +75,7 @@
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    app:cardBackgroundColor="@color/bg_screen1"
+
                     app:cardCornerRadius="10dp"
                     android:layout_marginLeft="10dp">
                     <RelativeLayout
@@ -97,7 +97,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="31 March 2018"
-                            android:textColor="@color/white"
+                            android:textColor="@color/back"
                             android:textSize="20dp"
                             android:textStyle="bold"
                             android:id="@+id/textView2"
@@ -141,6 +141,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 1"
+                        android:textColor="@color/back"
                         android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
@@ -150,7 +151,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="#000"
+                        android:background="@color/back"
                         ></View>
                     <TextView
                         android:padding="15dp"
@@ -158,6 +159,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
                         android:gravity="left"
+                        android:textColor="@color/back"
                         android:fontFamily="sans-serif"
                         android:text="Each team will get a circuit name to make circuit diagram in software [PROTEUS]. If the circuit diagram is right then the team will be selected for second round."></TextView>
 
@@ -185,6 +187,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 2"
+                        android:textColor="@color/back"
                         android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
@@ -194,7 +197,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="#000"
+                        android:background="@color/back"
                         ></View>
                     <TextView
                         android:padding="15dp"
@@ -202,6 +205,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="15dp"
+                        android:textColor="@color/back"
                         android:gravity="left"
                         android:text="Each team has to make layout of the given circuit. If the layout is correct team will be selected for third round."></TextView>
 
@@ -228,6 +232,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 3"
+                        android:textColor="@color/back"
                         android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
@@ -237,7 +242,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="#000"
+                        android:background="@color/back"
                         ></View>
                     <TextView
                         android:padding="15dp"
@@ -246,6 +251,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
                         android:gravity="left"
+                        android:textColor="@color/back"
                         android:text="Each team has to make hardware of the circuit. If possible team can bring their components for making hardware. Winner will be selected on the basis of completion of task in minimum time with correct output."></TextView>
 
                 </LinearLayout>
@@ -258,6 +264,7 @@
             <Button
                 android:id="@+id/button_circuit"
                 android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
                 android:layout_width="120dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center_horizontal"

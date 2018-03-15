@@ -85,27 +85,23 @@ public class CHEMICAL_EVENTS_MAIN extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0)
                 {
-                    Intent in = new Intent(getApplicationContext(),CodeRelay_CSE.class);
+                    Intent in = new Intent(getApplicationContext(),Dshriti_Chem.class);
                     startActivity(in);
 
                 }
                 if(position == 1)
                 {
-                    Intent in = new Intent(getApplicationContext(),C_Ladder_CSE.class);
+                    Intent in = new Intent(getApplicationContext(),Tech_Talk.class);
                     startActivity(in);
                 }
 
                 if(position == 2)
                 {
-                    Intent in = new Intent(getApplicationContext(),Trivia.class);
+                    Intent in = new Intent(getApplicationContext(),Water_rocket.class);
                     startActivity(in);
                 }
 
-                if(position == 3)
-                {
-                    Intent in = new Intent(getApplicationContext(),CodeHolix_CSE.class);
-                    startActivity(in);
-                }
+
             }
         });
 
