@@ -143,6 +143,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Rules"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -157,7 +158,7 @@
                         android:padding="15dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:fontFamily="sans-serif"
                         android:text="This is a team event. Each team will be given a list of 50 articles which they have to collect from the campus within given amount of time. Each article will have points. The team with maximum points will be the winner."></TextView>
 

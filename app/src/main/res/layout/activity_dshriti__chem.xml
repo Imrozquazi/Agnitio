@@ -142,6 +142,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 1"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -156,7 +157,7 @@
                         android:padding="15dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:fontFamily="sans-serif"
                         android:text="Participants have to form a group. One of the team members will be allowed to have a glimpse of the model and that participant has to guide his team mates verbally."></TextView>
 

@@ -143,6 +143,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Details"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -157,7 +158,7 @@
                         android:padding="15dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:fontFamily="sans-serif"
                         android:text="● All engineering branch regular students can participate\n● On the event date team should report with working project model and poster.\n● Projects will be demonstrated in front of Panel of judges and visitors\n● Best project will win exciting prizes."></TextView>
 
@@ -186,6 +187,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Execution"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -201,13 +203,13 @@
                         android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:text="● All Project entries will be collected by Student head.
 \n● Participants should submit undertaking and NOC from their college.
 \n● Student head Will maintain information like  \no Team members  \no Project Name     \no College Name     \no Requirementsparticular area will be given find the location of marked points from given hints/clues measure the elevation of that point with the help of dumpy level
-● One student in charge per 10 Project will be allocated.
-● Two day Before Event Schedule and venue will be conveyed to all participants
-● On the event day all participants should report at 8:00 AM in the morning.
+\n● One student in charge per 10 Project will be allocated.
+\n● Two day Before Event Schedule and venue will be conveyed to all participants
+\n● On the event day all participants should report at 8:00 AM in the morning.
 "></TextView>
 
 
@@ -235,8 +237,9 @@
                         android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
-                        android:text=" THE WINNER WOULD BE DECIDED BY THE JUDGES."></TextView>
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:text="THE WINNER WOULD BE DECIDED BY THE JUDGES."></TextView>
 
 
 

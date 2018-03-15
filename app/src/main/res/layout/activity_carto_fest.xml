@@ -142,6 +142,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Event Discription"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -156,7 +157,8 @@
                         android:padding="15dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:textSize="18dp"
+                        android:gravity="left"
                         android:fontFamily="sans-serif"
                         android:text="In this event , Dr. Suddhasheel Gosh will give an overview of surveying practices through a 45-60 min lecture. This would be followed by the training session conducted by the students who have gained excellence in collecting and mapping with data ,on the use of GIS software(45-60 min).This training will provide an overview regarding the various type of mapping layers, and their associated symbologies. Consequently the participants of the competition shall compete to prepare a “MAP” of the MGM JNEC lawn, using the data collected by the students"></TextView>
 
@@ -185,6 +187,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Prices"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -200,7 +203,7 @@
                         android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:text="The best map, complete with all annotations and symbology standards ,shall be awarded based on their aesthetics and meaningfulness .(THREE PRIZES)"></TextView>
 
 

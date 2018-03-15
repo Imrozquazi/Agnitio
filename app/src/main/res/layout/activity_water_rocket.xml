@@ -142,6 +142,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 1"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -156,7 +157,7 @@
                         android:padding="15dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:fontFamily="sans-serif"
                         android:text=" Participants will have to hit the target by using a water rocket."></TextView>
 
@@ -186,6 +187,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 2"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -201,7 +203,7 @@
                         android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:text="Three targets and five shots will be given and the participants have to hit the target with time and accuracy."></TextView>
 
 
@@ -231,7 +233,7 @@
                         android:text="At the end of event , there will be a round where ideas that can be implemented to make a city smart would be discussed."
                         android:padding="15dp"
                         android:fontFamily="sans-serif"
-                        android:textSize="25dp"
+                        android:textSize="20dp"
                         android:textStyle="bold"
                         android:layout_gravity="center"
                         />

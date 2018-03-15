@@ -142,6 +142,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 1"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -156,7 +157,7 @@
                         android:padding="15dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:fontFamily="sans-serif"
                         android:text="There will be a quiz on Lathe Machine. The quiz will comprise of 30 questions. A time of 30 minutes, i.e., 1 minute for 1 question will be given. Top scoring students/teams will be selected for the final round."></TextView>
 
@@ -185,6 +186,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 2"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -200,7 +202,7 @@
                         android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:text="This round will be a practical round, wherein the teams need to work out on lathes. Those who are single participant would be teamed-up.On the day of war, the teams will be given the designs for the jobs they need to work on.Each team will be given a period of 1 hour to complete their jobs .The team with optimum time for completion of job along with best surface finish will be selected as the winners and will be awarded."></TextView>
 
 
@@ -227,6 +229,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 3"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -242,7 +245,7 @@
                         android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:text=":Each team has to make hardware of the circuit. If possible team can bring their components for making hardware. Winner will be selected on the basis of completion of task in minimum time with correct output."></TextView>
 
                 </LinearLayout>

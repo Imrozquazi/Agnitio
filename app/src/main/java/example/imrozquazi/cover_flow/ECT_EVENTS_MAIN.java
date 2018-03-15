@@ -86,13 +86,25 @@ public class ECT_EVENTS_MAIN extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0)
                 {
-                    Intent in = new Intent(getApplicationContext(),CodeRelay_CSE.class);
+                    Intent in = new Intent(getApplicationContext(),Circuit_Making_ECT.class);
                     startActivity(in);
 
                 }
                 if(position == 1)
                 {
-                    Intent in = new Intent(getApplicationContext(),C_Ladder_CSE.class);
+                    Intent in = new Intent(getApplicationContext(),Tech_Hunt.class);
+                    startActivity(in);
+                }
+
+                if(position == 2)
+                {
+                    Intent in = new Intent(getApplicationContext(),Mat_Mania.class);
+                    startActivity(in);
+                }
+
+                if(position == 3)
+                {
+                    Intent in = new Intent(getApplicationContext(),AquaBoat.class);
                     startActivity(in);
                 }
             }

@@ -141,7 +141,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Round 1:"
+                        android:text="Round 1"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -157,8 +158,10 @@
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
-                        android:text="  ​Participants will have to find/search maximum number of algorithms placed at different places in the campus with the help of QR codes or Google Maps. The participants/teams which will report in the shortest span of time will be selected for the next round."></TextView>
+                        android:textSize="18dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="left"
+                        android:text="​Participants will have to find/search maximum number of algorithms placed at different places in the campus with the help of QR codes or Google Maps. The participants/teams which will report in the shortest span of time will be selected for the next round."></TextView>
 
                 </LinearLayout>
 
@@ -179,6 +182,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 2"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -193,9 +197,10 @@
                         android:padding="15dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:fontFamily="sans-serif"
-                        android:text=" ​The selected participants will have to code a program (C or C++) using the algorithms collected in Round 1."></TextView>
+                        android:gravity="left"
+                        android:text="The selected participants will have to code a program (C or C++) using the algorithms collected in Round 1."></TextView>
 
 
                 </LinearLayout>

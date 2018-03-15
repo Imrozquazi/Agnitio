@@ -73,7 +73,7 @@
 
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/c5_ECT"
+                    android:id="@+id/c2_ECT"
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
@@ -129,7 +129,7 @@
 
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c2_cse"
+                android:id="@+id/c3_ECT"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -143,6 +143,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 1"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -157,7 +158,7 @@
                         android:padding="15dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:fontFamily="sans-serif"
                         android:text="GUESS THE PASSWORD :This round is based on very basic technical knowledge. Participants will be given simple questions. The answer to the questions will be the password for the PC provided to them. Correct password will open the system and candidate  goes to the next round."></TextView>
 
@@ -171,7 +172,7 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c3_cse"
+                android:id="@+id/c4_ECT"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -186,6 +187,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 2"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -201,7 +203,7 @@
                         android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:text="FISH'S EYE : Participants will have to perform basic coding in MATLAB. The twist is that the screen will be masked, so they have to type the correct code just by seeing 	the keyboard and nothing on screen. Those getting the correct o/p in quick time will be chosen for the 	next round."></TextView>
 
 
@@ -213,7 +215,7 @@
 
 
             <android.support.v7.widget.CardView
-
+                android:id="@+id/c5_ECT"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -228,6 +230,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 3"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -243,7 +246,7 @@
                         android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:text="HIT THE RIGHT SPOT :this is the decider round of the event. In this round the participants will be provided a written code. The code will contain only one error. Without running the program or seeing the o/p, the participants have to guess the mistake at the earliest. The participants who spots the error first will be the winner."></TextView>
 
                 </LinearLayout>

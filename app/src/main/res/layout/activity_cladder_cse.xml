@@ -10,13 +10,13 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_margin="25dp"
-            android:layout_gravity="center"
+
             android:orientation="vertical">
 
 
@@ -25,12 +25,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_gravity="center"
-                android:layout_marginTop="300dp">
+
+                 >
 
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/c1_cse"
-                    android:layout_marginTop="300dp"
+
                     android:layout_width="150dp"
                     android:layout_height="100dp"
                     app:cardBackgroundColor="@color/bg_screen1"
@@ -74,7 +75,7 @@
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/c5_cse"
-                    android:layout_marginTop="300dp"
+
                     android:layout_width="150dp"
                     android:layout_height="100dp"
                     app:cardBackgroundColor="@color/bg_screen1"
@@ -137,6 +138,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Description"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -152,7 +154,9 @@
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="left"
                         android:text="It’s a Snake-n-ladder game like event with C/C ++ questions. One member  has to roll the dice and other one to play on the ladder. Lifelines will be provided."></TextView>
 
                 </LinearLayout>
@@ -178,6 +182,7 @@
                         android:layout_height="wrap_content"
                         android:text="Round 1"
                         android:padding="5dp"
+                        android:textStyle="bold"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
                         android:layout_gravity="center"
@@ -192,7 +197,8 @@
                         android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
+                        android:gravity="left"
                         android:text="4 teams will play at a time. The player has to complete the task in order to 	    succeed the game."></TextView>
 
                 </LinearLayout>
@@ -219,6 +225,7 @@
                         android:layout_height="wrap_content"
                         android:padding="5dp"
                         android:text="Round 2 || Round 3"
+                        android:textStyle="bold"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
                         android:layout_gravity="center"
@@ -233,7 +240,8 @@
                         android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
+                        android:gravity="left"
                         android:text=" Same as the round 1, but difficulty level will be increased."></TextView>
 
                 </LinearLayout>
@@ -250,7 +258,6 @@
                 android:layout_height="70dp"
                 android:layout_gravity="center_horizontal"
                 android:text="Book Event 2"
-
                 android:focusable="true"
                 android:clickable="true"
                 />

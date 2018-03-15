@@ -142,6 +142,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 1"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -156,7 +157,7 @@
                         android:padding="15dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:fontFamily="sans-serif"
                         android:text="Participants will be allowed to see the periodic table for 5 minutes. Then they will be given small colour cards and cards having symbols of elements. The participants have correctly recognise the colour and the element and have to write its complete name. The participant who will recognise the max number of elements will be the winner."></TextView>
 

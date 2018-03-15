@@ -28,7 +28,7 @@
 
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/c1_cse"
+                    android:id="@+id/c1_ECT"
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
@@ -73,7 +73,7 @@
 
                 <android.support.v7.widget.CardView
 
-
+                    android:id="@+id/c2_ECT"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
                     app:cardBackgroundColor="@color/bg_screen1"
@@ -121,7 +121,7 @@
 
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c3_cse"
+                android:id="@+id/c3_ECT"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -152,7 +152,7 @@
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:text="Round 1 - selection of boat based on given specifications.\n\nRound 2 - Boat should have to cover the given track with obstracles.\n\nRound 3 -Boat has to cover the track with obstracles within minimun time."></TextView>
 
 
@@ -163,7 +163,7 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c4_cse"
+                android:id="@+id/c4_ECT"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -189,11 +189,14 @@
                         android:background="#000"
                         ></View>
                     <TextView
+                        android:id="@+id/xt1"
                         android:padding="15dp"
                         android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
                         android:text="The boat should be a manually controlled. The L x B x H should not be exceed 25 x 25 x 25 (all in cm) Maximum allowed voltage to powered the robot is 24V and 4A. Wired or wireless boat are allowed. No lego kits or complete and ready-made boat are allowed. Length of the wire must be sufficient long to cover the entire arena."></TextView>
 
 
@@ -204,7 +207,7 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c5_cse"
+                android:id="@+id/c5_ECT"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -235,7 +238,9 @@
                         android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        android:justificationMode="inter_word"
                         android:text=" Same as the round 1, but difficulty level will be increased."></TextView>
 
                 </LinearLayout>

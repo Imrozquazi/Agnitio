@@ -16,7 +16,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="25dp"
-
             android:orientation="vertical">
 
 
@@ -42,9 +41,7 @@
                         <ImageView
                             android:id="@+id/imageView"
                             android:layout_width="30dp"
-
                             android:layout_height="30dp"
-
                             android:layout_alignEnd="@+id/textView"
                             android:layout_alignParentTop="true"
                             android:layout_alignRight="@+id/textView"
@@ -72,7 +69,7 @@
 
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/c5_ECT"
+                    android:id="@+id/c2_ECT"
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
@@ -128,7 +125,7 @@
 
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c2_cse"
+                android:id="@+id/c3_ECT"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -142,6 +139,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 1"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -156,7 +154,7 @@
                         android:padding="15dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:fontFamily="sans-serif"
                         android:text="CHECK YOUR KNOWLEDGE :This round is technical objective exam. In question paper there are 40 questions to be solved in 30 minutes."></TextView>
 
@@ -170,7 +168,7 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c3_cse"
+                android:id="@+id/c4_ECT"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -185,6 +183,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 2"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -200,7 +199,7 @@
                         android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:text="According to cut-off marks , short-listed group will be selected for 2nd round.\n\n(a)Techno-Puzzle : solve the puzzle related to electrical and electronics topics within 15 minutes.\n\n(b)Electro-Hunt:  Clues will be given to each group.  So each group has to  solve the clues and collect the different components from different locations and complete their circuit in minimum time."></TextView>
 
 
@@ -212,7 +211,7 @@
 
 
             <android.support.v7.widget.CardView
-
+                android:id="@+id/c5_ECT"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -227,6 +226,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 3"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -242,7 +242,7 @@
                         android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:text="(a)Tech-vision : This round is audio-visual round and  instructions for  this round will be given on spot. \n\n(b)Rapid-Fire :  Group who gives maximum answer in minimum time (5 min) will get maximum points."></TextView>
 
                 </LinearLayout>

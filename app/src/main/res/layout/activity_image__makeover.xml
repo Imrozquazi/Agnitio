@@ -143,6 +143,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 1"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -157,9 +158,9 @@
                         android:padding="15dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:fontFamily="sans-serif"
-                        android:text=" Click 10: ​Participants will have to click 10 photos within JNEC campus."></TextView>
+                        android:text="Click 10: ​Participants will have to click 10 photos within JNEC campus."></TextView>
 
 
 
@@ -190,6 +191,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 2"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -204,9 +206,9 @@
                         android:padding="15dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:fontFamily="sans-serif"
-                        android:text=" : Edit 5​: Participants will have to edit any 5 photos from the pictures they haveclicked with any editor."></TextView>
+                        android:text="Edit 5​: Participants will have to edit any 5 photos from the pictures they haveclicked with any editor."></TextView>
 
 
 
@@ -231,6 +233,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Round 3"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -245,9 +248,9 @@
                         android:padding="15dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:fontFamily="sans-serif"
-                        android:text=" Candid 1: ​Participants will have to click a candid of a given staff in campus."></TextView>
+                        android:text="Candid 1: ​Participants will have to click a candid of a given staff in campus."></TextView>
 
 
 

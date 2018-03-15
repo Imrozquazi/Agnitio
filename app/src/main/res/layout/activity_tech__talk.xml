@@ -144,7 +144,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="REQUIREMENT :"
+                        android:text="REQUIREMENT"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -160,7 +161,8 @@
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
+                        android:fontFamily="sans-serif"
                         android:text="Topics related to industrial pollution and its solutions are to be discussed. The various topics which the participants can opt to present are as given under. The presentation should be in context with the topic. The presentation should include minimum 8 slides or maximum 12 slides.Presentation should be completed within 10 min. The best solution presentation would be declared the winner"></TextView>
 
 

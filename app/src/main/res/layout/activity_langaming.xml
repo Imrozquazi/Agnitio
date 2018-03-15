@@ -142,6 +142,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Gaming"
+                        android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
                         android:textSize="30dp"
@@ -157,7 +158,7 @@
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="25dp"
+                        android:textSize="18dp"
                         android:text=" 1. CS 1.6 (Team of 5 members) \n 2. Need For Speed most wanted(Individual) \n 3. FIFA (Individual)\n 4. RAW (Individual)"></TextView>
 
                 </LinearLayout>

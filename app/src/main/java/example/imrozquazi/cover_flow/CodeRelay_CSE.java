@@ -51,11 +51,11 @@ public class CodeRelay_CSE extends AppCompatActivity {
         CardView v3 = (CardView)findViewById(R.id.c3_cse);
         CardView v4 = (CardView)findViewById(R.id.c4_cse);
 
-        /*v1.startAnimation(a);
+        v1.startAnimation(a);
         v2.startAnimation(a);
         v3.startAnimation(a);
         v4.startAnimation(a);
-*/
+
 
         mAuth=FirebaseAuth.getInstance();
 
