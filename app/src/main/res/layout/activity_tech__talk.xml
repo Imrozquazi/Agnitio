@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="example.imrozquazi.cover_flow.Tech_Talk"
     android:orientation="vertical"
-    android:background="#010">
+    android:background="@color/back">
 
 
     <ScrollView
@@ -32,7 +32,7 @@
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    app:cardBackgroundColor="@color/bg_screen1"
+
                     app:cardCornerRadius="10dp">
 
                     <RelativeLayout
@@ -58,7 +58,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="JNEC CAMPUS"
-                            android:textColor="@color/white"
+                            android:textColor="@color/back"
                             android:textSize="20dp"
                             android:textStyle="bold"
                             android:layout_marginTop="9dp"
@@ -76,7 +76,7 @@
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    app:cardBackgroundColor="@color/bg_screen1"
+
                     app:cardCornerRadius="10dp"
                     android:layout_marginLeft="10dp">
                     <RelativeLayout
@@ -98,7 +98,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="31 March 2018"
-                            android:textColor="@color/white"
+                            android:textColor="@color/back"
                             android:textSize="20dp"
                             android:textStyle="bold"
                             android:id="@+id/textView2"
@@ -145,6 +145,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="REQUIREMENT"
+                        android:textColor="@color/back"
                         android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
@@ -154,7 +155,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="#000"
+                        android:background="@color/back"
                         ></View>
                     <TextView
                         android:padding="15dp"
@@ -162,6 +163,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
+                        android:textColor="@color/back"
                         android:fontFamily="sans-serif"
                         android:text="Topics related to industrial pollution and its solutions are to be discussed. The various topics which the participants can opt to present are as given under. The presentation should be in context with the topic. The presentation should include minimum 8 slides or maximum 12 slides.Presentation should be completed within 10 min. The best solution presentation would be declared the winner"></TextView>
 
@@ -176,6 +178,7 @@
             <Button
                 android:id="@+id/button_techtalk"
                 android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
                 android:layout_width="120dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center_horizontal"

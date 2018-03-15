@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="example.imrozquazi.cover_flow.Project_Competition"
     android:orientation="vertical"
-    android:background="#010">
+    android:background="@color/back">
 
 
     <ScrollView
@@ -33,7 +33,7 @@
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    app:cardBackgroundColor="@color/bg_screen1"
+
                     app:cardCornerRadius="10dp">
 
                     <RelativeLayout
@@ -59,7 +59,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="JNEC CAMPUS"
-                            android:textColor="@color/white"
+                            android:textColor="@color/back"
                             android:textSize="20dp"
                             android:textStyle="bold"
                             android:layout_marginTop="9dp"
@@ -77,7 +77,7 @@
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    app:cardBackgroundColor="@color/bg_screen1"
+
                     app:cardCornerRadius="10dp"
                     android:layout_marginLeft="10dp">
                     <RelativeLayout
@@ -99,7 +99,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="31 March 2018"
-                            android:textColor="@color/white"
+                            android:textColor="@color/back"
                             android:textSize="20dp"
                             android:textStyle="bold"
                             android:id="@+id/textView2"
@@ -143,6 +143,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Details"
+                        android:textColor="@color/back"
                         android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
@@ -152,12 +153,13 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="#000"
+                        android:background="@color/back"
                         ></View>
                     <TextView
                         android:padding="15dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/back"
                         android:textSize="18dp"
                         android:fontFamily="sans-serif"
                         android:text="● All engineering branch regular students can participate\n● On the event date team should report with working project model and poster.\n● Projects will be demonstrated in front of Panel of judges and visitors\n● Best project will win exciting prizes."></TextView>
@@ -187,6 +189,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Execution"
+                        android:textColor="@color/back"
                         android:textStyle="bold"
                         android:padding="5dp"
                         android:fontFamily="sans-serif"
@@ -196,12 +199,13 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="#000"
+                        android:background="@color/back"
                         ></View>
                     <TextView
                         android:padding="15dp"
                         android:fontFamily="sans-serif"
                         android:layout_width="wrap_content"
+                        android:textColor="@color/back"
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
                         android:text="● All Project entries will be collected by Student head.
@@ -238,6 +242,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
+                        android:textColor="@color/back"
                         android:textStyle="bold"
                         android:text="THE WINNER WOULD BE DECIDED BY THE JUDGES."></TextView>
 
@@ -254,6 +259,7 @@
             <Button
                 android:id="@+id/button_event_4_cse"
                 android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
                 android:layout_width="120dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center_horizontal"

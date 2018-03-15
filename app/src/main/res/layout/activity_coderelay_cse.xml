@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context="example.imrozquazi.cover_flow.CodeRelay_CSE"
     android:orientation="vertical"
-    android:background="#010">
+    android:background="@color/back">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -31,7 +31,7 @@
 
             android:layout_width="150dp"
             android:layout_height="100dp"
-            app:cardBackgroundColor="@color/bg_screen1"
+
             app:cardCornerRadius="10dp">
 
             <RelativeLayout
@@ -57,7 +57,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="JNEC CAMPUS"
-                    android:textColor="@color/white"
+                    android:textColor="@color/back"
                     android:textSize="20dp"
                     android:textStyle="bold"
                     android:layout_marginTop="9dp"
@@ -74,7 +74,7 @@
                  android:id="@+id/c2_cse"
                  android:layout_width="150dp"
                  android:layout_height="100dp"
-                 app:cardBackgroundColor="@color/bg_screen1"
+
                  app:cardCornerRadius="10dp"
                  android:layout_marginLeft="10dp">
                  <RelativeLayout
@@ -96,7 +96,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="31 March 2018"
-                    android:textColor="@color/white"
+                    android:textColor="@color/back"
                     android:textSize="20dp"
                     android:textStyle="bold"
                     android:id="@+id/textView2"
@@ -143,6 +143,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Round 1"
+                    android:textColor="@color/back"
                     android:textStyle="bold"
                     android:padding="5dp"
                     android:fontFamily="sans-serif"
@@ -152,13 +153,14 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:background="#000"
+                    android:background="@color/back"
                     ></View>
                 <TextView
                     android:padding="15dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="18dp"
+                    android:textColor="@color/back"
                     android:gravity="left"
                     android:fontFamily="sans-serif"
                     android:text="Participants will have to find/search maximum number of algorithms placed at different places in the campus with the help of QR codes or Google Maps. The participants teams which will report in the shortest span of time will be selected for the next round."></TextView>
@@ -186,6 +188,7 @@
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
                      android:text="Round 2"
+                     android:textColor="@color/back"
                      android:textStyle="bold"
                      android:padding="5dp"
                      android:fontFamily="sans-serif"
@@ -195,13 +198,14 @@
                  <View
                      android:layout_width="match_parent"
                      android:layout_height="2dp"
-                     android:background="#000"
+                     android:background="@color/back"
                      ></View>
                  <TextView
                      android:padding="15dp"
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
                      android:textSize="18dp"
+                     android:textColor="@color/back"
                      android:gravity="left"
                      android:fontFamily="sans-serif"
                      android:text="The selected participants will have to code a program (C or C++) using the algorithms collected in Round 1."></TextView>
@@ -216,6 +220,7 @@
          <Button
              android:id="@+id/button_event_1_cse"
              android:layout_marginTop="30dp"
+             android:layout_marginBottom="40dp"
              android:layout_width="120dp"
              android:layout_height="70dp"
              android:layout_gravity="center_horizontal"
