@@ -253,7 +253,7 @@
 
 
             <Button
-                android:id="@+id/button_event_4_cse"
+                android:id="@+id/button_techhunt"
                 android:layout_marginTop="30dp"
                 android:layout_width="120dp"
                 android:layout_height="70dp"

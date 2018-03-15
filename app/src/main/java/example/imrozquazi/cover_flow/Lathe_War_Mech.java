@@ -128,7 +128,7 @@ public class Lathe_War_Mech extends AppCompatActivity {
         try {
             // Construct data
             String apiKey = "apikey=" + "4iQet9zS7N0-8BOlNJ7oGBJzPBA2yesfVrpXDE1K1y";
-            String message = "&message=" + "Greetings from team TechFest, Thank you for showing your interest  " + StudentInfo.getname()+ ".";
+            String message = "&message=" + "Greetings from team TechFest, Thank you for registering in LATHE WAR " + StudentInfo.getname()+ ".";
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
             String numbers = "&numbers=" + StudentInfo.getContact();
 
