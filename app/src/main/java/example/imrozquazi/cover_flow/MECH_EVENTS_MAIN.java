@@ -86,13 +86,13 @@ public class MECH_EVENTS_MAIN extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0)
                 {
-                    Intent in = new Intent(getApplicationContext(),CodeRelay_CSE.class);
+                    Intent in = new Intent(getApplicationContext(),Lathe_War_Mech.class);
                     startActivity(in);
 
                 }
                 if(position == 1)
                 {
-                    Intent in = new Intent(getApplicationContext(),C_Ladder_CSE.class);
+                    Intent in = new Intent(getApplicationContext(),Auto_CAD_Desgin.class);
                     startActivity(in);
                 }
             }

@@ -68,9 +68,6 @@ public class CodeRelay_CSE extends AppCompatActivity {
                 Toast.makeText(getApplication(),"Clicked",Toast.LENGTH_LONG).show();
 
                 Datacheck();
-                //DataEntry();
-
-
                 //smsApiCall();
             }
         });
@@ -87,20 +84,23 @@ public class CodeRelay_CSE extends AppCompatActivity {
         user=FirebaseAuth.getInstance().getCurrentUser();
         String email=user.getEmail();
         String uid=user.getUid();
-        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("CSE").child("Coderelay").child(uid);
+        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("CSE").child("CodeRelay").child(uid);
 
-
-        try {
-
-            Toast.makeText(getApplicationContext(),"in try",Toast.LENGTH_LONG).show();
 
             dr.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
 
-                    Toast.makeText(getApplicationContext(),"in data",Toast.LENGTH_LONG).show();
-                    String email = dataSnapshot.child("Email").getValue().toString();
-                    Toast.makeText(getApplicationContext(), "Already Registered with this " + email + "email", Toast.LENGTH_LONG).show();
+                    try {
+                        Toast.makeText(getApplicationContext(), "in data", Toast.LENGTH_LONG).show();
+                        String email = dataSnapshot.child("Email").getValue().toString();
+                        Toast.makeText(getApplicationContext(), "Already Registered with this " + email + "email", Toast.LENGTH_LONG).show();
+                    }
+                    catch (Exception e)
+                    {
+                        Toast.makeText(getApplicationContext(),"in catch ",Toast.LENGTH_LONG).show();
+                        DataEntry();
+                    }
                 }
 
                 @Override
@@ -108,12 +108,7 @@ public class CodeRelay_CSE extends AppCompatActivity {
 
                 }
             });
-        }
-        catch (NullPointerException e)
-        {
-            Toast.makeText(getApplicationContext(),"in catch ",Toast.LENGTH_LONG).show();
-            DataEntry();
-        }
+
 
     }
 
@@ -122,7 +117,8 @@ public class CodeRelay_CSE extends AppCompatActivity {
         user=FirebaseAuth.getInstance().getCurrentUser();
         String email=user.getEmail();
         String uid=user.getUid();
-        Toast.makeText(getApplicationContext(),""+email,Toast.LENGTH_LONG).show();
+
+        //Toast.makeText(getApplicationContext(),""+email,Toast.LENGTH_LONG).show();
 
         mDatabase = FirebaseDatabase.getInstance().getReference().child("CSE").child("CodeRelay").child(uid);
 
@@ -136,6 +132,7 @@ public class CodeRelay_CSE extends AppCompatActivity {
                 if(task.isSuccessful())
                 {
                     Toast.makeText(getApplicationContext(), "Registered ", Toast.LENGTH_SHORT).show();
+                    smsApiCall();
                 }
                 else
                 {
@@ -151,7 +148,7 @@ public class CodeRelay_CSE extends AppCompatActivity {
         try {
             // Construct data
             String apiKey = "apikey=" + "4iQet9zS7N0-8BOlNJ7oGBJzPBA2yesfVrpXDE1K1y";
-            String message = "&message=" + "Greetings from team TechFest, Thank you for the registration " + StudentInfo.getname();
+            String message = "&message=" + "Greetings from team TechFest, Thank you for showing your interest  " + StudentInfo.getname()+ ".";
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
             String numbers = "&numbers=" + StudentInfo.getContact();
 

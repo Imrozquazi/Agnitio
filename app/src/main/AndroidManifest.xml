@@ -25,9 +25,6 @@
             android:name=".Floatingmenu"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Popup_Activity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".Homescreen"
             android:screenOrientation="portrait" />
         <activity
