@@ -56,7 +56,7 @@ public class Trivia extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                DataEntry();
+                Datacheck();
 
             }
         });
