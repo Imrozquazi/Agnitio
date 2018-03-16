@@ -1,12 +1,16 @@
 package example.imrozquazi.cover_flow;
 
 import android.animation.ValueAnimator;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
  // java.util.concurrent.TimeUnit;
@@ -14,7 +18,7 @@ import com.airbnb.lottie.LottieAnimationView;
 public class Intro extends AppCompatActivity {
     LinearLayout l1, l2;
     Animation uptodown, downtoup;
-
+    boolean flag;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +30,7 @@ public class Intro extends AppCompatActivity {
        ///// uptodown = AnimationUtils.loadAnimation(this, R.anim.uptodown);
       //  l1.setAnimation(uptodown);
 
+        flag = false;
         final LottieAnimationView animationView = (LottieAnimationView)findViewById(R.id.animation_view3);
 
         
@@ -48,12 +53,26 @@ public class Intro extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent i=new Intent(Intro.this,WelcomeActivity.class);
-                startActivity(i);
-                finish();
+
+                    Toast.makeText(getApplicationContext(),"Make sure you are connected to INTERNET !!!",Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(Intro.this, WelcomeActivity.class);
+                    startActivity(i);
+                    finish();
+
+
+
             }
         }, 2900);
 
+    }
 
+    protected boolean isOnline() {
+        ConnectivityManager cm = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        if (netInfo != null && netInfo.isConnectedOrConnecting()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

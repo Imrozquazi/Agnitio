@@ -93,12 +93,11 @@ public class CodeRelay_CSE extends AppCompatActivity {
                 public void onDataChange(DataSnapshot dataSnapshot) {
 
                     try {
-                        if (count != 0){
+
                         Toast.makeText(getApplicationContext(), "in data", Toast.LENGTH_LONG).show();
                         String email = dataSnapshot.child("Email").getValue().toString();
                         Toast.makeText(getApplicationContext(), "Already Registered with this " + email + "email", Toast.LENGTH_LONG).show();
-                        count++;
-                        }
+
                     }
                     catch (Exception e)
                     {

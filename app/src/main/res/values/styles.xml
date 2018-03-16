@@ -6,7 +6,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-       <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+
+   <!--    <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item> -->
         <!-- Add this line -->
 
 
@@ -20,6 +21,7 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
+    <!--
 
     <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
         
@@ -29,6 +31,7 @@
         <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
     </style>
 
+-->
 
 
 
