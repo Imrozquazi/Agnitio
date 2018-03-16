@@ -15,6 +15,7 @@ import android.widget.ViewSwitcher;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
 
 import it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow;
 
@@ -90,19 +91,19 @@ public class CIVIL_EVENTS_MAIN extends AppCompatActivity {
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     if (position == 0)
                     {
-                        Intent in = new Intent(getApplicationContext(),CodeRelay_CSE.class);
+                        Intent in = new Intent(getApplicationContext(),Smarmony.class);
                         startActivity(in);
 
                     }
                     if(position == 1)
                     {
-                        Intent in = new Intent(getApplicationContext(),C_Ladder_CSE.class);
+                        Intent in = new Intent(getApplicationContext(),CartoFest.class);
                         startActivity(in);
                     }
 
                     if(position == 2)
                     {
-                        Intent in = new Intent(getApplicationContext(),Trivia.class);
+                        Intent in = new Intent(getApplicationContext(),Levelling_Master.class);
                         startActivity(in);
                     }
 

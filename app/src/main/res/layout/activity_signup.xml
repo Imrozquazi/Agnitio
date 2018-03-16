@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="example.imrozquazi.cover_flow.Signup"
     android:id="@+id/signup_layout"
-    android:background="@color/back">
+    android:background="@drawable/backgroundfinal">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -24,7 +24,7 @@
         android:layout_width="250dp"
         android:layout_height="50dp"
 
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/edittextcorners"
         android:drawableLeft="@drawable/ic_person_black_24dp"
 
