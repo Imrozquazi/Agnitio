@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="example.imrozquazi.cover_flow.Signup"
-    android:background="@drawable/android_color_gradient_list"
-    android:id="@+id/signup_layout" >
+    android:id="@+id/signup_layout"
+    android:background="@color/back">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -17,14 +17,27 @@
     android:orientation="vertical"
     android:layout_gravity="center"
      >
-
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view_cse"
+        android:layout_width="220dp"
+        android:layout_height="180dp"
+        app:lottie_loop="true"
+        android:layout_marginTop="200dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="ac_success.json" />
 
     <AutoCompleteTextView
         android:id="@+id/UserName"
         android:layout_width="250dp"
         android:layout_height="50dp"
 
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/edittextcorners"
         android:drawableLeft="@drawable/ic_person_black_24dp"
 
@@ -89,13 +102,14 @@
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/buttoncorners"
-        android:drawableRight="@drawable/ic_login"
+
 
         android:gravity="center"
-        android:hint="SIGNUP"
+        android:text="SIGNUP"
+
         android:paddingLeft="80dp"
         android:paddingRight="80dp"
-        android:textColor="#fff"
+        android:textColor="@color/back"
         android:textSize="18dp"
         android:textStyle="bold" />
 
@@ -108,8 +122,9 @@
         android:gravity="center"
         android:text="Already Signed Up...??..Click Here"
         android:textStyle="bold"
-        android:textColor="#fff"
+        android:textColor="@color/back"
         android:clickable="true"
+
         android:onClick="login"
 
         />

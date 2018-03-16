@@ -41,10 +41,7 @@ public class Signup extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
 
         RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.signup_layout);
-        AnimationDrawable animationDrawable = (AnimationDrawable) relativeLayout.getBackground();
-        animationDrawable.setEnterFadeDuration(1000);
-        animationDrawable.setExitFadeDuration(2000);
-        animationDrawable.start();
+
 
         //progressbar
         mProSignUp=new ProgressDialog(this);

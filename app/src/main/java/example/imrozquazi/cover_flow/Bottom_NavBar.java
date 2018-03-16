@@ -44,13 +44,13 @@ public class Bottom_NavBar extends AppCompatActivity {
                     ft1.commit();
                     return true;
 
-                case R.id.navigation_dashboard:
+               /* case R.id.navigation_dashboard:
                    // mTextMessage.setText(R.string.title_dashboard);
                     fragment_home frag2 = new fragment_home();
                     FragmentTransaction ft2 = getSupportFragmentManager().beginTransaction();
                     ft2.replace(R.id.fram,frag2);
                     ft2.commit();
-                    return true;
+                    return true;*/
 
                 case R.id.navigation_notifications:
                    // mTextMessage.setText  ("Profile");
@@ -85,6 +85,10 @@ public class Bottom_NavBar extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottom__nav_bar);
+
+
+        //getActionBar().setDisplayShowHomeEnabled(false);  // hides action bar icon
+        //getActionBar().setDisplayShowTitleEnabled(false); // hides action bar title
 
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);

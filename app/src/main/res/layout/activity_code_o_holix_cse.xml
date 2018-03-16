@@ -197,6 +197,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
+                        android:textColor="@color/back"
                         android:gravity="left"
                         android:text="Members will have to write program in as many programming language as possible the members will be switched after particular interval"></TextView>
 
