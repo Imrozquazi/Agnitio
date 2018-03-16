@@ -81,7 +81,8 @@
         <activity android:name=".Beg_Borrow_Steal" />
         <activity android:name=".Image_Makeover" />
         <activity android:name=".Murder_Mystery" />
-        <activity android:name=".Element_Sorting"></activity>
+        <activity android:name=".Element_Sorting" />
+        <activity android:name=".forgotpassword"></activity>
     </application>
 
 </manifest>
