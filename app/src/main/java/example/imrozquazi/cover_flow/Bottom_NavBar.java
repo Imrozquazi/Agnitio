@@ -61,12 +61,6 @@ public class Bottom_NavBar extends AppCompatActivity {
                     return true;
 
                 case R.id.navigation_Logout:
-                   // mTextMessage.setText("Logout");
-                    /*
-                    fragment_home frag4 = new fragment_home();
-                    FragmentTransaction ft4 = getSupportFragmentManager().beginTransaction();
-                    ft4.replace(R.id.fram,frag4);
-                    ft4.commit();*/
 
                     mAuth.signOut();
                     finish();
