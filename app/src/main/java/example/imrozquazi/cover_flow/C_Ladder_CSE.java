@@ -1,5 +1,6 @@
 package example.imrozquazi.cover_flow;
 
+import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -57,6 +58,9 @@ public class C_Ladder_CSE extends AppCompatActivity {
 
             }
         });
+
+        StrictMode.ThreadPolicy policy=new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
     }
 
 

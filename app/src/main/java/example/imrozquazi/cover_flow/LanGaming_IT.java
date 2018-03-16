@@ -1,5 +1,6 @@
 package example.imrozquazi.cover_flow;
 
+import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -30,6 +31,7 @@ import java.util.Map;
 public class LanGaming_IT extends AppCompatActivity {
 
     private Button mbtn;
+    private int count=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,9 +52,13 @@ public class LanGaming_IT extends AppCompatActivity {
         mbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(getApplication(),"Clicked",Toast.LENGTH_SHORT).show();
                 Datacheck();
             }
         });
+
+        StrictMode.ThreadPolicy policy=new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
     }
 
 
@@ -62,7 +68,7 @@ public class LanGaming_IT extends AppCompatActivity {
         FirebaseUser user= FirebaseAuth.getInstance().getCurrentUser();
         String email=user.getEmail();
         String uid=user.getUid();
-        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("IT").child("Codinngo").child(uid);
+        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("IT").child("Lan-Gaming").child(uid);
 
 
         dr.addValueEventListener(new ValueEventListener() {
@@ -70,15 +76,18 @@ public class LanGaming_IT extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
 
                 try {
-                    Toast.makeText(getApplicationContext(), "in data", Toast.LENGTH_LONG).show();
-                    String email = dataSnapshot.child("Email").getValue().toString();
-                    Toast.makeText(getApplicationContext(), "Already Registered with this " + email , Toast.LENGTH_LONG).show();
+                    if(count==0)
+                    {
+                        //Toast.makeText(getApplicationContext(), "in data", Toast.LENGTH_LONG).show();
+                        String email = dataSnapshot.child("Email").getValue().toString();
+                        Toast.makeText(getApplicationContext(), "Already Registered with this " + email , Toast.LENGTH_LONG).show();
+                        count++;
+                    }
                 }
                 catch (Exception e)
                 {
-                    Toast.makeText(getApplicationContext(),"in catch ",Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(),"in catch ",Toast.LENGTH_LONG).show();
                     DataEntry();
-
                 }
             }
 
@@ -99,7 +108,7 @@ public class LanGaming_IT extends AppCompatActivity {
         //Toast.makeText(getApplicationContext(),""+email,Toast.LENGTH_LONG).show();
 
 
-        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("IT").child("Codinngo").child(uid);
+        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("IT").child("Lan-Gaming").child(uid);
 
         Map<String, String> data=new HashMap<String,String>();
         data.put("Email",email);
@@ -127,7 +136,7 @@ public class LanGaming_IT extends AppCompatActivity {
         try {
             // Construct data
             String apiKey = "apikey=" + "4iQet9zS7N0-8BOlNJ7oGBJzPBA2yesfVrpXDE1K1y";
-            String message = "&message=" + "Greetings from team TechFest, Thank you for registering in CODINGGO" + StudentInfo.getname()+ ".";
+            String message = "&message=" + "Greetings from team TechFest, Thank you for registering in Lan-Gaming" + StudentInfo.getname()+ ".";
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
             String numbers = "&numbers=" + StudentInfo.getContact();
 

@@ -83,12 +83,12 @@ public class Signup extends AppCompatActivity {
         con=mContact.getText().toString();
         pass=mPass.getText().toString();
 
+
         //make a map to add it to database
         final Map<String,String> datamap=new HashMap<String, String>();
         datamap.put("Name",name);
         datamap.put("Email",email);
         datamap.put("Contact",con);
-        
 
 
         mAuth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {

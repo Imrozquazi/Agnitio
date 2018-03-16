@@ -1,6 +1,7 @@
 package example.imrozquazi.cover_flow;
 
 import android.app.Dialog;
+import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -68,6 +69,9 @@ public class Auto_CAD_Desgin extends AppCompatActivity {
 
             }
         });
+
+        StrictMode.ThreadPolicy policy=new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
     }
 
 
