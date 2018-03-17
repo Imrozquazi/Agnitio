@@ -2,6 +2,7 @@ package example.imrozquazi.cover_flow;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -118,10 +119,16 @@ public class CSE_EVENTS_MAIN extends AppCompatActivity {
 
         Animation a = AnimationUtils.loadAnimation(this, R.anim.textanim);
         a.reset();
-        TextView tv = (TextView) findViewById(R.id.txtanim);
-        tv.setTextColor(Color.BLACK);
-        tv.clearAnimation();
-        tv.startAnimation(a);
+
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+
+
+            TextView tv = (TextView) findViewById(R.id.txtanim);
+            tv.setTextColor(Color.BLACK);
+            tv.clearAnimation();
+            tv.startAnimation(a);
+
+        }
 
     }
 

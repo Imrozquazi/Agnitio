@@ -5,9 +5,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.animation.Animation;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -55,12 +57,17 @@ public class Intro extends AppCompatActivity {
 
 
                     Toast.makeText(getApplicationContext(),"Make sure you are connected to INTERNET !!!",Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(Intro.this, WelcomeActivity.class);
-                    startActivity(i);
-                    finish();
-
-
-
+                    if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                        Intent i = new Intent(Intro.this, WelcomeActivity.class);
+                        startActivity(i);
+                        finish();
+                    }
+                    else
+                    {
+                        Intent i = new Intent(Intro.this, Login.class);
+                        startActivity(i);
+                        finish();
+                    }
             }
         }, 2900);
 

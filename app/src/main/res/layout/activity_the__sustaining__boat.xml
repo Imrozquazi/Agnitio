@@ -420,13 +420,13 @@ ENTRY FEE :50/-"
 
 
             <Button
-                android:id="@+id/button_event_4_cse"
+                android:id="@+id/button_the_sustaining_boat"
                 android:layout_marginTop="30dp"
                 android:layout_width="120dp"
                 android:layout_marginBottom="50dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center_horizontal"
-                android:text="Book Event 4"
+                android:text="Book"
                 android:background="@drawable/btnbg"
                 android:focusable="true"
                 android:clickable="true"

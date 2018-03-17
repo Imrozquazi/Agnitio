@@ -40,7 +40,7 @@ public class Levelling_Master extends AppCompatActivity {
 
         mAuth=FirebaseAuth.getInstance();
 
-        mbook = (Button)findViewById(R.id.button_cartofest);
+        mbook = (Button)findViewById(R.id.button_levelling);
 
         mbook.setOnClickListener(new View.OnClickListener() {
             @Override

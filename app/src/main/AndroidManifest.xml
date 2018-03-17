@@ -73,15 +73,15 @@
         <activity android:name=".Water_rocket" />
         <activity android:name=".AquaBoat" />
         <activity android:name=".Tech_Talk" />
+        <activity android:name=".The_Sustaining_Boat" />
         <activity android:name=".General_Event_Main" />
-        <activity android:name=".General_Event_1" />
-        <activity android:name=".General_Event_Adapter" />
         <activity android:name=".Fun_Event_Main" />
         <activity android:name=".Project_Competition" />
         <activity android:name=".Beg_Borrow_Steal" />
         <activity android:name=".Image_Makeover" />
         <activity android:name=".Murder_Mystery" />
         <activity android:name=".Element_Sorting" />
+        <activity android:name=".The_Quiz"/>
         <activity android:name=".forgotpassword"></activity>
     </application>
 

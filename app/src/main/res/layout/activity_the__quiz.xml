@@ -390,7 +390,7 @@ ENTRY FEE : 50/-"
 
 
             <Button
-                android:id="@+id/button_lathe_war"
+                android:id="@+id/button_quiz"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="40dp"
                 android:layout_width="120dp"
