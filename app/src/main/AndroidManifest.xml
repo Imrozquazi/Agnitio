@@ -82,13 +82,7 @@
         <activity android:name=".Image_Makeover" />
         <activity android:name=".Murder_Mystery" />
         <activity android:name=".Element_Sorting" />
-        <activity android:name=".The_One" />
-        <activity android:name=".Master_vs_Slave_robot" />
-        <activity android:name=".Introduction_to_robotics" />
-        <activity android:name=".Project_Competiton" />
-        <activity android:name=".The_Sustaining_Boat" />
-        <activity android:name=".Innovators_Competition" />
-        <activity android:name=".The_Quiz"></activity>
+        <activity android:name=".forgotpassword"></activity>
     </application>
 
 </manifest>
