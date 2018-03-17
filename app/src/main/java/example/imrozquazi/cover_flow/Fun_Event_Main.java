@@ -93,7 +93,7 @@ public class Fun_Event_Main extends AppCompatActivity {
                 }
                 if(position == 1)
                 {
-                    Intent in = new Intent(getApplicationContext(),Image_Makeover.class);
+                    Intent in = new Intent(getApplicationContext(),Trivia.class);
                     startActivity(in);
                 }
 
@@ -104,9 +104,20 @@ public class Fun_Event_Main extends AppCompatActivity {
                 }
                 if(position == 3)
                 {
+                    Intent in = new Intent(getApplicationContext(),LanGaming_IT.class);
+                    startActivity(in);
+                }
+                if(position == 4)
+                {
                     Intent in = new Intent(getApplicationContext(),Element_Sorting.class);
                     startActivity(in);
                 }
+                if(position == 5)
+                {
+                    Intent in = new Intent(getApplicationContext(),Image_Makeover.class);
+                    startActivity(in);
+                }
+
 
             }
         });
@@ -125,9 +136,11 @@ public class Fun_Event_Main extends AppCompatActivity {
 
 
         FunEvent1List.add(new Fun_Event_1("Beg Borrow Steal","https://www.internationalstudentinsurance.com/blog/wp-content/uploads/2014/07/487540655-Converted.png"));
-        FunEvent1List.add(new Fun_Event_1("Image MakeOver","http://anurag.edu.in/wp-content/uploads/2012/quiz.jpg"));
+        FunEvent1List.add(new Fun_Event_1("Trivia","http://anurag.edu.in/wp-content/uploads/2012/quiz.jpg"));
         FunEvent1List.add(new Fun_Event_1("Murder Mystery","https://res.cloudinary.com/teepublic/image/private/s--91AeMXfq--/t_Preview/b_rgb:262c3a,c_limit,f_auto,h_313,q_90,w_313/v1496756374/production/designs/1649485_1"));
+        FunEvent1List.add(new Fun_Event_1("LAN Gaming","https://steemit-production-imageproxy-thumbnail.s3.amazonaws.com/U5dtqWmtAa9ULiANacbyj9nNCj1Da3k_1680x8400"));
         FunEvent1List.add(new Fun_Event_1("Element Sorting","https://bookboon.com/thumbnail/720/47f230d1-2d56-4cb9-9d04-a0f600b34b87/495eed07-fa5c-40b4-9667-a5d400e1a9ca/c-1-introduction-to-programming-and-the-c-language.jpg"));
+        FunEvent1List.add(new Fun_Event_1("Image Makeover","https://bookboon.com/thumbnail/720/47f230d1-2d56-4cb9-9d04-a0f600b34b87/495eed07-fa5c-40b4-9667-a5d400e1a9ca/c-1-introduction-to-programming-and-the-c-language.jpg"));
 
 
     }

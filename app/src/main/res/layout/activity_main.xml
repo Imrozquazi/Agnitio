@@ -22,7 +22,6 @@
         app:rotationThreshold="0.6"
         app:scalingThreshold="1.0"
         app:spacing="1.0"
-
         tools:ignore="OnClick">
 
 
@@ -36,8 +35,5 @@
         android:layout_marginTop="10dp"
         android:layout_alignParentBottom="true"
         android:layout_centerVertical="true">
-
-
-
     </TextSwitcher>
 </RelativeLayout>

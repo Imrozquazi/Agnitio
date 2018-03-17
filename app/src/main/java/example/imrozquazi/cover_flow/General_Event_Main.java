@@ -86,36 +86,42 @@ public class General_Event_Main extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0)
                 {
-                    Intent in = new Intent(getApplicationContext(),CodeRelay_CSE.class);
+                    Intent in = new Intent(getApplicationContext(),Democracy.class);
                     startActivity(in);
 
                 }
                 if(position == 1)
                 {
-                    Intent in = new Intent(getApplicationContext(),C_Ladder_CSE.class);
+                    Intent in = new Intent(getApplicationContext(),The_One.class);
                     startActivity(in);
                 }
 
                 if(position == 2)
                 {
-                    Intent in = new Intent(getApplicationContext(),C_Ladder_CSE.class);
+                    Intent in = new Intent(getApplicationContext(),Master_vs_Slave_robot.class);
                     startActivity(in);
                 }
                 if(position == 3)
                 {
-                    Intent in = new Intent(getApplicationContext(),C_Ladder_CSE.class);
+                    Intent in = new Intent(getApplicationContext(),Project_Competition.class);
                     startActivity(in);
                 }
                 if(position == 4)
                 {
-                    Intent in = new Intent(getApplicationContext(),C_Ladder_CSE.class);
+                    Intent in = new Intent(getApplicationContext(),Introduction_to_robotics.class);
                     startActivity(in);
                 }
                 if(position == 5)
                 {
-                    Intent in = new Intent(getApplicationContext(),C_Ladder_CSE.class);
+                    Intent in = new Intent(getApplicationContext(),Innovators_Competition.class);
                     startActivity(in);
                 }
+                if(position == 6)
+                {
+                    Intent in = new Intent(getApplicationContext(),The_Quiz.class);
+                    startActivity(in);
+                }
+
             }
         });
 
@@ -132,12 +138,13 @@ public class General_Event_Main extends AppCompatActivity {
     {
 
 
-        GeneralEvent1List.add(new General_Event_1("Paper Presentation","https://www.internationalstudentinsurance.com/blog/wp-content/uploads/2014/07/487540655-Converted.png"));
-        GeneralEvent1List.add(new General_Event_1("Quiz","http://anurag.edu.in/wp-content/uploads/2012/quiz.jpg"));
-        GeneralEvent1List.add(new General_Event_1("WorkShop","https://res.cloudinary.com/teepublic/image/private/s--91AeMXfq--/t_Preview/b_rgb:262c3a,c_limit,f_auto,h_313,q_90,w_313/v1496756374/production/designs/1649485_1"));
-        GeneralEvent1List.add(new General_Event_1("Democracy","https://bookboon.com/thumbnail/720/47f230d1-2d56-4cb9-9d04-a0f600b34b87/495eed07-fa5c-40b4-9667-a5d400e1a9ca/c-1-introduction-to-programming-and-the-c-language.jpg"));
-        GeneralEvent1List.add(new General_Event_1("The One","https://bookboon.com/thumbnail/720/47f230d1-2d56-4cb9-9d04-a0f600b34b87/495eed07-fa5c-40b4-9667-a5d400e1a9ca/c-1-introduction-to-programming-and-the-c-language.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Democracy","https://www.internationalstudentinsurance.com/blog/wp-content/uploads/2014/07/487540655-Converted.png"));
+        GeneralEvent1List.add(new General_Event_1("The One","http://anurag.edu.in/wp-content/uploads/2012/quiz.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Master Robot vs Slave Robot","https://res.cloudinary.com/teepublic/image/private/s--91AeMXfq--/t_Preview/b_rgb:262c3a,c_limit,f_auto,h_313,q_90,w_313/v1496756374/production/designs/1649485_1"));
         GeneralEvent1List.add(new General_Event_1("Project Competition","https://bookboon.com/thumbnail/720/47f230d1-2d56-4cb9-9d04-a0f600b34b87/495eed07-fa5c-40b4-9667-a5d400e1a9ca/c-1-introduction-to-programming-and-the-c-language.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Introduction To Robotics","https://bookboon.com/thumbnail/720/47f230d1-2d56-4cb9-9d04-a0f600b34b87/495eed07-fa5c-40b4-9667-a5d400e1a9ca/c-1-introduction-to-programming-and-the-c-language.jpg"));
+        GeneralEvent1List.add(new General_Event_1("Innovators Competition","https://bookboon.com/thumbnail/720/47f230d1-2d56-4cb9-9d04-a0f600b34b87/495eed07-fa5c-40b4-9667-a5d400e1a9ca/c-1-introduction-to-programming-and-the-c-language.jpg"));
+        GeneralEvent1List.add(new General_Event_1("The Quiz","https://bookboon.com/thumbnail/720/47f230d1-2d56-4cb9-9d04-a0f600b34b87/495eed07-fa5c-40b4-9667-a5d400e1a9ca/c-1-introduction-to-programming-and-the-c-language.jpg"));
 
     }
 

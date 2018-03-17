@@ -59,20 +59,7 @@
 
     </TextSwitcher>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:onClick="Circlemenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="340dp"
-        android:clickable="true"
-        app:srcCompat="@drawable/shape"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="21dp"
-        android:layout_marginRight="20dp"
-        android:paddingRight="8dp"
-        android:focusable="true"/>
+
 
 
 </RelativeLayout>

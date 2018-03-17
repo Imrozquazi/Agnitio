@@ -212,6 +212,78 @@
 
             </android.support.v7.widget.CardView>
 
+            <android.support.v7.widget.CardView
+
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TEAM MEMBERS: SINGLE OR GROUP OF 2
+ENTRY FEE: 50/-"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:textColor="@color/back"
+                        android:fontFamily="sans-serif"
+                        android:textSize="20dp"
+                        android:layout_gravity="center"
+                        />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <android.support.v7.widget.CardView
+
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:textColor="@color/back"
+                        android:fontFamily="sans-serif"
+                        android:textSize="30dp"
+                        android:layout_gravity="center"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/back"
+                        ></View>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/phoneNumber"
+                        android:autoLink="phone"
+                        android:textColor="@color/back"
+                        android:layout_gravity="center"
+                        android:linksClickable="true"
+                        android:text="Head: Abhishek Nilekar +918007300505
+ Co-head: Vallabh Patil +919561864259"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
             <Button
                 android:id="@+id/button_event_1_IT"
                 android:layout_width="120dp"

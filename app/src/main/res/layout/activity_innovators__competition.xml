@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="example.imrozquazi.cover_flow.CartoFest"
+    tools:context="example.imrozquazi.cover_flow.Innovators_Competition"
     android:orientation="vertical"
     android:background="@color/back">
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,7 +29,7 @@
 
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/c1_Civil"
+                    android:id="@+id/c1_ECT"
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
@@ -58,10 +59,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="JNEC CAMPUS"
+
                             android:textColor="@color/back"
                             android:textSize="20dp"
                             android:textStyle="bold"
-
                             android:layout_marginTop="9dp"
                             android:layout_marginLeft="5dp"
                             android:layout_below="@+id/imageView"
@@ -73,7 +74,7 @@
 
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/c2_Civil"
+                    android:id="@+id/c5_ECT"
 
                     android:layout_width="150dp"
                     android:layout_height="100dp"
@@ -129,7 +130,7 @@
 
 
             <android.support.v7.widget.CardView
-                android:id="@+id/c3_Civil"
+                android:id="@+id/c2_cse"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -142,7 +143,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Event Discription"
+                        android:text="Description"
                         android:textColor="@color/back"
                         android:textStyle="bold"
                         android:padding="5dp"
@@ -160,10 +161,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
-                        android:gravity="left"
                         android:textColor="@color/back"
                         android:fontFamily="sans-serif"
-                        android:text="In this event , Dr. Suddhasheel Gosh will give an overview of surveying practices through a 45-60 min lecture. This would be followed by the training session conducted by the students who have gained excellence in collecting and mapping with data ,on the use of GIS software(45-60 min).This training will provide an overview regarding the various type of mapping layers, and their associated symbologies. Consequently the participants of the competition shall compete to prepare a “MAP” of the MGM JNEC lawn, using the data collected by the students"></TextView>
+                        android:text="Industries of the sector should be contacted for providing
+a real time industrial problem.
+Student teams would be allowed to select any one
+problem, two days’ time would be given to students
+wherein they would try to tackle this problem.
+Experts from the same industries would be requested for
+judging"></TextView>
 
 
 
@@ -173,51 +179,6 @@
 
 
             </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/c4_Civil"
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                app:cardCornerRadius="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Prices"
-                        android:textColor="@color/back"
-                        android:textStyle="bold"
-                        android:padding="5dp"
-                        android:fontFamily="sans-serif"
-                        android:textSize="30dp"
-                        android:layout_gravity="center"
-                        />
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="@color/back"
-                        ></View>
-                    <TextView
-                        android:padding="15dp"
-                        android:fontFamily="sans-serif"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="18dp"
-                        android:textColor="@color/back"
-                        android:text="The best map, complete with all annotations and symbology standards ,shall be awarded based on their aesthetics and meaningfulness .(THREE PRIZES)"></TextView>
-
-
-
-                </LinearLayout>
-
-
-            </android.support.v7.widget.CardView>
-
 
             <android.support.v7.widget.CardView
 
@@ -233,7 +194,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ENTRY FEE :200/-"
+                        android:text="TEAM MEMBERS : 2
+ENTRY FEE : 50/-"
                         android:textStyle="bold"
                         android:padding="5dp"
                         android:textColor="@color/back"
@@ -284,8 +246,8 @@
                         android:textColor="@color/back"
                         android:layout_gravity="center"
                         android:linksClickable="true"
-                        android:text="Head: Pradipkumar Doifode +917774946939
-Co-head: Snehal Panchakshari +919404431956"/>
+                        android:text="Head : Tejal Devkule +919404133044
+  "/>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
@@ -293,12 +255,8 @@ Co-head: Snehal Panchakshari +919404431956"/>
 
 
 
-
-
-
-
             <Button
-                android:id="@+id/button_cartofest"
+                android:id="@+id/button_lathe_war"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="40dp"
                 android:layout_width="120dp"
@@ -315,9 +273,8 @@ Co-head: Snehal Panchakshari +919404431956"/>
 
 
 
-    </ScrollView>/
+    </ScrollView>
 
 
 
-
-</LinearLayout>
+</>
