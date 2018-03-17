@@ -119,7 +119,7 @@ public class CodeHolix_CSE extends AppCompatActivity {
                 }
                 else
                 {
-                    Toast.makeText(getApplicationContext(),"Error ",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Error ",Toast.LENGTH_LONG).show();
                 }
             }
         });

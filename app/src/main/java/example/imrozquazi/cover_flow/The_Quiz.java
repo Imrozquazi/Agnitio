@@ -2,6 +2,7 @@ package example.imrozquazi.cover_flow;
 
 import android.app.Dialog;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -121,7 +122,19 @@ public class The_Quiz extends AppCompatActivity {
                 if(task.isSuccessful())
                 {
                     Toast.makeText(getApplicationContext(), "Registered ", Toast.LENGTH_SHORT).show();
+
                     smsApiCall();
+
+                    String email=StudentInfo.getEmail();
+                    String subject="Greetings from JNEC-SWAYAMBHU";
+                    String message="Thank you "+ StudentInfo.getname()+" for registering in The Quiz. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
+
+                    //Toast.makeText(getApplicationContext(),email+" ",Toast.LENGTH_LONG).show();
+
+                    SendMail sm = new SendMail(The_Quiz.this, email, subject, message);
+
+                    //Executing sendmail to send email
+                    sm.execute();
                 }
                 else
                 {
@@ -138,7 +151,7 @@ public class The_Quiz extends AppCompatActivity {
         try {
             // Construct data
             String apiKey = "apikey=" + "4iQet9zS7N0-8BOlNJ7oGBJzPBA2yesfVrpXDE1K1y";
-            String message = "&message=" + "Greetings from team TechFest, Thank you for registering in Smarmony" + StudentInfo.getname()+ ".";
+            String message = "&message=" + "Thank you "+ StudentInfo.getname()+" for registering in The Quiz. Kindly show this message/email on payment desk to confirm your booking.";
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
             String numbers = "&numbers=" + StudentInfo.getContact();
 
@@ -157,7 +170,7 @@ public class The_Quiz extends AppCompatActivity {
             String line;
             while ((line = rd.readLine()) != null) {
                 //stringBuffer.append(line);
-                Toast.makeText(getApplicationContext(),"The Message is: "+line,Toast.LENGTH_LONG).show();
+               // Toast.makeText(getApplicationContext(),"The Message is: "+line,Toast.LENGTH_LONG).show();
 
             }
 
