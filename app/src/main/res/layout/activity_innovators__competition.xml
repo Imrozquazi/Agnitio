@@ -261,6 +261,7 @@ ENTRY FEE : 50/-"
                 android:layout_marginBottom="40dp"
                 android:layout_width="120dp"
                 android:layout_height="70dp"
+
                 android:layout_gravity="center_horizontal"
                 android:text="Book Event 4"
                 android:background="@drawable/btnbg"
