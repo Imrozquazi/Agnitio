@@ -335,13 +335,14 @@ Co-head : Aarti Bhavar +919067425469"></TextView>
                 android:id="@+id/button_techhunt"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="40dp"
-                android:layout_width="120dp"
-                android:layout_height="70dp"
+                android:textColor="@color/back"
                 android:layout_gravity="center_horizontal"
-                android:text="Book Event 4"
-                android:background="@drawable/btnbg"
                 android:focusable="true"
                 android:clickable="true"
+                android:text="Book"
+                android:layout_height="50dp"
+                android:layout_width="180dp"
+                android:background="@drawable/buttoncorners"
                 />
 
         </LinearLayout>

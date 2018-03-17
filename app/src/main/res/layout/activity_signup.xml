@@ -29,6 +29,7 @@
         android:drawableLeft="@drawable/ic_person_black_24dp"
 
         android:hint="   Username"
+        android:paddingRight="15dp"
 
         android:paddingLeft="15dp" />
 
@@ -38,6 +39,7 @@
             android:layout_width="250dp"
             android:layout_height="50dp"
             android:layout_marginTop="15dp"
+            android:paddingRight="15dp"
 
             android:background="@drawable/edittextcorners"
             android:drawableLeft="@drawable/ic_email_black_24dp"
@@ -68,6 +70,7 @@
         android:drawableLeft="@drawable/ic_email_black_24dp"
         android:gravity="center_vertical"
         android:hint="   Email"
+        android:paddingRight="15dp"
 
         android:paddingLeft="15dp" />
 
@@ -80,6 +83,7 @@
         android:drawableLeft="@drawable/ic_password"
         android:gravity="center_vertical"
         android:hint="   Password"
+        android:paddingRight="15dp"
         android:inputType="textPassword"
 
         android:paddingLeft="15dp" />

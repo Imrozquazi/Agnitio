@@ -25,7 +25,7 @@
         android:id="@+id/coverflow_ECT"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:elevation="2dp"
+        android:elevation="0dp"
         android:longClickable="true"
 
         app:reflectionOpacity="@android:integer/config_mediumAnimTime"
@@ -36,7 +36,6 @@
         app:rotationThreshold="0.4"
         app:scalingThreshold="1.0"
         app:spacing="0.6"
-
         tools:ignore="OnClick">
 
 

@@ -19,13 +19,41 @@
             android:layout_margin="25dp"
 
             android:orientation="vertical">
+            <android.support.v7.widget.CardView
+
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardElevation="25dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/white">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ABHIVYAKTI"
+                        android:textStyle="bold"
+                        android:layout_gravity="center|center_horizontal"
+                        android:padding="5dp"
+                        android:textColor="@color/back"
+                        android:fontFamily="monospace"
+                        android:textSize="30dp"
+
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
 
 
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
 
 
                 <android.support.v7.widget.CardView
@@ -323,13 +351,14 @@ Co-head: Swapnil Bhiungade +918237602343"/>
                 android:id="@+id/button_event_2_it"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="40dp"
-                android:layout_width="120dp"
-                android:layout_height="70dp"
+                android:textColor="@color/back"
                 android:layout_gravity="center_horizontal"
-                android:text="Book Event 2"
-                android:background="@drawable/btnbg"
                 android:focusable="true"
                 android:clickable="true"
+                android:text="Book"
+                android:layout_height="50dp"
+                android:layout_width="180dp"
+                android:background="@drawable/buttoncorners"
                 />
 
         </LinearLayout>
