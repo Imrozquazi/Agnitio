@@ -31,6 +31,7 @@ import java.util.Map;
 public class C_Ladder_CSE extends AppCompatActivity {
 
     private Button mbtn;
+    int count = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,13 +78,16 @@ public class C_Ladder_CSE extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
 
                 try {
-                    Toast.makeText(getApplicationContext(), "in data", Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(), "in data", Toast.LENGTH_LONG).show();
                     String email = dataSnapshot.child("Email").getValue().toString();
-                    Toast.makeText(getApplicationContext(), "Already Registered with this " + email , Toast.LENGTH_LONG).show();
+                    if(count >= 1) {
+                        Toast.makeText(getApplicationContext(), "Already Registered with this " + email, Toast.LENGTH_LONG).show();
+                    }
+                    count++;
                 }
                 catch (Exception e)
                 {
-                    Toast.makeText(getApplicationContext(),"in catch ",Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(),"in catch ",Toast.LENGTH_LONG).show();
                     DataEntry();
                 }
             }
@@ -119,6 +123,17 @@ public class C_Ladder_CSE extends AppCompatActivity {
                 {
                     Toast.makeText(getApplicationContext(), "Registered ", Toast.LENGTH_SHORT).show();
                     smsApiCall();
+
+                    String email=StudentInfo.getEmail();
+                    String subject="Greetings from JNEC-SWAYAMBHU";
+                    String message="Thank you "+ StudentInfo.getname()+" for registering in C LADDER. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
+
+                    //Toast.makeText(getApplicationContext(),email+" ",Toast.LENGTH_LONG).show();
+
+                    SendMail sm = new SendMail(C_Ladder_CSE.this, email, subject, message);
+
+                    //Executing sendmail to send email
+                    sm.execute();
                 }
                 else
                 {
@@ -134,7 +149,7 @@ public class C_Ladder_CSE extends AppCompatActivity {
         try {
             // Construct data
             String apiKey = "apikey=" + "4iQet9zS7N0-8BOlNJ7oGBJzPBA2yesfVrpXDE1K1y";
-            String message = "&message=" + "Greetings from team TechFest, Thank you for registering in C-Ladder " + StudentInfo.getname()+ ".";
+            String message = "&message=" + "Thank you "+ StudentInfo.getname()+" for registering in C LADDER. Kindly show this message/email on payment desk to confirm your booking.";
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
             String numbers = "&numbers=" + StudentInfo.getContact();
 
@@ -153,7 +168,7 @@ public class C_Ladder_CSE extends AppCompatActivity {
             String line;
             while ((line = rd.readLine()) != null) {
                 //stringBuffer.append(line);
-                Toast.makeText(getApplicationContext(),"The Message is: "+line,Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(),"The Message is: "+line,Toast.LENGTH_LONG).show();
             }
 
             rd.close();

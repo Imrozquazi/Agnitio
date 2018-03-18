@@ -171,6 +171,7 @@
                     android:text="SHORT FILM MAKING COMPETITION​"
                     android:layout_gravity="center"
                     android:textColor="#01579B"
+                    android:padding="15dp"
                     android:textSize="18dp"
                     android:fontFamily="sans-serif"
                     android:textStyle="bold"
@@ -220,7 +221,7 @@
                     android:textSize="18dp"
                     android:padding="15dp"
                     android:fontFamily="sans-serif"
-                    android:textStyle="bold"
+
                     android:textColor="#01579B"
                     android:gravity="left"
                     android:justificationMode="inter_word"
@@ -265,7 +266,7 @@
                     android:textSize="18dp"
                     android:padding="15dp"
                     android:fontFamily="sans-serif"
-                    android:textStyle="bold"
+
                     android:justificationMode="inter_word"
                     android:text="Title of the film will be unique for each entry.\nThere won’t be any kind of redundancy.\nIt should represent idea behind film.\nIt must not be objectionable and the same rule rigidly applied for the content of the film.\nEach movie will be bound to time."></TextView>
 
@@ -288,10 +289,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TEAM MEMBERS: SINGLE OR GROUP OF 4
+                        android:text="TEAM MEMBERS: SINGLE OR GROUP OF 4\n\n
 ENTRY FEE: 50/-"
                         android:textStyle="bold"
-                        android:padding="5dp"
+                        android:padding="15dp"
                         android:textColor="@color/back"
                         android:fontFamily="sans-serif"
                         android:textSize="20dp"
@@ -340,8 +341,9 @@ ENTRY FEE: 50/-"
                         android:textColor="@color/back"
                         android:layout_gravity="center"
                         android:linksClickable="true"
-                        android:text="Head: Madhuri Rudrawar +919637744217
-Co-head: Swapnil Bhiungade +918237602343"/>
+                        android:padding="15dp"
+                        android:text="Head: \nMadhuri Rudrawar +919637744217\n\n
+Co-head:\n Swapnil Bhiungade +918237602343"/>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
@@ -360,6 +362,7 @@ Co-head: Swapnil Bhiungade +918237602343"/>
                 android:layout_width="180dp"
                 android:background="@drawable/buttoncorners"
                 />
+
 
         </LinearLayout>
 
