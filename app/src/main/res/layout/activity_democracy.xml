@@ -19,12 +19,44 @@
 
             android:orientation="vertical">
 
+            <android.support.v7.widget.CardView
+
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardElevation="25dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/white">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DEMOCRACY"
+                        android:textStyle="bold"
+
+                        android:layout_gravity="center|center_horizontal"
+                        android:padding="5dp"
+                        android:textColor="@color/back"
+                        android:fontFamily="monospace"
+                        android:textSize="30dp"
+
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+
 
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
 
 
                 <android.support.v7.widget.CardView
@@ -96,7 +128,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="31 March 2018"
+                            android:text="30 March 2018"
                             android:textColor="@color/back"
                             android:textSize="20dp"
                             android:textStyle="bold"
@@ -232,14 +264,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="SESSIONS: 1hr 30min- 6 sessions.\n
+                        android:text="SESSIONS:\n1hr 30min- 6 sessions.\n
 ENTRY FEE: 50/-"
                         android:textStyle="bold"
-                        android:padding="5dp"
+                        android:padding="15dp"
                         android:textColor="@color/back"
                         android:fontFamily="sans-serif"
                         android:textSize="20dp"
-                        android:layout_gravity="center"
+                        android:layout_gravity="left"
                         />
 
 
@@ -282,10 +314,13 @@ ENTRY FEE: 50/-"
                         android:id="@+id/phoneNumber"
                         android:autoLink="phone"
                         android:textColor="@color/back"
-                        android:layout_gravity="center"
+
                         android:linksClickable="true"
-                        android:text="Head: Akshay Jadhav +918208419552
- Co-head: Pradnaya Gite +917709566496"/>
+                        android:padding="15dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"
+                        android:text="Head:\nAkshay Jadhav +918208419552\n
+Co-head:\nPradnaya Gite +917709566496"/>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
@@ -297,13 +332,19 @@ ENTRY FEE: 50/-"
                 android:id="@+id/button_event_4_cse"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="40dp"
-                android:layout_width="120dp"
-                android:layout_height="70dp"
+                android:textColor="@color/back"
                 android:layout_gravity="center_horizontal"
-                android:text="Book Event 4"
-                android:background="@drawable/btnbg"
                 android:focusable="true"
                 android:clickable="true"
+                android:text="Book"
+                android:layout_height="50dp"
+                android:layout_width="180dp"
+                android:background="@drawable/buttoncorners"
+
+
+
+
+
                 />
 
         </LinearLayout>

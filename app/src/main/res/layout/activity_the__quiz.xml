@@ -127,7 +127,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="31 March 2018"
+                            android:text="30 March 2018"
                             android:textColor="@color/back"
                             android:textSize="20dp"
                             android:textStyle="bold"
@@ -357,14 +357,14 @@ buzzer first get to answer first."></TextView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TEAM MEMBERS : 2
+                        android:text="TEAM MEMBERS : 2\n
 ENTRY FEE : 50/-"
                         android:textStyle="bold"
-                        android:padding="5dp"
+                        android:padding="15dp"
                         android:textColor="@color/back"
                         android:fontFamily="sans-serif"
                         android:textSize="20dp"
-                        android:layout_gravity="center"
+                        android:layout_gravity="left"
                         />
 
 

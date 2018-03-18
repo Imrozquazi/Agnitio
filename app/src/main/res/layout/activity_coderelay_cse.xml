@@ -20,10 +20,44 @@
 
          android:orientation="vertical">
 
+
+         <android.support.v7.widget.CardView
+
+             android:layout_marginTop="20dp"
+             android:layout_width="match_parent"
+             android:layout_height="150dp"
+             app:cardElevation="25dp"
+             app:cardCornerRadius="10dp"
+             app:cardBackgroundColor="@color/white">
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 >
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="DRISHTI CHEM"
+                     android:textStyle="bold"
+
+                     android:layout_gravity="center|center_horizontal"
+                     android:padding="5dp"
+                     android:textColor="@color/back"
+                     android:fontFamily="monospace"
+                     android:textSize="30dp"
+
+                     android:layout_centerVertical="true"
+                     android:layout_centerHorizontal="true" />
+             </RelativeLayout>
+         </android.support.v7.widget.CardView>
+
+
+
          <LinearLayout
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
-             android:orientation="horizontal">
+             android:orientation="horizontal"
+             android:layout_marginTop="20dp"
+             android:gravity="center">
 
 
         <android.support.v7.widget.CardView
@@ -95,7 +129,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="31 March 2018"
+                    android:text="30 March 2018"
                     android:textColor="@color/back"
                     android:textSize="20dp"
                     android:textStyle="bold"
@@ -232,14 +266,14 @@
                  <TextView
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
-                     android:text="TEAM MEMBERS: Group of 2 or 3
+                     android:text="TEAM MEMBERS:\nGroup of 2 or 3\n
 ENTRY FEE :50/-"
                      android:textStyle="bold"
-                     android:padding="5dp"
+                     android:padding="15dp"
                      android:textColor="@color/back"
                      android:fontFamily="sans-serif"
                      android:textSize="20dp"
-                     android:layout_gravity="center"
+                     android:layout_gravity="left"
                      />
 
 
@@ -282,10 +316,13 @@ ENTRY FEE :50/-"
                      android:id="@+id/phoneNumber"
                      android:autoLink="phone"
                      android:textColor="@color/back"
-                     android:layout_gravity="center"
+
                      android:linksClickable="true"
-                     android:text="Head: Payal Jaiswal : +918862058997
-Co-head: Sarjil Tikki : +917276293555
+                     android:padding="15dp"
+                     android:textStyle="bold"
+                     android:layout_gravity="left"
+                     android:text="Head:\nPayal Jaiswal : +918862058997
+Co-head:\nSarjil Tikki : +917276293555
 Mayuri Udhan : +917744892094"/>
              </LinearLayout>
          </android.support.v7.widget.CardView>
@@ -295,12 +332,16 @@ Mayuri Udhan : +917744892094"/>
              android:id="@+id/button_event_1_cse"
              android:layout_marginTop="30dp"
              android:layout_marginBottom="40dp"
-             android:layout_width="120dp"
-             android:layout_height="70dp"
+             android:textColor="@color/back"
              android:layout_gravity="center_horizontal"
-             android:text="Book Event 1"
              android:focusable="true"
              android:clickable="true"
+             android:text="Book"
+             android:layout_height="50dp"
+             android:layout_width="180dp"
+             android:background="@drawable/buttoncorners"
+
+
 
              />
 
