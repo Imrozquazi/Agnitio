@@ -36,7 +36,6 @@
         app:rotationThreshold="0.4"
         app:scalingThreshold="1.0"
         app:spacing="0.6"
-
         tools:ignore="OnClick">
 
 

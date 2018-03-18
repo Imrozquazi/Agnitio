@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -26,11 +27,11 @@ public class Intro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
 
-       // l1 = (LinearLayout) findViewById(R.id.l1);
+       l1 = (LinearLayout) findViewById(R.id.l1);
 
 
-       ///// uptodown = AnimationUtils.loadAnimation(this, R.anim.uptodown);
-      //  l1.setAnimation(uptodown);
+       uptodown = AnimationUtils.loadAnimation(this, R.anim.uptodown);
+       l1.setAnimation(uptodown);
 
         flag = false;
         final LottieAnimationView animationView = (LottieAnimationView)findViewById(R.id.animation_view3);
@@ -69,7 +70,7 @@ public class Intro extends AppCompatActivity {
                         finish();
                     }
             }
-        }, 2900);
+        }, 3000);
 
     }
 

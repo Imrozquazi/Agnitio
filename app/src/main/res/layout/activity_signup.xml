@@ -24,11 +24,11 @@
         android:layout_width="250dp"
         android:layout_height="50dp"
 
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="150dp"
         android:background="@drawable/edittextcorners"
         android:drawableLeft="@drawable/ic_person_black_24dp"
-
-        android:hint="   Username"
+        android:drawablePadding="10dp"
+        android:hint="Name"
         android:paddingRight="15dp"
 
         android:paddingLeft="15dp" />
@@ -40,11 +40,11 @@
             android:layout_height="50dp"
             android:layout_marginTop="15dp"
             android:paddingRight="15dp"
-
+            android:drawablePadding="10dp"
             android:background="@drawable/edittextcorners"
-            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawableLeft="@drawable/ic_college_50dp"
             android:gravity="center_vertical"
-            android:hint="   College"
+            android:hint="College"
 
             android:paddingLeft="15dp" />
 
@@ -56,7 +56,8 @@
         android:background="@drawable/edittextcorners"
         android:drawableLeft="@drawable/ic_phone_iphone_black_24dp"
         android:gravity="center_vertical"
-        android:hint="   Mobile"
+        android:hint="Mobile"
+        android:drawablePadding="10dp"
 
         android:paddingLeft="15dp" />
 
@@ -65,12 +66,12 @@
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
-
         android:background="@drawable/edittextcorners"
         android:drawableLeft="@drawable/ic_email_black_24dp"
         android:gravity="center_vertical"
-        android:hint="   Email"
+        android:hint="Email"
         android:paddingRight="15dp"
+        android:drawablePadding="10dp"
 
         android:paddingLeft="15dp" />
 
@@ -82,9 +83,10 @@
         android:background="@drawable/edittextcorners"
         android:drawableLeft="@drawable/ic_password"
         android:gravity="center_vertical"
-        android:hint="   Password"
+        android:hint="Password"
         android:paddingRight="15dp"
         android:inputType="textPassword"
+        android:drawablePadding="10dp"
 
         android:paddingLeft="15dp" />
 
@@ -94,8 +96,6 @@
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/buttoncorners"
-
-
         android:gravity="center"
         android:text="SIGNUP"
 
@@ -103,20 +103,21 @@
         android:paddingRight="80dp"
         android:textColor="@color/back"
         android:textSize="18dp"
+        android:fontFamily="sans-serif-condensed"
         android:textStyle="bold" />
 
         />
 
     <TextView
-        android:layout_width="250dp"
+        android:layout_width="wrap_content"
         android:layout_height="20dp"
         android:layout_marginTop="50dp"
         android:gravity="center"
-        android:text="Already Signed Up...??..Click Here"
+        android:text="   Already Signed Up...??..Click Here"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:clickable="true"
-
+        android:focusable="true"
         android:onClick="login"
 
         />
