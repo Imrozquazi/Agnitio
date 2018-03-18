@@ -18,13 +18,29 @@
     android:layout_gravity="center"
      >
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="Signup_USER.json"
+        android:layout_marginRight="8dp"
+        app:lottie_loop="true"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="25dp"
+
+          />
+
 
     <AutoCompleteTextView
         android:id="@+id/UserName"
         android:layout_width="250dp"
         android:layout_height="50dp"
 
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/edittextcorners"
         android:drawableLeft="@drawable/ic_person_black_24dp"
         android:drawablePadding="10dp"
@@ -111,7 +127,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="   Already Signed Up...??..Click Here"
         android:textStyle="bold"

@@ -47,7 +47,7 @@ public class CSE_EVENTS_MAIN extends AppCompatActivity {
                 LayoutInflater inflater = LayoutInflater.from(CSE_EVENTS_MAIN.this);
                 TextView txt = (TextView) inflater.inflate((R.layout.layout_title),null);
                 txt.setTextColor(Color.BLACK);
-                txt.setTextSize(40);
+                txt.setTextSize(30);
 
                 return txt;
 

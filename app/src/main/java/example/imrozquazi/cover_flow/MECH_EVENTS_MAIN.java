@@ -84,13 +84,13 @@ public class MECH_EVENTS_MAIN extends AppCompatActivity {
         MechcoverFlow.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (position == 0)
+
+                if(position == 1)
                 {
                     Intent in = new Intent(getApplicationContext(),Lathe_War_Mech.class);
                     startActivity(in);
-
                 }
-                if(position == 1)
+                if(position == 2)
                 {
                     Intent in = new Intent(getApplicationContext(),Auto_CAD_Desgin.class);
                     startActivity(in);
@@ -113,6 +113,7 @@ public class MECH_EVENTS_MAIN extends AppCompatActivity {
 
         MechEvent1List.add(new MECH_EVENT_1("AutoCAD Design","https://www.internationalstudentinsurance.com/blog/wp-content/uploads/2014/07/487540655-Converted.png"));
         MechEvent1List.add(new MECH_EVENT_1("Lathe War","http://anurag.edu.in/wp-content/uploads/2012/quiz.jpg"));
+
 
     }
 

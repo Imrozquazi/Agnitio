@@ -30,7 +30,7 @@ public class fragment_home extends Fragment implements View.OnClickListener {
 
     RelativeLayout r_cse,r_mech,r_it,r_ect;
 
-    CardView c_cse,c_mech,c_cvivl,c_IT,c_ECT,c_chem,c_General,c_Fun;
+    CardView c_cse,c_mech,c_cvivl,c_IT,c_ECT,c_chem,c_General,c_Fun,c_FAQ;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -68,6 +68,7 @@ public class fragment_home extends Fragment implements View.OnClickListener {
         c_General= (CardView) v.findViewById(R.id.cardView_GENERAL);
         c_Fun= (CardView) v.findViewById(R.id.cardView_FUN);
         c_chem= (CardView) v.findViewById(R.id.cardView_Chemical);
+        c_FAQ= (CardView) v.findViewById(R.id.cardView_FAQ);
 
 
 
@@ -75,7 +76,7 @@ public class fragment_home extends Fragment implements View.OnClickListener {
 
         c_cse.setOnClickListener(this);
         c_mech.setOnClickListener(this);
-
+        c_FAQ.setOnClickListener(this);
         c_cvivl.setOnClickListener(this);
         c_ECT.setOnClickListener(this);
         c_chem.setOnClickListener(this);
@@ -149,6 +150,10 @@ public class fragment_home extends Fragment implements View.OnClickListener {
 
             case R.id.cardView_civil:
                 startActivity(new Intent(getActivity(),CIVIL_EVENTS_MAIN.class));
+                break;
+
+            case R.id.cardView_FAQ:
+                startActivity(new Intent(getActivity(),FAQ_ACTIVITY.class));
                 break;
 
 
