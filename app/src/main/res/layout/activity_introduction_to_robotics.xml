@@ -232,7 +232,7 @@ Contact: 7276651256"></TextView>
 
 
             <Button
-                android:id="@+id/button_event_4_cse"
+                android:id="@+id/button_intro_robotics"
                 android:layout_marginTop="30dp"
                 android:layout_width="120dp"
                 android:layout_marginBottom="50dp"

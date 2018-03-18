@@ -246,7 +246,7 @@ ENTRY FEE :30/-"
 
 
             <Button
-                android:id="@+id/button_event_4_cse"
+                android:id="@+id/button_element_sorting"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="40dp"
                 android:layout_width="120dp"

@@ -77,6 +77,10 @@
         <activity android:name=".General_Event_Main" />
         <activity android:name=".Fun_Event_Main" />
         <activity android:name=".Project_Competition" />
+        <activity android:name=".Introduction_to_robotics"/>
+        <activity android:name=".Innovators_Competition"/>
+        <activity android:name=".The_One"/>
+        <activity android:name=".Master_vs_Slave_robot"/>
         <activity android:name=".Beg_Borrow_Steal" />
         <activity android:name=".Image_Makeover" />
         <activity android:name=".Murder_Mystery" />

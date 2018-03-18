@@ -345,7 +345,7 @@ Team Size: Max. 3 Students"></TextView>
 
 
             <Button
-                android:id="@+id/button_event_4_cse"
+                android:id="@+id/button_master"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="40dp"
                 android:textColor="@color/back"

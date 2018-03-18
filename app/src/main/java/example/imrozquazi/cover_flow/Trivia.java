@@ -1,5 +1,6 @@
 package example.imrozquazi.cover_flow;
 
+import android.app.Dialog;
 import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -30,7 +31,14 @@ import java.util.Map;
 
 public class Trivia extends AppCompatActivity {
 
-    private Button mbtn;
+    private FirebaseAuth mAuth;
+    private DatabaseReference mDatabase;
+    private FirebaseUser user;
+    Dialog mydialog;
+    Button mbook;
+    int count = 0;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,33 +51,41 @@ public class Trivia extends AppCompatActivity {
         CardView v4 = (CardView)findViewById(R.id.c4_cse);
         CardView v5 = (CardView)findViewById(R.id.c5_cse);
 
+        /*
         v1.startAnimation(a);
         v2.startAnimation(a);
         v3.startAnimation(a);
         v4.startAnimation(a);
         v5.startAnimation(a);
+*/
+
+        mAuth=FirebaseAuth.getInstance();
 
 
-        mbtn = (Button) findViewById(R.id.button_event_4_cse);
+        mbook = (Button)findViewById(R.id.button_trivia);
 
-        mbtn.setOnClickListener(new View.OnClickListener() {
+        mbook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Datacheck();
 
+                Toast.makeText(getApplication(),"Clicked",Toast.LENGTH_LONG).show();
+                Datacheck();
+                //smsApiCall();
+                // mProLogin.dismiss();
             }
         });
+
         StrictMode.ThreadPolicy policy=new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
     }
 
     private void Datacheck()
     {
-        FirebaseUser user=FirebaseAuth.getInstance().getCurrentUser();
+        FirebaseUser user= FirebaseAuth.getInstance().getCurrentUser();
         String email=user.getEmail();
         String uid=user.getUid();
-        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("CSE").child("Trivia").child(uid);
+        DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("Fun").child("Trivia").child(uid);
 
 
         dr.addValueEventListener(new ValueEventListener() {
@@ -77,13 +93,18 @@ public class Trivia extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
 
                 try {
-                    Toast.makeText(getApplicationContext(), "in data", Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(), "in data", Toast.LENGTH_LONG).show();
                     String email = dataSnapshot.child("Email").getValue().toString();
-                    Toast.makeText(getApplicationContext(), "Already Registered with this " + email , Toast.LENGTH_LONG).show();
+                    if(count >= 1) {
+                        Toast.makeText(getApplicationContext(), "Already Registered with this " + email, Toast.LENGTH_LONG).show();
+                    }
+                    count++;
+                    //mProLogin.dismiss();
+
                 }
                 catch (Exception e)
                 {
-                    Toast.makeText(getApplicationContext(),"in catch ",Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(),"in catch ",Toast.LENGTH_LONG).show();
                     DataEntry();
                 }
             }
@@ -106,7 +127,7 @@ public class Trivia extends AppCompatActivity {
         //Toast.makeText(getApplicationContext(),""+email,Toast.LENGTH_LONG).show();
 
 
-        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("CSE").child("Trivia").child(uid);
+        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Fun").child("Trivia").child(uid);
 
         Map<String, String> data=new HashMap<String,String>();
         data.put("Email",email);
@@ -118,7 +139,19 @@ public class Trivia extends AppCompatActivity {
                 if(task.isSuccessful())
                 {
                     Toast.makeText(getApplicationContext(), "Registered ", Toast.LENGTH_SHORT).show();
+
                     smsApiCall();
+
+                    String email=StudentInfo.getEmail();
+                    String subject="Greetings from JNEC-SWAYAMBHU";
+                    String message="Thank you "+ StudentInfo.getname()+" for registering in Trivia. Kindly show this message/email on payment desk to confirm your booking. This email is valid until bookings are full.";
+
+                    //Toast.makeText(getApplicationContext(),email+" ",Toast.LENGTH_LONG).show();
+
+                    SendMail sm = new SendMail(Trivia.this, email, subject, message);
+
+                    //Executing sendmail to send email
+                    sm.execute();
                 }
                 else
                 {
@@ -126,6 +159,7 @@ public class Trivia extends AppCompatActivity {
                 }
             }
         });
+
     }
 
 
@@ -134,7 +168,7 @@ public class Trivia extends AppCompatActivity {
         try {
             // Construct data
             String apiKey = "apikey=" + "4iQet9zS7N0-8BOlNJ7oGBJzPBA2yesfVrpXDE1K1y";
-            String message = "&message=" + "Greetings from team TechFest, Thank you for registering in Trivia " + StudentInfo.getname()+ ".";
+            String message = "&message=" + "Thank you "+ StudentInfo.getname()+" for registering in Trivia. Kindly show this message/email on payment desk to confirm your booking.";
             String sender = "&sender=" + "";//mtxtsender.getText().toString();
             String numbers = "&numbers=" + StudentInfo.getContact();
 
@@ -153,7 +187,8 @@ public class Trivia extends AppCompatActivity {
             String line;
             while ((line = rd.readLine()) != null) {
                 //stringBuffer.append(line);
-                Toast.makeText(getApplicationContext(),"The Message is: "+line,Toast.LENGTH_LONG).show();
+                // Toast.makeText(getApplicationContext(),"The Message is: "+line,Toast.LENGTH_LONG).show();
+
             }
 
             rd.close();
