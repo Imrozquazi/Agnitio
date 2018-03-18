@@ -43,7 +43,7 @@ public class Innovators_Competition extends AppCompatActivity {
         mAuth=FirebaseAuth.getInstance();
 
 
-        mbook = (Button)findViewById(R.id.button_innovators);
+        mbook = (Button)findViewById(R.id.button_innovator);
 
         mbook.setOnClickListener(new View.OnClickListener() {
             @Override
