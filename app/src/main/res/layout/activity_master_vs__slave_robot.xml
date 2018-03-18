@@ -282,10 +282,12 @@ weight should be less than 10 kg."></TextView>
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"
                         android:fontFamily="sans-serif"
                         android:textColor="@color/back"
                         android:text="Entry fees: 50
-Team Size: Max. 3 Students"></TextView>
+\nTeam Size: Max. 3 Students"></TextView>
 
 
 

@@ -318,8 +318,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TEAM MEMBERS:\n Single
-ENTRY FEE: 30/"
+                        android:text="TEAM MEMBERS:\nSingle\n\nENTRY FEE: 30/"
                         android:textStyle="bold"
                         android:padding="15dp"
                         android:textColor="@color/back"
@@ -373,8 +372,7 @@ ENTRY FEE: 30/"
                         android:padding="15dp"
                         android:textStyle="bold"
                         android:layout_gravity="left"
-                        android:text="Head:\nSaurabh Sable +918408924642\n
-Co-Head:\nShivraj Kinnur +919130012483"/>
+                        android:text="Head:\nSaurabh Sable +918408924642\n\nCo-Head:\nShivraj Kinnur +919130012483"/>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 

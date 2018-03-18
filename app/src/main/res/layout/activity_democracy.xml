@@ -319,8 +319,7 @@ ENTRY FEE: 50/-"
                         android:padding="15dp"
                         android:textStyle="bold"
                         android:layout_gravity="left"
-                        android:text="Head:\nAkshay Jadhav +918208419552\n
-Co-head:\nPradnaya Gite +917709566496"/>
+                        android:text="Head:\nAkshay Jadhav +918208419552\n\nCo-head:\nPradnaya Gite +917709566496"/>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 

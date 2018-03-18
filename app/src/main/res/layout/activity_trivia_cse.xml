@@ -304,14 +304,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TEAM MEMBERS: Single or Group of 2.
-ENTRY FEE: 50/-"
+                        android:text="TEAM MEMBERS:\nSingle or Group of 2.\n\nENTRY FEE: 50/-"
                         android:textStyle="bold"
-                        android:padding="5dp"
+                        android:padding="15dp"
                         android:textColor="@color/back"
                         android:fontFamily="sans-serif"
                         android:textSize="20dp"
-                        android:layout_gravity="center"
+                        android:layout_gravity="left"
                         />
 
 
@@ -356,7 +355,7 @@ ENTRY FEE: 50/-"
                         android:padding="15dp"
                         android:textStyle="bold"
                         android:linksClickable="true"
-                        android:text="Head:\nRushikesh Nimkar +919011893401\nCo-head:\nKautuki Mahajan +91869886333"
+                        android:text="Head:\nRushikesh Nimkar +919011893401\n\nCo-head:\nKautuki Mahajan +91869886333"
                         />
 
 

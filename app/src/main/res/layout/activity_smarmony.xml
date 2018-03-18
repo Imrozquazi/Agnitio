@@ -286,14 +286,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TEAM MEMBERS : 2
-ENTRY FEE : 50/-"
+                        android:text="TEAM MEMBERS : 2\n\nENTRY FEE : 50/-"
                         android:textStyle="bold"
-                        android:padding="5dp"
+                        android:padding="15dp"
                         android:textColor="@color/back"
                         android:fontFamily="sans-serif"
                         android:textSize="20dp"
-                        android:layout_gravity="center"
+                        android:layout_gravity="left"
                         />
 
 
@@ -340,7 +339,7 @@ ENTRY FEE : 50/-"
                         android:padding="15dp"
                         android:textStyle="bold"
                         android:linksClickable="true"
-                        android:text="Head:\nYogeshwari Pande +919970147420\nCo-head:\nYuvraj Dhanvat +917038469534"/>
+                        android:text="Head:\nYogeshwari Pande +919970147420\n\nCo-head:\nYuvraj Dhanvat +917038469534"/>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 

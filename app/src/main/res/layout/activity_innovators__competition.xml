@@ -224,8 +224,7 @@ judging"></TextView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TEAM MEMBERS:2
-ENTRY FEE : 50/-"
+                        android:text="TEAM MEMBERS:2\n\nENTRY FEE : 50/-"
                         android:textStyle="bold"
                         android:padding="15dp"
                         android:textColor="@color/back"

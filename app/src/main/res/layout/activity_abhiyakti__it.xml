@@ -289,8 +289,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TEAM MEMBERS: SINGLE OR GROUP OF 4\n\n
-ENTRY FEE: 50/-"
+                        android:text="TEAM MEMBERS: SINGLE OR GROUP OF 4\n\nENTRY FEE: 50/-"
                         android:textStyle="bold"
                         android:padding="15dp"
                         android:textColor="@color/back"
@@ -339,11 +338,12 @@ ENTRY FEE: 50/-"
                         android:id="@+id/phoneNumber"
                         android:autoLink="phone"
                         android:textColor="@color/back"
-                        android:layout_gravity="center"
+                        android:layout_gravity="left"
                         android:linksClickable="true"
+
                         android:padding="15dp"
-                        android:text="Head: \nMadhuri Rudrawar +919637744217\n\n
-Co-head:\n Swapnil Bhiungade +918237602343"/>
+                        android:textStyle="bold"
+                        android:text="Head: \nMadhuri Rudrawar +919637744217\n\nCo-head:\nSwapnil Bhiungade +918237602343"/>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 

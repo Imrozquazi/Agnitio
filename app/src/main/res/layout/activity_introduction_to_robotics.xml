@@ -226,15 +226,11 @@ Robocon competition"></TextView>
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
-                        android:gravity="center"
+                        android:gravity="left"
+                        android:textStyle="bold"
                         android:fontFamily="sans-serif"
                         android:textColor="@color/back"
-                        android:text="No entry fees
-Venue:SF-23
-Date 30/03/2018
-Time: 1:30 pm to 3:30 p.m.
-Coordinators: Yogiraj Patil (BE- EEP)
-Contact: 7276651256"></TextView>
+                        android:text="No entry fees  Venue:SF-23\nDate 30/03/2018\nTime: 1:30 pm to 3:30 p.m.\nCoordinator:Yogiraj Patil(BE-EEP)\nContact: 7276651256"></TextView>
 
 
 

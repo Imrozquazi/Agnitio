@@ -305,14 +305,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TEAM MEMBERS: Group of 2
-ENTRY FEE: 50/-"
+                        android:text="TEAM MEMBERS:\nGroup of 2.\n\nENTRY FEE: 50/-"
                         android:textStyle="bold"
-                        android:padding="5dp"
+                        android:padding="15dp"
                         android:textColor="@color/back"
                         android:fontFamily="sans-serif"
                         android:textSize="20dp"
-                        android:layout_gravity="center"
+                        android:layout_gravity="left"
                         />
 
 
@@ -360,8 +359,7 @@ ENTRY FEE: 50/-"
                         android:padding="15dp"
                         android:textStyle="bold"
                         android:layout_gravity="left"
-                        android:text="Head:\nJerin Ignatious +919145716250
-Co-head:\nDhananjay Adhao +917887647838"/>
+                        android:text="Head:\nJerin Ignatious +919145716250\n\nCo-head:\nDhananjay Adhao +917887647838"/>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 

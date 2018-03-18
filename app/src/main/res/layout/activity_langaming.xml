@@ -215,14 +215,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ENTRY FEE :250/- (CS 1.6)
- 50/- (Rest Games)"
+                        android:text="ENTRY FEE:\n250/- (CS 1.6)\n50/- (Rest Games)"
                         android:textStyle="bold"
-                        android:padding="5dp"
+                        android:padding="15dp"
                         android:textColor="@color/back"
                         android:fontFamily="sans-serif"
                         android:textSize="20dp"
-                        android:layout_gravity="center"
+                        android:layout_gravity="left"
                         />
 
 
@@ -269,8 +268,7 @@
                         android:textStyle="bold"
                         android:textColor="@color/back"
                         android:linksClickable="true"
-                        android:text="Head:\nSufiyan Shaikh +917798521896\n
-Co-head:\nPratik Shaha  +918237523964"/>
+                        android:text="Head:\nSufiyan Shaikh +917798521896\n\nCo-head:\nPratik Shaha  +918237523964"/>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 

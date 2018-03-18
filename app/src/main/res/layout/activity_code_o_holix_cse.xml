@@ -33,7 +33,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="DRISHTI CHEM"
+                        android:text="CODE-O-HOLIX"
                         android:textStyle="bold"
 
                         android:layout_gravity="center|center_horizontal"
@@ -253,14 +253,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TEAM MEMBERS: Group of 2\n
-ENTRY FEE :50/-"
+                        android:text="TEAM MEMBERS:\nGroup of 2\n\nENTRY FEE :50/-"
                         android:textStyle="bold"
                         android:padding="15dp"
                         android:textColor="@color/back"
                         android:fontFamily="sans-serif"
                         android:textSize="20dp"
-                        android:layout_gravity="center"
+                        android:layout_gravity="left"
                         />
 
 
@@ -312,8 +311,7 @@ ENTRY FEE :50/-"
 
 
 
-                        android:text="Head:\nDhanashree Kapse +919767091665
-Co-head:\nKunal Kulkarni +919970675640"/>
+                        android:text="Head:\nDhanashree Kapse +919767091665\n\nCo-head:\nKunal Kulkarni +919970675640"/>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 

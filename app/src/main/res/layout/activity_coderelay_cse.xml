@@ -36,7 +36,7 @@
                  <TextView
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
-                     android:text="DRISHTI CHEM"
+                     android:text="CODERELAY"
                      android:textStyle="bold"
 
                      android:layout_gravity="center|center_horizontal"
@@ -240,6 +240,7 @@
                      android:layout_height="wrap_content"
                      android:textSize="18dp"
                      android:textColor="@color/back"
+
                      android:gravity="left"
                      android:fontFamily="sans-serif"
                      android:text="The selected participants will have to code a program (C or C++) using the algorithms collected in Round 1."></TextView>
@@ -321,9 +322,7 @@ ENTRY FEE :50/-"
                      android:padding="15dp"
                      android:textStyle="bold"
                      android:layout_gravity="left"
-                     android:text="Head:\nPayal Jaiswal : +918862058997
-Co-head:\nSarjil Tikki : +917276293555
-Mayuri Udhan : +917744892094"/>
+                     android:text="Head:\nPayal Jaiswal : +918862058997\n\nCo-head:\nSarjil Tikki : +917276293555\nMayuri Udhan : +917744892094"/>
              </LinearLayout>
          </android.support.v7.widget.CardView>
 

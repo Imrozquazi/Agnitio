@@ -191,8 +191,7 @@
                         android:textSize="18dp"
                         android:fontFamily="sans-serif"
                         android:textColor="@color/back"
-                        android:text="Participants have to design a model based on the
-task which will be assigned to the groups made on spot."></TextView>
+                        android:text="Participants have to design a model based on the task which will be assigned to the groups made on spot."></TextView>
 
 
 
@@ -242,7 +241,7 @@ task which will be assigned to the groups made on spot."></TextView>
                         android:textSize="18dp"
                         android:fontFamily="sans-serif"
                         android:textColor="@color/back"
-                        android:text="2:Technical/Non-technical Quiz round"></TextView>
+                        android:text="Technical/Non-technical Quiz round"></TextView>
 
 
 
@@ -338,8 +337,7 @@ task which will be assigned to the groups made on spot."></TextView>
                         android:textSize="18dp"
                         android:fontFamily="sans-serif"
                         android:textColor="@color/back"
-                        android:text="4:PERSONAL INTERVIEW ROUND OF TOP 10
-CONTESTANT."></TextView>
+                        android:text="PERSONAL INTERVIEW ROUND OF TOP 10 CONTESTANT."></TextView>
 
 
 
@@ -370,10 +368,10 @@ CONTESTANT."></TextView>
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="18dp"
+                        android:textStyle="bold"
                         android:fontFamily="sans-serif"
                         android:textColor="@color/back"
-                        android:text="TEAM MEMBERS : Single entry
-  ENTRY FEE :50/-"></TextView>
+                        android:text="TEAM MEMBERS :\nSingle entry\n\nENTRY FEE :50/-"></TextView>
 
 
 
@@ -424,7 +422,7 @@ CONTESTANT."></TextView>
                         android:padding="15dp"
                         android:textStyle="bold"
                         android:linksClickable="true"
-                        android:text="Prasad Patil \n+91 9404 632 449 \nAnkita Navale \n+91 8552 913 309"
+                        android:text="Prasad Patil \n+91 9404 632 449 \n\nAnkita Navale \n+91 8552 913 309"
                         />
 
 

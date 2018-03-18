@@ -280,14 +280,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TEAM MEMBERS :1
-ENTRY FEE :\n30/- (Single) \n50/- (Group)"
+                        android:text="TEAM MEMBERS :1\nENTRY FEE :\n30/- (Single) \n50/- (Group)"
                         android:textStyle="bold"
-                        android:padding="5dp"
+                        android:padding="15dp"
                         android:textColor="@color/back"
                         android:fontFamily="sans-serif"
                         android:textSize="20dp"
-                        android:layout_gravity="center"
+                        android:layout_gravity="left"
                         />
 
 
@@ -334,8 +333,7 @@ ENTRY FEE :\n30/- (Single) \n50/- (Group)"
                         android:padding="15dp"
                         android:textStyle="bold"
                         android:layout_gravity="left"
-                        android:text="Head :\n Piyush Bhosale +919860675538\n\n
-Co-head :\n Rishikesh Khangar +919975669556"></TextView>
+                        android:text="Head :\nPiyush Bhosale +919860675538\n\nCo-head :\nRishikesh Khangar +919975669556"></TextView>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
