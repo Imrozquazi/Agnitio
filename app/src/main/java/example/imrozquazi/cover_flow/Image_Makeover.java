@@ -54,6 +54,7 @@ public class Image_Makeover extends AppCompatActivity {
                 Datacheck();
                 //smsApiCall();
                 // mProLogin.dismiss();
+
             }
         });
 
